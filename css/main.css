@@ -15,6 +15,8 @@ http://yuilibrary.com/license/
 html {
   color: #000;
   background: #FFF;
+  width: 100%;
+  height: 100%;
 }
 
 /*
@@ -24,7 +26,7 @@ html {
 	TODO test putting a class on HEAD.
 		- Fails on FF. 
 */
-/* line 47, base/_reset.scss */
+/* line 49, base/_reset.scss */
 body,
 div,
 dl,
@@ -54,13 +56,13 @@ td {
   padding: 0;
 }
 
-/* line 51, base/_reset.scss */
+/* line 53, base/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 56, base/_reset.scss */
+/* line 58, base/_reset.scss */
 fieldset,
 img {
   border: 0;
@@ -69,7 +71,7 @@ img {
 /*
 	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
 */
-/* line 70, base/_reset.scss */
+/* line 72, base/_reset.scss */
 address,
 caption,
 cite,
@@ -83,19 +85,19 @@ var {
   font-weight: normal;
 }
 
-/* line 76, base/_reset.scss */
+/* line 78, base/_reset.scss */
 ol,
 ul {
   list-style: none;
 }
 
-/* line 81, base/_reset.scss */
+/* line 83, base/_reset.scss */
 caption,
 th {
   text-align: left;
 }
 
-/* line 89, base/_reset.scss */
+/* line 91, base/_reset.scss */
 h1,
 h2,
 h3,
@@ -106,13 +108,13 @@ h6 {
   font-weight: normal;
 }
 
-/* line 94, base/_reset.scss */
+/* line 96, base/_reset.scss */
 q:before,
 q:after {
   content: '';
 }
 
-/* line 98, base/_reset.scss */
+/* line 100, base/_reset.scss */
 abbr,
 acronym {
   border: 0;
@@ -120,17 +122,17 @@ acronym {
 }
 
 /* to preserve line-height and selector appearance */
-/* line 103, base/_reset.scss */
+/* line 105, base/_reset.scss */
 sup {
   vertical-align: text-top;
 }
 
-/* line 106, base/_reset.scss */
+/* line 108, base/_reset.scss */
 sub {
   vertical-align: text-bottom;
 }
 
-/* line 111, base/_reset.scss */
+/* line 113, base/_reset.scss */
 input,
 textarea,
 select {
@@ -140,7 +142,7 @@ select {
 }
 
 /*to enable resizing for IE*/
-/* line 119, base/_reset.scss */
+/* line 121, base/_reset.scss */
 input,
 textarea,
 select {
@@ -148,7 +150,7 @@ select {
 }
 
 /*because legend doesn't inherit in IE */
-/* line 123, base/_reset.scss */
+/* line 125, base/_reset.scss */
 legend {
   color: #000;
 }
@@ -804,17 +806,19 @@ http://yuilibrary.com/license/
  */
 /* line 12, base/_font.scss */
 body {
-  font: 13px/1.231 SingleMaltaRegular,arial,helvetica,clean,sans-serif;
+  font: 13px/1.231 "Lucida Grande",helvetica,arial,clean;
   *font-size: small;
   /* for IE */
   *font: x-small;
   /* for IE in quirks mode */
+  color: #a8a8a8;
+  /* default font color */
 }
 
 /**
  * Nudge down to get to 13px equivalent for these form elements
  */
-/* line 24, base/_font.scss */
+/* line 25, base/_font.scss */
 select,
 input,
 button,
@@ -825,7 +829,7 @@ textarea {
 /**
  * To help tables remember to inherit
  */
-/* line 31, base/_font.scss */
+/* line 32, base/_font.scss */
 table {
   font-size: inherit;
   font: 100%;
@@ -834,7 +838,7 @@ table {
 /**
  * Bump up IE to get to 13px equivalent for these fixed-width elements
  */
-/* line 43, base/_font.scss */
+/* line 44, base/_font.scss */
 pre,
 code,
 kbd,
@@ -2434,12 +2438,17 @@ ol.list-inline li, ul.list-inline li {
 /* Layout */
 /* wrapper */
 /* line 3, layout/_base.scss */
-.wrapper, .header, .billboard, .nav, .main, .footer {
+body {
   width: 100%;
   height: 100%;
 }
 
 /* line 7, layout/_base.scss */
+.wrapper, .header, .billboard, .nav, .main, .footer, header, nav, main, footer {
+  width: 100%;
+}
+
+/* line 10, layout/_base.scss */
 .container {
   width: 960px;
   margin: 0 auto;
@@ -2451,16 +2460,6 @@ ol.list-inline li, ul.list-inline li {
 /* billboard */
 /* main */
 /* footer */
-/* line 35, layout/_base.scss */
-.bs-docs-example {
-  border: 1px solid #dddddd;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  margin: 15px 0;
-  padding: 40px 20px;
-}
-
 /* line 1, layout/_compass-page.scss */
 .homepage-favicon {
   width: 32px;
@@ -2483,4 +2482,129 @@ ol.list-inline li, ul.list-inline li {
 .homepage-share {
   width: 158px;
   height: 165px;
+}
+
+/* line 1, layout/_examples.scss */
+.bs-docs-example {
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  margin: 15px 0;
+  padding: 40px 20px;
+}
+
+/* line 8, layout/_examples.scss */
+.the-icons li {
+  float: left;
+  width: 25%;
+  line-height: 20px;
+}
+
+/* line 16, layout/_examples.scss */
+#grid .yui3-g div {
+  background: green;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  color: #ffffff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, layout/_introduce.scss */
+#home {
+  background-image: radial-gradient(50% 45%, circle cover, #ffffff 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+  background-image: -o-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+  background-image: -ms-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+  background-image: -moz-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+  background-image: -webkit-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+}
+/* line 7, layout/_introduce.scss */
+#home header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -200px;
+  z-index: 1000;
+  width: 200px;
+  height: 240px;
+  background: url(../images/lightnightbg.png) no-repeat center center;
+}
+/* line 17, layout/_introduce.scss */
+#home header .lightning {
+  width: 200px;
+  height: 240px;
+  background: url(../images/lightnight.png) no-repeat 0 0;
+  animation: changeOpacity 1s ease-in-out infinite alternate;
+  -webkit-animation: changeOpacity 1s ease-in-out infinite alternate;
+}
+/* line 24, layout/_introduce.scss */
+#home header .logo {
+  position: absolute;
+  bottom: -90px;
+  left: -40px;
+  font-size: 400%;
+  color: #000000;
+  cursor: default;
+}
+/* line 31, layout/_introduce.scss */
+#home header .logo span {
+  color: #00bbd7;
+}
+/* line 37, layout/_introduce.scss */
+#home nav {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  text-align: center;
+}
+/* line 42, layout/_introduce.scss */
+#home nav a {
+  font-size: 1.2em;
+  display: inline-block;
+  color: #999999;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  width: 100px;
+}
+/* line 49, layout/_introduce.scss */
+#home nav a:hover {
+  color: #12BBD5;
+  text-indent: 10px;
+  text-decoration: none;
+}
+/* line 57, layout/_introduce.scss */
+#home footer {
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+@keyframes changeOpacity {
+  /* line 68, layout/_introduce.scss */
+  from {
+    opacity: 0.1;
+  }
+
+  /* line 69, layout/_introduce.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes changeOpacity {
+  /* line 73, layout/_introduce.scss */
+  from {
+    opacity: 0.1;
+  }
+
+  /* line 74, layout/_introduce.scss */
+  to {
+    opacity: 1;
+  }
 }

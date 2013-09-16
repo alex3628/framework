@@ -1,0 +1,26 @@
+.bs-docs-example {
+  @include normal-border();
+  margin: 15px 0;
+  padding: 40px 20px;
+}
+
+
+.the-icons li {
+   float: left;
+   width: 25%;
+   line-height: 20px;
+ }
+
+
+
+#grid .yui3-g div{
+  background: green;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  color: #ffffff;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
