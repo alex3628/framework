@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" name="Default" comment="" />
+    <ignored path="framework.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/main.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378889447794" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/css/base/_base.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1377847411381" ignored="false" />
+    <file path="/index.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378954350303" ignored="false" />
+    <file path="/_compass.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1377853299006" ignored="false" />
+    <file path="/_sprite.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1377852012945" ignored="false" />
+    <file path="/main.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378954271089" ignored="false" />
+    <file path="/yui.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379319786907" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/common.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289256495" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/all-landing.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378092415509" ignored="false" />
+    <file path="/all-landing.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378092415509" ignored="false" />
+    <file path="/modernizr-2.6.2.min.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378088749054" ignored="false" />
+    <file path="/common.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378288374004" ignored="false" />
+    <file path="/knockout-2.2.1.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378089581687" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/3rdparty/knockout-2.2.1.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378089593725" ignored="false" />
+    <file path="/*.regexp" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378881692366" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/area-landing.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378092438737" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/detail.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378093204008" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/buddy/BuddyFavouriteCoursesModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378091584620" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/buddy/BuddyFavouriteCoursesModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378091586829" ignored="false" />
+    <file path="/detail.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378091922014" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/buddy-profile.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378093204008" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/course-detail.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289256495" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/index.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378092491734" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/makeup-course-landing.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378093204008" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/makeup_course_publicSpace.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378092507760" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/mobile.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378092255198" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/my_profile_buddy.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378093204008" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/my_profile_course.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378093204008" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/my_profile_edit.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378093204008" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/my_profile_makeup.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378093204008" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/my_profile_makeup_box.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378092343598" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/my_profile_notification.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378189559326" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/my_profile_qa.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378093204008" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/points-system.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378092594673" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/search.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378093204008" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/module/QAModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378093204008" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/app.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289674442" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/css/main.css" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289455086" ignored="false" />
+    <file path="$PROJECT_DIR$/.sass-cache/fb60290ff7ce32c7162b498f714ebb35c567c135/_compass-page.scssc" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378104286144" ignored="false" />
+    <file path="/_compass-page.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378104205496" ignored="false" />
+    <file path="/_base.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378172632090" ignored="false" />
+    <file path="/Dummy.txt" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378106769949" ignored="false" />
+    <file path="/_typography.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378805524204" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/css/main.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289453129" ignored="false" />
+    <file path="/mixins.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378175391676" ignored="false" />
+    <file path="/variables.css" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378113763432" ignored="false" />
+    <file path="/_variables.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378182437558" ignored="false" />
+    <file path="/_mixins.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378190809553" ignored="false" />
+    <file path="/_progress-bar" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378178787456" ignored="false" />
+    <file path="/_common.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378180902756" ignored="false" />
+    <file path="/_progress-bar.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378182578894" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/interface/ISurveyCallbackData.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187481494" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/interface/ISurveyCallbackData.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187485515" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/interface/ISurveyCallbackData.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187624812" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/interface/ISurveyResult.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187696880" ignored="false" />
+    <file path="/ISurveyResult.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187695444" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/interface/ISurveyResult.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187696880" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/interface/ISurveyResult.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187696880" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/survey/SurveyModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187733698" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/survey/SurveyModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378189584821" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/survey/SurveyModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378188066453" ignored="false" />
+    <file path="/SurveyModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187733218" ignored="false" />
+    <file path="/CourseDetailPlayerModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187799170" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/player/CourseDetailPlayerModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187799520" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/player/CourseDetailPlayerModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378188066453" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/player/CourseDetailPlayerModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378190309768" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/interface/ICourse.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187785119" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/member/MemberLevelModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378188703681" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/member/MemberLevelModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378190309768" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/member/MemberLevelModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378188688918" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/courses/CoursesLandingModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187884601" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/courses/CoursesLandingModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378188066453" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/courses/CoursesLandingModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378189584821" ignored="false" />
+    <file path="/CoursesLandingModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187883082" ignored="false" />
+    <file path="/MemberLevelModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378188345115" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/main.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378348417932" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/main.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378348422864" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/datatype/PostboxEventDataType.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378190309768" ignored="false" />
+    <file path="/my_profile_notification.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378189390481" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileMemberLevelModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378189551475" ignored="false" />
+    <file path="/ProfileMemberLevelModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378189054686" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileMemberLevelModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378189551475" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileMemberLevelModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378189584821" ignored="false" />
+    <file path="/main.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378348265161" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/player/PlayerModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378189254766" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileSubNavModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378189254766" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileRemoveBuddyModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378189254766" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileNotificationModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289421998" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileSideBuddyModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378347935852" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/player/YoukuPlayerModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378189254766" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/utils/track/GaTrackManager.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378348222278" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/courses/CoursesDetailModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378189824081" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/css/layout/_makeup-course-public-space.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378287115980" ignored="false" />
+    <file path="/_makeup-course-public-space.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378286825988" ignored="false" />
+    <file path="/public-space.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378288935388" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/public-space.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378354616603" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/public-comments.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378346784625" ignored="false" />
+    <file path="/public-comments.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289105195" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/buddy-space.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378346755834" ignored="false" />
+    <file path="/buddy-space.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289129647" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/space/PublicSpaceModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378352936776" ignored="false" />
+    <file path="/PublicSpaceModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378347148140" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/space/PublicSpaceModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378352939760" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/home/PlayerModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378348222278" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileQuestionModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289421998" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/module/SocialLoginModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289421998" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileQuestionModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289421998" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/module/player/YoukuPlayerModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378348222278" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileNotificationModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289421998" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileBuddyModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378348430974" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/space/PublicSpaceModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378352939760" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileBuddyModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378348430974" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/css/layout/course-detail/_course-detail-base.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289256495" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/module/upload/ImageEditModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289256495" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileImageUploadModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289256495" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/utils/service/ServiceManager.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289256495" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/umbraco/api/generalApi/GetPublicSpaceGallery/index.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378346887571" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/umbraco/api/photoApi/GetPhotosForEveryone/index.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378349184748" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileSideBuddyModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378347935852" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/module/nav/NavModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378348430974" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/datatype/LayoutDataType.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378348430974" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/.idea/workspace.xml" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378354675045" ignored="false" />
+    <file path="/_normalize.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378805255187" ignored="false" />
+    <file path="/mobile.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378881533389" ignored="false" />
+    <file path="/_font.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378889574868" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="framework" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/icons/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="208" column="49" selection-start="13886" selection-end="13886" vertical-scroll-proportion="-32.291668">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/typography/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="267" column="49" selection-start="13713" selection-end="13713" vertical-scroll-proportion="-166.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/flex/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="69" selection-start="2270" selection-end="2270" vertical-scroll-proportion="-23.125">
+              <folding>
+                <element signature="n#style#0;n#article#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yui.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/grid/yui.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="38" selection-start="1819" selection-end="1826" vertical-scroll-proportion="-6.428571">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_grid.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/components/_grid.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="51" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_icons.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/components/_icons.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="196" column="150" selection-start="2668" selection-end="2668" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="26" selection-start="1719" selection-end="1719" vertical-scroll-proportion="0.6208791">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_compass.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/base/_compass.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_font.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/base/_font.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="11" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_print.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/base/_print.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/css/components/_typography.scss" />
+        <option value="$PROJECT_DIR$/css/base/_normalize.scss" />
+        <option value="$PROJECT_DIR$/css/main.scss" />
+        <option value="$PROJECT_DIR$/js/3rdparty/jquery.easing.1.3.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/common.js" />
+        <option value="$PROJECT_DIR$/html5.html" />
+        <option value="$PROJECT_DIR$/mobile.html" />
+        <option value="$PROJECT_DIR$/examples/carousel/index.html" />
+        <option value="$PROJECT_DIR$/examples/compass/index.html" />
+        <option value="$PROJECT_DIR$/examples/icons/index.html" />
+        <option value="$PROJECT_DIR$/examples/typography/index.html" />
+        <option value="$PROJECT_DIR$/examples/flex/index.html" />
+        <option value="$PROJECT_DIR$/css/base/_font.scss" />
+        <option value="$PROJECT_DIR$/examples/grid/yui.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1440" />
+    <option name="y" value="80" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>File Watchers</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="typography" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="icons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flex" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="compass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carousel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="settings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/css/components" />
+      <recent name="$PROJECT_DIR$/css/base" />
+      <recent name="$PROJECT_DIR$/css/layout" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" name="Default" comment="" />
+      <created>1377844220317</created>
+      <updated>1377844220317</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1440" y="80" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1829204" sideWeight="0.6708861" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1771348" sideWeight="0.42705572" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1995842" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/examples/carousel/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="49" selection-start="2481" selection-end="2481" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/compass/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="45" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/base/_reset.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/base/_normalize.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/base/_print.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/base/_compass.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/base/_font.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="11" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/typography/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="267" column="49" selection-start="13713" selection-end="13713" vertical-scroll-proportion="-166.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/icons/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="208" column="49" selection-start="13886" selection-end="13886" vertical-scroll-proportion="-32.291668">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/flex/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="69" selection-start="2270" selection-end="2270" vertical-scroll-proportion="-23.125">
+          <folding>
+            <element signature="n#style#0;n#article#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/grid/yui.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="38" selection-start="1819" selection-end="1826" vertical-scroll-proportion="-6.428571">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/components/_grid.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="51" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/components/_icons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="150" selection-start="2668" selection-end="2668" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="26" selection-start="1719" selection-end="1719" vertical-scroll-proportion="0.6208791">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

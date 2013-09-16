@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Global Variable
+   ========================================================================== */
+$content-width: 960px;
+
+$box-margin: 20px;
+
+$copy-margin: 15px;
+
+
+
+
+// border color
+// -------------------------
+$border-width:      1px;
+$border-color:      #dddddd;
+$border-style:      solid;
+$border-radius:     0px;
+
+
+
+
+
+// color
+// -------------------------
+$default-color:        #f7f7f7;
+$info-color:           #3a87ad;
+$success-color:        #468847;
+$warning-color:        #c09853;
+$error-color:          #b94a48;
+$progress-color:       #0e90d2;
+
+
+
+
+
+// Buttons
+// -------------------------
+$btn-default-text-color:               #333333;
+$btn-default-bg-color:                 $default-color;
+$btn-default-border-color:             darken($btn-default-bg-color, 5%);
+
+$btn-info-text-color:                  #ffffff;
+$btn-info-bg-color:                    $info-color;
+$btn-info-border-color:                darken($btn-info-bg-color, 5%);
+
+$btn-success-text-color:               #ffffff;
+$btn-success-bg-color:                 $success-color;
+$btn-success-border-color:             darken($btn-success-bg-color, 5%);
+
+$btn-warning-text-color:               #ffffff;
+$btn-warning-bg-color:                 $warning-color;
+$btn-warning-border-color:             darken($btn-warning-bg-color, 5%);
+
+$btn-error-text-color:                 #ffffff;
+$btn-error-bg-color:                   $error-color;
+$btn-error-border-color:               darken($btn-error-bg-color, 5%);

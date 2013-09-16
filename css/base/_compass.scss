@@ -1,0 +1,12 @@
+/* ==========================================================================
+   compass sprite
+   ========================================================================== */
+
+
+$mysprite-layout:smart;
+
+
+/* homepage images spript */
+@import "homepage/*.png";
+@include all-homepage-sprites;
+

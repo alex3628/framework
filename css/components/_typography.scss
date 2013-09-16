@@ -1,0 +1,182 @@
+/* body font size */
+.title {
+  font-size: 1.6em;
+}
+.describe {
+  font-size: 1.5em;
+}
+.subtext {
+  font-size: 1.4em;
+}
+.lead {
+  font-size: 1.3em;
+}
+
+
+
+/* body copy */
+p {
+  margin: 0 0 $copy-margin 0;
+  &:last-child {
+    margin: 0;
+  }
+}
+.text-info {
+  color: $info-color;
+}
+.text-success {
+  color: $success-color;
+}
+.text-warning {
+  color: $warning-color;
+}
+.text-error {
+  color: $error-color;
+}
+
+
+
+
+address {
+  display: block;
+  margin-bottom: $box-margin;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+blockquote {
+  display: block;
+  margin-bottom: $box-margin;
+  padding: 0 0 0 15px;
+  border-left: 5px solid #eeeeee;
+  p {
+    font-size: 1.2em;
+  }
+  small {
+    color: #999999;
+    font-size: 1em;
+  }
+  &.quote-right {
+    margin-bottom: $box-margin;
+    text-align: right;
+    padding: 0 15px 0 0;
+    border-left: none;
+    border-right: 5px solid #eeeeee;
+  }
+  &:last-child {
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+dl {
+  margin-bottom: $box-margin;
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin: 0 0 0 20px;
+  }
+  &.dl-horizontal dt {
+    float: left;
+    width: 160px;
+    text-align: right;
+    clear: left;
+  }
+  &.dl-horizontal dd {
+    margin: 0 0 0 180px;
+  }
+  &:last-child {
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+ul, ol{
+  margin-bottom: $box-margin;
+  &:last-child {
+    margin: 0;
+  }
+}
+ol.list-inline li, ul.list-inline li {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+.btn {
+  @include button-variant($btn-default-text-color, $btn-default-bg-color, $btn-default-border-color);
+}
+.btn-info {
+  @include button-variant($btn-info-text-color, $btn-info-bg-color, $btn-info-border-color);
+}
+.btn-success {
+  @include button-variant($btn-success-text-color, $btn-success-bg-color, $btn-success-border-color);
+}
+.btn-warning {
+  @include button-variant($btn-warning-text-color, $btn-warning-bg-color, $btn-warning-border-color);
+}
+.btn-error {
+  @include button-variant($btn-error-text-color, $btn-error-bg-color, $btn-error-border-color);
+}
+
+
+
+
+
+
+
+.table {
+  width: 100%;
+  @include normal-border();
+  caption {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+  }
+  th {
+    font-weight: bold;
+  }
+  th, td {
+    padding: 10px;
+    vertical-align: middle;
+  }
+  td {
+    @include normal-border();
+    border-right: none;
+    border-bottom: none;
+  }
+  &.table-hover {
+    tbody {
+      tr:hover {
+        background-color: #eeeeee;
+      }
+    }
+  }
+}
