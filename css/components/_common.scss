@@ -1,15 +1,21 @@
+  /* link */
+a {
+  color: #666666;
+  text-decoration: none;
+  @include transition(all 0.2s ease-in-out);
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: #00bbd7;
+  }
+}
+
+
+
     /* clear */
 .clearfix {
-	zoom: 1;
-}
-.clearfix:after {
-	clear: both;
-	content: ".";
-	display: block;
-	font-size: 0;
-	height: 0;
-	line-height: 0;
-	visibility: hidden
+  @include clearfix();
 }
 .clearboth {
 	font: 0px/0px sans-serif;
@@ -17,6 +23,9 @@
 	visibility: hidden;
 	display: block;
 }
+
+
+
 
     /* float */
 .floatl {
@@ -28,6 +37,9 @@
 .floatn {
 	float: none;
 }
+
+
+
 
     /* text align */
 .textl {
@@ -44,6 +56,9 @@
 }
 
 
+
+
+
     /* hide and show */
 .hidden {
 	display: none;
@@ -55,17 +70,6 @@
 }
 
 
-    /* link */
-a {
-  color: #0088cc;
-  text-decoration: none;
-  &:hover,
-  &:focus,
-  &:active {
-    color: #005580;
-    text-decoration: underline;
-  }
-}
 
 
 

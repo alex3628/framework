@@ -1,3 +1,5 @@
+/** _:IE6; *:IE6.7; \9:IE6.7.8; -ms-:Microsoft(Trident引擎); -moz-:Firfox(Gecko引擎); -webkit-:Chrome,Safari(Webkit引擎); -o-:Opera(Presto引擎); **/
+
 /*
 YUI 3.11.0 (build d549e5c)
 Copyright 2013 Yahoo! Inc. All rights reserved.
@@ -10,8 +12,6 @@ http://yuilibrary.com/license/
 	TODO with the prefix, should I group by selector or property for weight savings?
 */
 html{
-  color:#000;
-  background:#FFF;
   width: 100%;
   height: 100%;
 }

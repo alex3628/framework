@@ -2,36 +2,48 @@
    Global mixins
    ========================================================================== */
 
-// border variants
-// -------------------------
-@mixin normal-border($radius: $border-radius){
-  $width:  $border-width;
-  $color:  $border-color;
-  $style:  $border-style;
-
-  border: $width $style $color;
-
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  border-radius: $radius;
+@mixin clearfix() {
+  zoom: 1;
+  &:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden
+  }
 }
 
 
-// Single side border-radius
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  border-radius: $radius;
+
+@mixin text-animation() {
+  &:hover,
+  &:focus,
+  &:active {
+    text-indent: 10px;
+    border-color: #12BBD5;
+  }
 }
 
 
-// background size
-@mixin background-size($size) {
-  -webkit-background-size: 40px 40px;
-  -moz-background-size: 40px 40px;
-  -o-background-size: 40px 40px;
-  background-size: 40px 40px;
+
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  //$opacity-ie: ($opacity * 100);
+  filter: alpha(opacity = $opacity * 100); // IE8 filter
 }
+
+
+
+
+
+
+
+
+
+
 
 
 @mixin button-variant($color, $background, $border) {
@@ -73,6 +85,7 @@
 
 
 
+
 // Box sizing
 @mixin box-sizing($boxmodel) {
   -webkit-box-sizing: $boxmodel;
@@ -82,10 +95,95 @@
 
 
 
+// Single side border-radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+
 // Drop shadows
 @mixin box-shadow($shadow) {
   -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
   box-shadow: $shadow;
+}
+
+
+
+// border variants
+// -------------------------
+@mixin normal-border($radius: $border-radius) {
+  $width:  $border-width;
+  $color:  $border-color;
+  $style:  $border-style;
+
+  border: $width $style $color;
+
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+// Text overflow
+// Requires inline-block or block for proper styling
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+// background size
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+}
+
+
+@mixin background-linear($color-start: #ffffff, $color-end: #000000) {
+  //-webkit-gradien(<type>,<point>[,<radius>]?,<point>[,<radius>]?[,<stop>]*)                                  //Webkit引擎老式语法
+  //-webkit-linear-gradient([<point>||<angle>,]?<stop>,<stop>[,<stop>]*)                                       //Webkit引擎新式语法
+  //-moz-linear-gradient([<point>||<angle>,]?<stop>,<stop>[,<stop>]*)                                          //Gecko引擎
+  //-o-linear-gradient([<point>||<angle>,]?<stop>,<stop>[,<stop>]*)                                            //Presto引擎
+  //-ms-linear-gradient([<point>||<angle>,]?<stop>,<stop>[,<stop>]*)                                           //Trident引擎
+  //linear-gradient([[<angle> | to <side-or-corner> ],]?<color-stop>[,<color-stop>]+)                          //w3c标准
+  //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff');        //IE6 & IE7
+  //-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff')";  //IE8+
+
+  background-image: -moz-linear-gradient($color-start, $color-end); /* FF 3.6+ */
+  background-image: -webkit-linear-gradient($color-start, $color-end); /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient($color-start, $color-end); /* Opera 11.10 */
+  background-image: linear-gradient($color-start, $color-end); /* the standard */
+}
+
+
+
+
+
+
+
+
+
+
+// loading and progress Striped
+@mixin striped($color: #555, $angle: 45deg) {
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
 }
 
 
@@ -136,41 +234,10 @@
 }
 @mixin skew($x, $y) {
   -webkit-transform: skew($x, $y);
-  -ms-transform: skewX($x) skewY($y); // See https://github.com/twbs/bootstrap/issues/4885; IE9+
+  -ms-transform: skewX($x) skewY($y); // IE9+
   transform: skew($x, $y);
 }
 @mixin translate3d($x, $y, $z) {
   -webkit-transform: translate3d($x, $y, $z);
   transform: translate3d($x, $y, $z);
-}
-
-
-
-
-// Opacity
-@mixin opacity($opacity) {
-  opacity: $opacity;
-  // IE8 filter
-  $opacity-ie: ($opacity * 100);
-  filter: alpha(opacity = $opacity-ie);
-}
-
-
-
-
-// Text overflow
-// Requires inline-block or block for proper styling
-@mixin text-overflow() {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-
-// loading and progress Striped
-@mixin striped($color: #555, $angle: 45deg) {
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent));
-  background-image: -webkit-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
-  background-image: -moz-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
 }

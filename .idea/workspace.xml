@@ -4,28 +4,28 @@
     <list default="true" id="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" name="Default" comment="" />
     <ignored path="framework.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/main.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379323170029" ignored="false" />
+    <file path="/main.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379996646755" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/css/base/_base.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1377847411381" ignored="false" />
-    <file path="/index.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379330413288" ignored="false" />
+    <file path="/index.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380081978092" ignored="false" />
     <file path="/_compass.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1377853299006" ignored="false" />
     <file path="/_sprite.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1377852012945" ignored="false" />
-    <file path="/main.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378954271089" ignored="false" />
+    <file path="/main.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379396176367" ignored="false" />
     <file path="/yui.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379319786907" ignored="false" />
-    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/common.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289256495" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/common.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380013017089" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/all-landing.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378092415509" ignored="false" />
     <file path="/all-landing.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378092415509" ignored="false" />
     <file path="/modernizr-2.6.2.min.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378088749054" ignored="false" />
-    <file path="/common.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378288374004" ignored="false" />
+    <file path="/common.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380080197593" ignored="false" />
     <file path="/knockout-2.2.1.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378089581687" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/3rdparty/knockout-2.2.1.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378089593725" ignored="false" />
-    <file path="/*.regexp" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378881692366" ignored="false" />
+    <file path="/*.regexp" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380018827067" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/area-landing.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378092438737" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/detail.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378093204008" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/buddy/BuddyFavouriteCoursesModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378091584620" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/buddy/BuddyFavouriteCoursesModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378091586829" ignored="false" />
     <file path="/detail.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378091922014" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/buddy-profile.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378093204008" ignored="false" />
-    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/course-detail.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289256495" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/course-detail.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380012918848" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/index.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378092491734" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/makeup-course-landing.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378093204008" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/makeup_course_publicSpace.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378092507760" ignored="false" />
@@ -40,20 +40,19 @@
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/points-system.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378092594673" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/search.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378093204008" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/module/QAModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378093204008" ignored="false" />
-    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/app.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289674442" ignored="false" />
-    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/css/main.css" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289455086" ignored="false" />
-    <file path="$PROJECT_DIR$/.sass-cache/fb60290ff7ce32c7162b498f714ebb35c567c135/_compass-page.scssc" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378104286144" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/app.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380014829794" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/css/main.css" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380014764321" ignored="false" />
     <file path="/_compass-page.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378104205496" ignored="false" />
-    <file path="/_base.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379325793309" ignored="false" />
+    <file path="/_base.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380075591150" ignored="false" />
     <file path="/Dummy.txt" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378106769949" ignored="false" />
-    <file path="/_typography.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378805524204" ignored="false" />
+    <file path="/_typography.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380073068751" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/css/main.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289453129" ignored="false" />
     <file path="/mixins.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378175391676" ignored="false" />
     <file path="/variables.css" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378113763432" ignored="false" />
-    <file path="/_variables.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378182437558" ignored="false" />
-    <file path="/_mixins.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378190809553" ignored="false" />
+    <file path="/_variables.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379403298016" ignored="false" />
+    <file path="/_mixins.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380015760552" ignored="false" />
     <file path="/_progress-bar" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378178787456" ignored="false" />
-    <file path="/_common.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378180902756" ignored="false" />
+    <file path="/_common.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380001526250" ignored="false" />
     <file path="/_progress-bar.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378182578894" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/interface/ISurveyCallbackData.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187481494" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/interface/ISurveyCallbackData.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378187485515" ignored="false" />
@@ -99,10 +98,10 @@
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/css/layout/_makeup-course-public-space.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378287115980" ignored="false" />
     <file path="/_makeup-course-public-space.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378286825988" ignored="false" />
     <file path="/public-space.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378288935388" ignored="false" />
-    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/public-space.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378354616603" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/public-space.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380012918848" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/public-comments.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378346784625" ignored="false" />
     <file path="/public-comments.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289105195" ignored="false" />
-    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/buddy-space.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378346755834" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/buddy-space.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380012918848" ignored="false" />
     <file path="/buddy-space.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289129647" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/space/PublicSpaceModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378352936776" ignored="false" />
     <file path="/PublicSpaceModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378347148140" ignored="false" />
@@ -113,9 +112,9 @@
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileQuestionModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289421998" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/module/player/YoukuPlayerModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378348222278" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileNotificationModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289421998" ignored="false" />
-    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileBuddyModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378348430974" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileBuddyModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379389015283" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/space/PublicSpaceModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378352939760" ignored="false" />
-    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileBuddyModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378348430974" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileBuddyModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379389015283" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/css/layout/course-detail/_course-detail-base.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289256495" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/module/upload/ImageEditModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289256495" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileImageUploadModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378289256495" ignored="false" />
@@ -126,13 +125,41 @@
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/module/nav/NavModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378348430974" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/datatype/LayoutDataType.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378348430974" ignored="false" />
     <file path="$PROJECT_DIR$/../imakeup/tools/front-end/.idea/workspace.xml" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378354675045" ignored="false" />
-    <file path="/_normalize.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379324725616" ignored="false" />
-    <file path="/mobile.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1378881533389" ignored="false" />
-    <file path="/_font.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379325962916" ignored="false" />
-    <file path="/_examples.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379324222543" ignored="false" />
+    <file path="/_normalize.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380007911923" ignored="false" />
+    <file path="/mobile.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379383178477" ignored="false" />
+    <file path="/_font.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379413404727" ignored="false" />
+    <file path="/_examples.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379413241820" ignored="false" />
     <file path="/html5.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379323786612" ignored="false" />
     <file path="/_introduce.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379331196675" ignored="false" />
-    <file path="/dummy.xml" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379327902163" ignored="false" />
+    <file path="/dummy.xml" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380079938350" ignored="false" />
+    <file path="/blog.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379401935071" ignored="false" />
+    <file path="/_blog.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379383568012" ignored="false" />
+    <file path="/_reset.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380009235684" ignored="false" />
+    <file path="/_home.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379993560993" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileBuddyModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379389012791" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/module/SocialShareModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379407580699" ignored="false" />
+    <file path="/a.less" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379403137193" ignored="false" />
+    <file path="/_grid.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379412358602" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/module/SocialShareModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379407583676" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/module/SocialShareModel.js.map" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379407458650" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/module/VoteModel.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379407958744" ignored="false" />
+    <file path="/bootstrap.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379410150389" ignored="false" />
+    <file path="/index.php" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379991840974" ignored="false" />
+    <file path="/404.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379993580312" ignored="false" />
+    <file path="/_responsive.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1379999882938" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/profile-notification.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380012918848" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/look-detail.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380012918848" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/popup/ProfileRedeemProductModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380014284541" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/vm/profile/ProfileMakeupBoxModel.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380013467754" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/profile-makeup.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380013838595" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/scripts/interface/IMakeupBoxProduct.ts" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380013467754" ignored="false" />
+    <file path="/profile-makeup.html" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380013829850" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/css/layout/profile/_profile-makeup.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380014059928" ignored="false" />
+    <file path="/_profile-makeup.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380014006020" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/tools/front-end/css/layout/profile/_profile-buddy.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380014713760" ignored="false" />
+    <file path="/controllers.js" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380081232861" ignored="false" />
+    <file path="/_back-to-top.scss" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380080340551" ignored="false" />
+    <file path="$PROJECT_DIR$/../imakeup/src/iMakeup.Web.UI/usercontrols/MemberInfo.ascx" changelist="2e04c5e9-ccfb-425f-9eb1-c281bda4f1cc" time="1380091670652" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,53 +178,98 @@
     <favorites_list name="framework" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="15" selection-start="1683" selection-end="1683" vertical-scroll-proportion="-9.142858">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_introduce.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/layout/_introduce.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="21" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_progress-bar.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/components/_progress-bar.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="49" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_typography.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/components/_typography.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_variables.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/components/_variables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="61" selection-start="399" selection-end="399" vertical-scroll-proportion="0.44052863">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.61254615">
+      <split-first>
+        <splitter split-orientation="horizontal" split-proportion="0.62134254">
+          <split-first>
+            <leaf>
+              <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/tutorial/index.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="60" column="73" selection-start="2775" selection-end="2775" vertical-scroll-proportion="0.43575418">
+                      <folding>
+                        <element signature="tag#footer#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/js/controllers.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="0" column="0" selection-start="0" selection-end="345" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="_base.scss" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/css/layout/_base.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="35" column="12" selection-start="442" selection-end="442" vertical-scroll-proportion="-0.45214522">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_responsive.scss" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/layout/_responsive.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="8" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_typography.scss" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/components/_typography.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="45" column="0" selection-start="502" selection-end="516" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_progress-bar.scss" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/components/_progress-bar.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="83" column="0" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_back-to-top.scss" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/components/_back-to-top.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="3" column="11" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_mixins.scss" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/components/_mixins.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="155" column="7" selection-start="2471" selection-end="2471" vertical-scroll-proportion="-93.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -207,29 +279,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/examples/grid/grid.css" />
-        <option value="$PROJECT_DIR$/examples/compass/index.html" />
-        <option value="$PROJECT_DIR$/examples/carousel/index.html" />
-        <option value="$PROJECT_DIR$/examples/icons/index.html" />
-        <option value="$PROJECT_DIR$/mobile.html" />
-        <option value="$PROJECT_DIR$/html5.html" />
-        <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/introduce/index.html" />
-        <option value="$PROJECT_DIR$/examples/grid/index.html" />
-        <option value="$PROJECT_DIR$/css/layout/_examples.scss" />
         <option value="$PROJECT_DIR$/css/base/_normalize.scss" />
+        <option value="$PROJECT_DIR$/css/components/_common.scss" />
         <option value="$PROJECT_DIR$/css/base/_reset.scss" />
+        <option value="$PROJECT_DIR$/css/components/_progress-bar.scss" />
+        <option value="$PROJECT_DIR$/css/components/_mixins.scss" />
+        <option value="$PROJECT_DIR$/css/components/_typography.scss" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/css/layout/_responsive.scss" />
+        <option value="$PROJECT_DIR$/tutorial/angularJS/index.html" />
+        <option value="$PROJECT_DIR$/css/main.scss" />
+        <option value="$PROJECT_DIR$/js/common.js" />
+        <option value="$PROJECT_DIR$/css/components/_back-to-top.scss" />
+        <option value="$PROJECT_DIR$/js/3rdparty/backToTop.js" />
+        <option value="$PROJECT_DIR$/js/controllers.js" />
+        <option value="$PROJECT_DIR$/tutorial/index.html" />
         <option value="$PROJECT_DIR$/css/layout/_base.scss" />
-        <option value="$PROJECT_DIR$/css/base/_font.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/layout/_introduce.scss" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="829" />
+    <option name="x" value="1440" />
+    <option name="y" value="80" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -239,7 +312,25 @@
             <id />
           </State>
           <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
             <id>File Watchers</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>LESS</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>SASS/SCSS</id>
           </State>
         </expanded-state>
         <selected-state>
@@ -305,7 +396,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="introduce" />
+              <option name="myItemId" value="tutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3rdparty" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -320,24 +443,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -384,17 +489,20 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="settings" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../imakeup/tools/front-end" />
     <property name="FullScreen" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/css/components" />
+      <recent name="$PROJECT_DIR$/tutorial" />
+      <recent name="$PROJECT_DIR$/blog" />
+      <recent name="$PROJECT_DIR$/js/3rdparty" />
       <recent name="$PROJECT_DIR$/css/base" />
-      <recent name="$PROJECT_DIR$/css/layout" />
     </key>
   </component>
   <component name="RunManager">
@@ -462,22 +570,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="829" extended-state="0" />
+    <frame x="1440" y="80" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32708332" sideWeight="0.49973643" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32708332" sideWeight="0.49973643" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24488355" sideWeight="0.80104166" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14760147" sideWeight="0.803125" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1771348" sideWeight="0.42705572" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19895834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5002636" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.196875" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -515,7 +623,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
     <option name="LIMIT_HISTORY" value="true" />
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
@@ -544,115 +652,121 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/examples/grid/index.html">
+    <entry file="file://$PROJECT_DIR$/tutorial/examples/typography/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="37" selection-start="1096" selection-end="1100" vertical-scroll-proportion="-12.5">
+        <state line="41" column="33" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.6201117">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/layout/_examples.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="31" selection-start="264" selection-end="264" vertical-scroll-proportion="0.305794">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/typography/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="267" column="49" selection-start="13713" selection-end="13713" vertical-scroll-proportion="3.6748602">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/base/_print.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="69" selection-start="354" selection-end="354" vertical-scroll-proportion="0.20922747">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/base/_reset.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="12" selection-start="320" selection-end="323" vertical-scroll-proportion="-7.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/base/_normalize.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="7" selection-start="3601" selection-end="3606" vertical-scroll-proportion="3.472988">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/base/_compass.scss">
+    <entry file="file://$PROJECT_DIR$/js/3rdparty/angular-1.0.8.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="7" selection-start="0" selection-end="631" vertical-scroll-proportion="0.09793253">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/components/_grid.scss">
+    <entry file="file://$PROJECT_DIR$/tutorial/angularJS/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="11" column="33" selection-start="307" selection-end="312" vertical-scroll-proportion="0.18171807">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/base/_font.scss">
+    <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="55" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
+        <state line="10" column="24" selection-start="590" selection-end="590" vertical-scroll-proportion="0.16094421">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/layout/_base.scss">
+    <entry file="file://$PROJECT_DIR$/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
+        <state line="11" column="44" selection-start="299" selection-end="299" vertical-scroll-proportion="0.17703862">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/components/_common.scss">
+    <entry file="file://$PROJECT_DIR$/js/3rdparty/backToTop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.68991417">
+        <state line="17" column="35" selection-start="509" selection-end="509" vertical-scroll-proportion="0.27360514">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/components/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="15" selection-start="1683" selection-end="1683" vertical-scroll-proportion="-9.142858">
+        <state line="155" column="7" selection-start="2471" selection-end="2471" vertical-scroll-proportion="-93.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/layout/_introduce.scss">
+    <entry file="file://$PROJECT_DIR$/css/components/_back-to-top.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="21" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.0">
+        <state line="3" column="11" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/components/_progress-bar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="49" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0">
+        <state line="83" column="0" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/components/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="45" column="0" selection-start="502" selection-end="516" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/components/_variables.scss">
+    <entry file="file://$PROJECT_DIR$/js/3rdparty/require.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="399" selection-end="399" vertical-scroll-proportion="0.44052863">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.2480958">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="345" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/layout/_responsive.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="8" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/layout/_base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="12" selection-start="442" selection-end="442" vertical-scroll-proportion="-0.45214522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorial/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="73" selection-start="2775" selection-end="2775" vertical-scroll-proportion="0.43575418">
+          <folding>
+            <element signature="tag#footer#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

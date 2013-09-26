@@ -1,0 +1,11 @@
+#back-to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  cursor: pointer;
+
+  border-bottom: solid 30px green;
+  border-top: solid 30px transparent;
+  border-right: solid 30px transparent;
+  border-left: solid 30px transparent;
+}

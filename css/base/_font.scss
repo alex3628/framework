@@ -10,10 +10,9 @@ http://yuilibrary.com/license/
  * x-small is for IE6/7 quirks mode.
  */
 body {
-  font:13px/1.231 "Lucida Grande",helvetica,arial,clean;
+  font:13px/1.231 helvetica,arial,clean,"Lucida Grande";
   *font-size:small; /* for IE */
   *font:x-small; /* for IE in quirks mode */
-  color: #a8a8a8; /* default font color */
 }
 
 /**

@@ -6,7 +6,6 @@
 @import "base/print";
 @import "base/normalize";
 @import "base/font";
-@import "base/compass";
 
 
 
@@ -16,6 +15,7 @@
    Layout (components css)
    ========================================================================== */
 
+@import "components/compass";
 @import "components/variables";
 @import "components/mixins";
 @import "components/common";
@@ -23,6 +23,7 @@
 @import "components/icons";
 @import "components/typography";
 @import "components/progress-bar";
+@import "components/back-to-top";
 
 
 
@@ -35,7 +36,9 @@
 @import "layout/base";
 @import "layout/compass-page";
 @import "layout/examples";
-@import "layout/introduce";
+@import "layout/home";
+@import "layout/blog";
+@import "layout/responsive";
 
 
 

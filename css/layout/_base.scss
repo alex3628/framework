@@ -1,8 +1,7 @@
 /* Layout */
-    /* wrapper */
-body{
-  width: 100%;
-  height: 100%;
+body {
+  background: url("/images/bg.png") repeat;
+  color: #333333;
 }
 .wrapper, .header, .billboard, .nav, .main, .footer, header, nav, main, footer {
     width: 100%;
@@ -14,22 +13,106 @@ body{
 }
 
 
+
+
+
+
+
+
+
+
+
     /* header */
-.header {
+header {
+  padding: 10px 0;
+  border-bottom: 5px solid #12BBD5;
 }
-
+.logo {
+  color: #000000;
+  font-size: 3em;
+  span {
+    color: #00bbd7;
+  }
+}
     /* nav */
-.nav {
+nav {
+  a {
+    line-height: 50px;
+    &.logo {
+      float: left;
+    }
+    &.item {
+      font-size: 1.2em;
+      float: right;
+      padding: 0 25px;
+    }
+  }
 }
 
-    /* billboard */
-.billboard {
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* main */
-.main {
+main {
+  .container{
+    @include clearfix();
+    padding: 30px 0;
+  }
+}
+aside {
+  width: 180px;
+  position: fixed;
+
+}
+article {
+  margin-left: 230px;
+}
+.search {
+  width: 180px;
+  height: 30px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  outline: none;
+  @include box-sizing(border-box);
+  @include normal-border(15px);
+  @include transition(all 0.2s ease-in-out);
+  &:focus{
+    border-color: #00bbd7;
+    @include box-shadow(0 0 10px rgba(0, 187, 217, 0.2));
+  }
+}
+.menu {
+  a {
+    font-size: 1.1em;
+    border-bottom: 1px dashed $border-color;
+    display: block;
+    padding: 10px;
+    @include text-animation();
+  }
 }
 
+
+
+
+
+
+
+
     /* footer */
-.footer {
+footer {
+  color: #ffffff;
+  background: url("/images/bg-footer.png") repeat;
+  border-top: 2px solid #12BBD5;
+  text-align: center;
+  padding: 20px 0;
 }
