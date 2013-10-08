@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7" ng-app> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js" ng-app  ng-controller="pageCtrl"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>grid | Examples | AKQA</title>
+    <meta name="author" content="AKQA Shanghai technology Team" />
+    <meta name="copyright" content="AKQA Inc." />
+
+    <meta name="keywords" content="AKQA" />
+    <meta name="description" content="AKQA is an independent, ideas-led agency and we work with the world’s leading consumer brands." />
+
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="msapplication-TileImage" content="/images/touch/apple-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#333333">
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/touch/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/touch/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/touch/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/touch/apple-touch-icon-57x57-precomposed.png">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="/images/favicon.ico"/>
+    <!-- CSS link here -->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+
+<!-- hidden input -->
+<div class="hidden-input">
+    <input type="hidden" value="">
+    <input type="hidden" value="">
+</div>
+<!-- html5 -->
+<div class="wrapper">
+    <header>
+        <div class="container clearfix">
+            <a href="/" class="logo">Frame<span>Work</span></a>
+            <nav>
+                <a ng-repeat="nav in navs" href="{{nav.link}}" class="item">{{nav.name}}</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <aside>
+                <input type="text" ng-model="search.title" placeholder="search the ex." class="search">
+                <ul class="menu">
+                    <li ng-repeat="page in pages | filter:search:strict">
+                        <a href="{{page.link}}" title="{{page.title}}">{{page.title}}</a>
+                    </li>
+                </ul>
+            </aside>
+            <article>
+                <ul class="breadcrumbs">
+                    <li><a href="##">{{crumbFirst}}</a> <em class="divider">/</em></li>
+                    <li><a href="##" class="active">{{crumbSecond}}</a></li>
+                </ul>
+                <div id="page-content">
+                    <h1 class="title">{{submenuOverview}}</h1>
+                    <div>
+                        about grid
+                    </div>
+                    <h3 class="title">{{submenuCode}}</h3>
+                    <code>
+                        <ol class="linenums">
+                            <li>
+                                <div class="tag tab"> &lt;div id="slides" class="carousel"&gt; </div>
+                            </li>
+                            <li>
+                                <div class="pln tab-1"> &lt;img src="/images/billboard/slide-1.jpg" width="100%"&gt; </div>
+                            </li>
+                            <li>
+                                <div class="pln tab-1"> &lt;img src="/images/billboard/slide-2.jpg" width="100%"&gt; </div>
+                            </li>
+                            <li>
+                                <div class="pln tab-1"> &lt;img src="/images/billboard/slide-3.jpg" width="100%"&gt; </div>
+                            </li>
+                            <li>
+                                <div class="pln tab-1"> &lt;img src="/images/billboard/slide-4.jpg" width="100%"&gt; </div>
+                            </li>
+                            <li>
+                                <div class="tag tab"> &lt;div&gt; </div>
+                            </li>
+                        </ol>
+                    </code>
+                    <h3 class="title">{{submenuDemo}}</h3>
+                    <div class="bs-docs-example" id="grid">
+                        <p>YUI 3.0 grid examples</p>
+                        <p>The bug is you can't customize font family.just using some system font family, like arial,verdana..</p>
+                        <div class="yui3-g">
+                            <div class="yui3-u-1-1">1</div>
+                        </div>
+                        <div class="yui3-g">
+                            <div class="yui3-u-1-2">1</div>
+                            <div class="yui3-u-1-2">2</div>
+                        </div>
+                        <div class="yui3-g">
+                            <div class="yui3-u-1-3">1</div>
+                            <div class="yui3-u-1-3">2</div>
+                            <div class="yui3-u-1-3">3</div>
+                        </div>
+                        <div class="yui3-g">
+                            <div class="yui3-u-1-4">1</div>
+                            <div class="yui3-u-1-4">2</div>
+                            <div class="yui3-u-1-4">3</div>
+                            <div class="yui3-u-1-4">4</div>
+                        </div>
+                        <div class="yui3-g">
+                            <div class="yui3-u-1-5">1</div>
+                            <div class="yui3-u-1-5">2</div>
+                            <div class="yui3-u-1-5">3</div>
+                            <div class="yui3-u-1-5">4</div>
+                            <div class="yui3-u-1-5">5</div>
+                        </div>
+                        <div class="yui3-g">
+                            <div class="yui3-u-1-6">1</div>
+                            <div class="yui3-u-1-6">2</div>
+                            <div class="yui3-u-1-6">3</div>
+                            <div class="yui3-u-1-6">4</div>
+                            <div class="yui3-u-1-6">5</div>
+                            <div class="yui3-u-1-6">6</div>
+                        </div>
+                        <div class="yui3-g">
+                            <div class="yui3-u-1-8">1</div>
+                            <div class="yui3-u-1-8">2</div>
+                            <div class="yui3-u-1-8">3</div>
+                            <div class="yui3-u-1-8">4</div>
+                            <div class="yui3-u-1-8">5</div>
+                            <div class="yui3-u-1-8">6</div>
+                            <div class="yui3-u-1-8">7</div>
+                            <div class="yui3-u-1-8">8</div>
+                        </div>
+                        <div class="yui3-g">
+                            <div class="yui3-u-1-12">1</div>
+                            <div class="yui3-u-1-12">2</div>
+                            <div class="yui3-u-1-12">3</div>
+                            <div class="yui3-u-1-12">4</div>
+                            <div class="yui3-u-1-12">5</div>
+                            <div class="yui3-u-1-12">6</div>
+                            <div class="yui3-u-1-12">7</div>
+                            <div class="yui3-u-1-12">8</div>
+                            <div class="yui3-u-1-12">9</div>
+                            <div class="yui3-u-1-12">10</div>
+                            <div class="yui3-u-1-12">11</div>
+                            <div class="yui3-u-1-12">12</div>
+                        </div>
+                        <div class="yui3-g">
+                            <div class="yui3-u-1-24">1</div>
+                            <div class="yui3-u-1-24">2</div>
+                            <div class="yui3-u-1-24">3</div>
+                            <div class="yui3-u-1-24">4</div>
+                            <div class="yui3-u-1-24">5</div>
+                            <div class="yui3-u-1-24">6</div>
+                            <div class="yui3-u-1-24">7</div>
+                            <div class="yui3-u-1-24">8</div>
+                            <div class="yui3-u-1-24">9</div>
+                            <div class="yui3-u-1-24">10</div>
+                            <div class="yui3-u-1-24">11</div>
+                            <div class="yui3-u-1-24">12</div>
+                            <div class="yui3-u-1-24">13</div>
+                            <div class="yui3-u-1-24">14</div>
+                            <div class="yui3-u-1-24">15</div>
+                            <div class="yui3-u-1-24">16</div>
+                            <div class="yui3-u-1-24">17</div>
+                            <div class="yui3-u-1-24">18</div>
+                            <div class="yui3-u-1-24">19</div>
+                            <div class="yui3-u-1-24">20</div>
+                            <div class="yui3-u-1-24">21</div>
+                            <div class="yui3-u-1-24">22</div>
+                            <div class="yui3-u-1-24">23</div>
+                            <div class="yui3-u-1-24">24</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="logo">Frame<span>Work</span></div>
+            <div class="submenu">
+                <a href="##" id="toOverview" class="item"><i class="icon-arrow-up icon-white"></i>{{submenuOverview}}</a>
+                <a href="##" id="toCode" class="item"><i class="icon-arrow-up icon-white"></i>{{submenuCode}}</a>
+                <a href="##" id="toDemo" class="item"><i class="icon-arrow-up icon-white"></i>{{submenuDemo}}</a>
+                <a href="##" id="toTop" class="item"><i class="icon-arrow-up icon-white"></i>{{submenuTop}}</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+<!-- Add your template content here -->
+<div class="template"></div>
+<!-- script link here -->
+<div id="script">
+    <script src="/js/common.js"></script>
+</div>
+</body>
+</html>

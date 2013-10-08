@@ -7,6 +7,7 @@ document.write(
     '<script src="/js/3rdparty/jail.js"></script>' +
     '<script src="/js/3rdparty/require.js"></script>' +
     '<script src="/js/3rdparty/backToTop.js"></script>' +
-    '<script src="/js/controllers.js"><\/script>' +
+    '<script src="/js/pageControllers.js"><\/script>' +
+    '<script src="/js/submenuScrollByPageHeight.js"><\/script>' +
     '<script src="/js/main.js"><\/script>'
 );

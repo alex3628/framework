@@ -15,15 +15,15 @@
    Layout (components css)
    ========================================================================== */
 
-@import "components/compass";
 @import "components/variables";
 @import "components/mixins";
-@import "components/common";
+@import "components/compass";
+
 @import "components/grid";
 @import "components/icons";
 @import "components/typography";
-@import "components/progress-bar";
-@import "components/back-to-top";
+@import "components/progressBar";
+@import "components/backToTop";
 
 
 
@@ -34,11 +34,11 @@
    ========================================================================== */
 
 @import "layout/base";
-@import "layout/compass-page";
-@import "layout/examples";
-@import "layout/home";
-@import "layout/blog";
+@import "layout/examples-page";
+@import "layout/home-page";
+@import "layout/blog-page";
 @import "layout/responsive";
+
 
 
 

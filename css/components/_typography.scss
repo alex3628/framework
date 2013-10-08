@@ -18,11 +18,10 @@ p {
   color: $error-color;
 }
 
-
-
 /* body font size */
 .title {
   font-size: 1.6em;
+  margin-bottom: 20px;
 }
 .describe {
   font-size: 1.5em;
@@ -35,6 +34,8 @@ p {
 }
 
 
+
+
 .list-lead-stlye {
   border-left: 4px solid #1BAACC;
   color: #1BAACC;
@@ -43,13 +44,17 @@ p {
 
 
 
-.breadcrumb {
+.breadcrumbs {
+  > li {
+    display: inline-block;
+  }
   line-height: 35px;
   padding: 0 15px;
   @include normal-border(3px);
   @include background-linear(#ffffff, #f5f5f5);
   em{
-    margin: 0 10px;
+    margin: 0 5px;
+    color: #999;
   }
 }
 
@@ -133,7 +138,7 @@ dl {
 
 
 
-ul, ol{
+ul, ol {
   margin-bottom: $box-margin;
   &:last-child {
     margin: 0;
@@ -198,6 +203,50 @@ ol.list-inline li, ul.list-inline li {
       tr:hover {
         background-color: #eeeeee;
       }
+    }
+  }
+}
+
+
+
+
+code {
+  display: block;
+  @include normal-border();
+  box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+}
+
+code.scrollable {
+  max-height: 360px;
+  overflow-y: scroll;
+}
+
+ol.linenums {
+  padding: 10px 0 10px 45px;
+  list-style-type: decimal;
+  list-style-position: outside;
+  color: #bebec5;
+  li {
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    line-height: 20px;
+    padding-left: 10px;
+    > div {
+      word-break: break-all;
+    }
+    .tag {
+      color: #1e347b;
+    }
+    .pln {
+      color: #666666;
+    }
+    .tab-1 {
+      text-indent: 16px;
+    }
+    .tab-2 {
+      text-indent: 32px;
+    }
+    .tab-3 {
+      text-indent: 48px;
     }
   }
 }

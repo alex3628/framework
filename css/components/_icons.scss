@@ -1,5 +1,7 @@
 [class^="icon-"],
-[class*=" icon-"] {
+[class*=" icon-"],
+[class^="icon-white"],
+[class*=" icon-white"] {
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -9,7 +11,9 @@
   background-image: url("/images/icons.png");
   background-repeat: no-repeat;
 }
-
+.icon-white {
+  background-image: url("/images/icons-white.png");
+}
 
 .icon-glass {
   background-position: 0 0;

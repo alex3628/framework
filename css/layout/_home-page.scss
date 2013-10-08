@@ -12,17 +12,17 @@
     left: 50%;
     margin-left: -100px;
     margin-top: -240px;
-    z-index: 1000;
+    z-index: 2;
     width: 200px;
     height: 240px;
-    background: url(../images/lightnightbg.png) no-repeat center;
+    background: url(../images/home-lightnight-bg.png) no-repeat center;
     padding: 0;
     border: none;
     @include transition(all 0.2s ease-in-out);
     .lightning {
       width: 200px;
       height: 240px;
-      background: url(../images/lightnight.png) no-repeat 0 0;
+      background: url(../images/home-lightnight.png) no-repeat 0 0;
       animation: changeOpacity 1s ease-in-out infinite alternate;
       -webkit-animation: changeOpacity 1s ease-in-out infinite alternate;
     }
@@ -48,6 +48,7 @@
     position: absolute;
     bottom: 20%;
     left: 0;
+    z-index: 3;
     text-align: center;
     a {
       font-size: 1.2em;
@@ -59,6 +60,7 @@
   footer {
     @include transition(all 0.2s ease-in-out);
     position: absolute;
+    padding: 20px 0;
     bottom: 0;
     left: 0;
     text-align: center;
