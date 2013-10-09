@@ -18,6 +18,11 @@ html {
   height: 100%;
 }
 
+/* line 18, base/_reset.scss */
+body {
+  background-color: #ffffff;
+}
+
 /*
 	TODO remove settings on BODY since we can't namespace it.
 */
@@ -25,7 +30,7 @@ html {
 	TODO test putting a class on HEAD.
 		- Fails on FF. 
 */
-/* line 49, base/_reset.scss */
+/* line 52, base/_reset.scss */
 body,
 div,
 dl,
@@ -55,13 +60,13 @@ td {
   padding: 0;
 }
 
-/* line 53, base/_reset.scss */
+/* line 56, base/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 58, base/_reset.scss */
+/* line 61, base/_reset.scss */
 fieldset,
 img {
   border: 0;
@@ -70,7 +75,7 @@ img {
 /*
 	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
 */
-/* line 72, base/_reset.scss */
+/* line 75, base/_reset.scss */
 address,
 caption,
 cite,
@@ -84,19 +89,19 @@ var {
   font-weight: normal;
 }
 
-/* line 78, base/_reset.scss */
+/* line 81, base/_reset.scss */
 ol,
 ul {
   list-style: none;
 }
 
-/* line 83, base/_reset.scss */
+/* line 86, base/_reset.scss */
 caption,
 th {
   text-align: left;
 }
 
-/* line 91, base/_reset.scss */
+/* line 94, base/_reset.scss */
 h1,
 h2,
 h3,
@@ -107,13 +112,13 @@ h6 {
   font-weight: normal;
 }
 
-/* line 96, base/_reset.scss */
+/* line 99, base/_reset.scss */
 q:before,
 q:after {
   content: '';
 }
 
-/* line 100, base/_reset.scss */
+/* line 103, base/_reset.scss */
 abbr,
 acronym {
   border: 0;
@@ -121,17 +126,17 @@ acronym {
 }
 
 /* to preserve line-height and selector appearance */
-/* line 105, base/_reset.scss */
+/* line 108, base/_reset.scss */
 sup {
   vertical-align: text-top;
 }
 
-/* line 108, base/_reset.scss */
+/* line 111, base/_reset.scss */
 sub {
   vertical-align: text-bottom;
 }
 
-/* line 113, base/_reset.scss */
+/* line 116, base/_reset.scss */
 input,
 textarea,
 select {
@@ -141,7 +146,7 @@ select {
 }
 
 /*to enable resizing for IE*/
-/* line 121, base/_reset.scss */
+/* line 124, base/_reset.scss */
 input,
 textarea,
 select {
@@ -149,7 +154,7 @@ select {
 }
 
 /*because legend doesn't inherit in IE */
-/* line 125, base/_reset.scss */
+/* line 128, base/_reset.scss */
 legend {
   color: #000;
 }
@@ -261,7 +266,7 @@ legend {
   }
 }
 /*
-YUI 3.11.0 (build d549e5c)
+YUI 3.13.0 (build 508226d)
 Copyright 2013 Yahoo! Inc. All rights reserved.
 Licensed under the BSD License.
 http://yuilibrary.com/license/
@@ -386,67 +391,31 @@ a:hover {
    Typography
    ========================================================================== */
 /**
- * Address font sizes and margins set differently in IE 6/7.
- * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
- * and Chrome.
- */
-/* line 136, base/_normalize.scss */
-h1 {
-  font-size: 2em;
-}
-
-/* line 140, base/_normalize.scss */
-h2 {
-  font-size: 1.5em;
-}
-
-/* line 144, base/_normalize.scss */
-h3 {
-  font-size: 1.17em;
-}
-
-/* line 148, base/_normalize.scss */
-h4 {
-  font-size: 1em;
-}
-
-/* line 152, base/_normalize.scss */
-h5 {
-  font-size: 0.83em;
-}
-
-/* line 156, base/_normalize.scss */
-h6 {
-  font-size: 0.67em;
-}
-
-/**
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
-/* line 164, base/_normalize.scss */
-abbr {
-  border-bottom: 1px dotted #000;
-  cursor: help;
-}
-
-/* line 168, base/_normalize.scss */
-em {
-  font-style: italic;
+/* line 134, base/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
 }
 
 /**
  * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
-/* line 177, base/_normalize.scss */
+/* line 143, base/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
+/* line 147, base/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 185, base/_normalize.scss */
+/* line 155, base/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -455,7 +424,7 @@ dfn {
  * Address differences between Firefox and other browsers.
  * Known issue: no IE 6/7 normalization.
  */
-/* line 194, base/_normalize.scss */
+/* line 164, base/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -465,16 +434,25 @@ hr {
 /**
  * Address styling not present in IE 6/7/8/9.
  */
-/* line 204, base/_normalize.scss */
+/* line 174, base/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
 /**
+ * Address margins set differently in IE 6/7.
+ */
+/* line 184, base/_normalize.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/**
  * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
  */
-/* line 216, base/_normalize.scss */
+/* line 195, base/_normalize.scss */
 code,
 kbd,
 pre,
@@ -487,7 +465,7 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 226, base/_normalize.scss */
+/* line 205, base/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -497,7 +475,7 @@ pre {
 /**
  * Address CSS quotes not supported in IE 6/7.
  */
-/* line 236, base/_normalize.scss */
+/* line 215, base/_normalize.scss */
 q {
   quotes: none;
 }
@@ -505,7 +483,7 @@ q {
 /**
  * Address `quotes` property not supported in Safari 4.
  */
-/* line 245, base/_normalize.scss */
+/* line 224, base/_normalize.scss */
 q:before,
 q:after {
   content: '';
@@ -515,7 +493,7 @@ q:after {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 254, base/_normalize.scss */
+/* line 233, base/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -523,7 +501,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 263, base/_normalize.scss */
+/* line 242, base/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -532,12 +510,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 270, base/_normalize.scss */
+/* line 249, base/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 274, base/_normalize.scss */
+/* line 253, base/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -548,7 +526,7 @@ sub {
 /**
  * Correct list images handled incorrectly in IE 7.
  */
-/* line 287, base/_normalize.scss */
+/* line 266, base/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -562,7 +540,7 @@ nav ol {
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
  */
-/* line 301, base/_normalize.scss */
+/* line 280, base/_normalize.scss */
 img {
   border: 0;
   /* 1 */
@@ -573,7 +551,7 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 310, base/_normalize.scss */
+/* line 289, base/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -584,7 +562,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
-/* line 322, base/_normalize.scss */
+/* line 301, base/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -595,7 +573,7 @@ figure {
 /**
  * Correct margin displayed oddly in IE 6/7.
  */
-/* line 334, base/_normalize.scss */
+/* line 313, base/_normalize.scss */
 form {
   margin: 0;
 }
@@ -603,7 +581,7 @@ form {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 342, base/_normalize.scss */
+/* line 321, base/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -615,7 +593,7 @@ fieldset {
  * 2. Correct text not wrapping in Firefox 3.
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
-/* line 354, base/_normalize.scss */
+/* line 333, base/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -632,7 +610,7 @@ legend {
  *    and Chrome.
  * 3. Improve appearance and consistency in all browsers.
  */
-/* line 371, base/_normalize.scss */
+/* line 350, base/_normalize.scss */
 button,
 input,
 select,
@@ -645,14 +623,13 @@ textarea {
   /* 3 */
   *vertical-align: middle;
   /* 3 */
-  outline: none;
 }
 
 /**
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 385, base/_normalize.scss */
+/* line 363, base/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -664,7 +641,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 397, base/_normalize.scss */
+/* line 375, base/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -679,7 +656,7 @@ select {
  * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-/* line 414, base/_normalize.scss */
+/* line 392, base/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -695,7 +672,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 425, base/_normalize.scss */
+/* line 403, base/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -707,7 +684,7 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-/* line 437, base/_normalize.scss */
+/* line 415, base/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -725,7 +702,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 450, base/_normalize.scss */
+/* line 428, base/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -739,7 +716,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 463, base/_normalize.scss */
+/* line 441, base/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -748,7 +725,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 3+.
  */
-/* line 472, base/_normalize.scss */
+/* line 450, base/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -759,7 +736,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 6/7/8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 482, base/_normalize.scss */
+/* line 460, base/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -773,10 +750,40 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 495, base/_normalize.scss */
+/* line 473, base/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* line 478, base/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* line 482, base/_normalize.scss */
+em {
+  font-style: italic;
+}
+
+/* line 485, base/_normalize.scss */
+blockquote {
+  margin: 0;
+}
+
+/* line 489, base/_normalize.scss */
+p,
+pre {
+  margin: 0;
+}
+
+/* line 495, base/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  outline: none;
 }
 
 /*
@@ -791,17 +798,18 @@ http://yuilibrary.com/license/
  */
 /* line 12, base/_font.scss */
 body {
-  font: 13px/1.231 helvetica,arial,clean,"Lucida Grande";
+  font: 13px/1.231 'proxima-nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   *font-size: small;
   /* for IE */
   *font: x-small;
   /* for IE in quirks mode */
+  color: #333333;
 }
 
 /**
  * Nudge down to get to 13px equivalent for these form elements
  */
-/* line 24, base/_font.scss */
+/* line 25, base/_font.scss */
 select,
 input,
 button,
@@ -812,7 +820,7 @@ textarea {
 /**
  * To help tables remember to inherit
  */
-/* line 31, base/_font.scss */
+/* line 32, base/_font.scss */
 table {
   font-size: inherit;
   font: 100%;
@@ -821,7 +829,7 @@ table {
 /**
  * Bump up IE to get to 13px equivalent for these fixed-width elements
  */
-/* line 43, base/_font.scss */
+/* line 44, base/_font.scss */
 pre,
 code,
 kbd,
@@ -833,9 +841,9 @@ tt {
 }
 
 @font-face {
-  font-family: 'SingleMaltaRegular';
+  font-family: 'SingleMalta';
   src: url("../fonts/singlemalta-webfont.eot");
-  src: url("../fonts/singlemalta-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/singlemalta-webfont.woff") format("woff"), url("../fonts/singlemalta-webfont.ttf") format("truetype"), url("../fonts/singlemalta-webfont.svg#SingleMaltaRegular") format("svg");
+  src: url("../fonts/singlemalta-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/singlemalta-webfont.woff") format("woff"), url("../fonts/singlemalta-webfont.ttf") format("truetype"), url("../fonts/singlemalta-webfont.svg#singlemaltaregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -853,29 +861,49 @@ tt {
    compass sprite
    ========================================================================== */
 /* homepage images spript */
-/* line 66, homepage/*.png */
-.homepage-sprite, .homepage-favicon, .homepage-heading, .homepage-icons, .homepage-share {
-  background: url('/images/homepage-s5027757e2c.png') no-repeat;
+/* line 98, homepage/*.png */
+.homepage-sprite, .homepage-body-bg, .homepage-body-bg2, .homepage-favicon, .homepage-footer-arrow, .homepage-footer-bg, .homepage-heading, .homepage-icons, .homepage-share {
+  background: url('/images/homepage-s863c8ca398.png') no-repeat;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.homepage-body-bg {
+  background-position: 0 -524px;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.homepage-body-bg2 {
+  background-position: 0 -665px;
 }
 
 /* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .homepage-favicon {
-  background-position: 0 -365px;
+  background-position: 0 -765px;
 }
 
 /* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.homepage-heading {
-  background-position: 0 -324px;
+.homepage-footer-arrow {
+  background-position: 0 -797px;
 }
 
 /* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.homepage-icons {
+.homepage-footer-bg {
   background-position: 0 0;
 }
 
 /* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.homepage-heading {
+  background-position: 0 -624px;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.homepage-icons {
+  background-position: 0 -200px;
+}
+
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .homepage-share {
-  background-position: 0 -159px;
+  background-position: 0 -359px;
 }
 
 /* line 1, components/_grid.scss */
@@ -1866,73 +1894,118 @@ tt {
   background-position: -456px -144px;
 }
 
-/* body copy */
-/* line 2, components/_typography.scss */
-p {
-  margin: 0 0 15px 0;
-}
-/* line 4, components/_typography.scss */
-p:last-child {
-  margin: 0;
-}
-
-/* line 8, components/_typography.scss */
-.text-info {
-  color: #3a87ad;
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+/* body font size */
+/* line 9, components/_typography.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
-/* line 11, components/_typography.scss */
-.text-success {
-  color: #468847;
-}
-
-/* line 14, components/_typography.scss */
-.text-warning {
-  color: #c09853;
+/* line 13, components/_typography.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
 }
 
 /* line 17, components/_typography.scss */
-.text-error {
-  color: #b94a48;
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
 }
 
-/* body font size */
-/* line 22, components/_typography.scss */
+/* line 21, components/_typography.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 25, components/_typography.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 29, components/_typography.scss */
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+/* line 33, components/_typography.scss */
+.headline {
+  font-size: 3em;
+}
+
+/* line 36, components/_typography.scss */
 .title {
-  font-size: 1.6em;
-  margin-bottom: 20px;
+  font-size: 2em;
 }
 
-/* line 26, components/_typography.scss */
+/* line 39, components/_typography.scss */
 .describe {
   font-size: 1.5em;
 }
 
-/* line 29, components/_typography.scss */
+/* line 42, components/_typography.scss */
 .subtext {
   font-size: 1.4em;
 }
 
-/* line 32, components/_typography.scss */
+/* line 45, components/_typography.scss */
 .lead {
   font-size: 1.3em;
 }
 
-/* line 39, components/_typography.scss */
+/* body copy */
+/* line 54, components/_typography.scss */
+p {
+  margin: 0 0 15px 0;
+}
+/* line 56, components/_typography.scss */
+p:last-child {
+  margin: 0;
+}
+
+/* line 60, components/_typography.scss */
+.text-info {
+  color: #3a87ad;
+}
+
+/* line 63, components/_typography.scss */
+.text-success {
+  color: #468847;
+}
+
+/* line 66, components/_typography.scss */
+.text-warning {
+  color: #c09853;
+}
+
+/* line 69, components/_typography.scss */
+.text-error {
+  color: #b94a48;
+}
+
+/* line 76, components/_typography.scss */
 .list-lead-stlye {
   border-left: 4px solid #1BAACC;
   color: #1BAACC;
   padding-left: 10px;
 }
 
-/* line 47, components/_typography.scss */
+/* line 84, components/_typography.scss */
 .breadcrumbs {
   line-height: 35px;
   padding: 0 15px;
   border: 1px solid #dddddd;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
   background-image: -moz-linear-gradient(white, whitesmoke);
   /* FF 3.6+ */
   background-image: -webkit-linear-gradient(white, whitesmoke);
@@ -1942,43 +2015,43 @@ p:last-child {
   background-image: linear-gradient(#ffffff, #f5f5f5);
   /* the standard */
 }
-/* line 48, components/_typography.scss */
+/* line 85, components/_typography.scss */
 .breadcrumbs > li {
   display: inline-block;
 }
-/* line 55, components/_typography.scss */
+/* line 92, components/_typography.scss */
 .breadcrumbs em {
   margin: 0 5px;
   color: #999;
 }
 
-/* line 64, components/_typography.scss */
+/* line 101, components/_typography.scss */
 address {
   display: block;
   margin-bottom: 20px;
 }
-/* line 67, components/_typography.scss */
+/* line 104, components/_typography.scss */
 address:last-child {
   margin: 0;
 }
 
-/* line 81, components/_typography.scss */
+/* line 118, components/_typography.scss */
 blockquote {
   display: block;
   margin-bottom: 20px;
   padding: 0 0 0 15px;
   border-left: 5px solid #eeeeee;
 }
-/* line 86, components/_typography.scss */
+/* line 123, components/_typography.scss */
 blockquote p {
   font-size: 1.2em;
 }
-/* line 89, components/_typography.scss */
+/* line 126, components/_typography.scss */
 blockquote small {
   color: #999999;
   font-size: 1em;
 }
-/* line 93, components/_typography.scss */
+/* line 130, components/_typography.scss */
 blockquote.quote-right {
   margin-bottom: 20px;
   text-align: right;
@@ -1986,54 +2059,54 @@ blockquote.quote-right {
   border-left: none;
   border-right: 5px solid #eeeeee;
 }
-/* line 100, components/_typography.scss */
+/* line 137, components/_typography.scss */
 blockquote:last-child {
   margin: 0;
 }
 
-/* line 112, components/_typography.scss */
+/* line 149, components/_typography.scss */
 dl {
   margin-bottom: 20px;
 }
-/* line 114, components/_typography.scss */
+/* line 151, components/_typography.scss */
 dl dt {
   font-weight: bold;
 }
-/* line 117, components/_typography.scss */
+/* line 154, components/_typography.scss */
 dl dd {
   margin: 0 0 0 20px;
 }
-/* line 120, components/_typography.scss */
+/* line 157, components/_typography.scss */
 dl.dl-horizontal dt {
   float: left;
   width: 160px;
   text-align: right;
   clear: left;
 }
-/* line 126, components/_typography.scss */
+/* line 163, components/_typography.scss */
 dl.dl-horizontal dd {
   margin: 0 0 0 180px;
 }
-/* line 129, components/_typography.scss */
+/* line 166, components/_typography.scss */
 dl:last-child {
   margin: 0;
 }
 
-/* line 141, components/_typography.scss */
+/* line 178, components/_typography.scss */
 ul, ol {
   margin-bottom: 20px;
 }
-/* line 143, components/_typography.scss */
+/* line 180, components/_typography.scss */
 ul:last-child, ol:last-child {
   margin: 0;
 }
 
-/* line 147, components/_typography.scss */
+/* line 184, components/_typography.scss */
 ol.list-inline li, ul.list-inline li {
   display: inline-block;
 }
 
-/* line 158, components/_typography.scss */
+/* line 195, components/_typography.scss */
 .btn {
   color: #333333;
   background-color: #f7f7f7;
@@ -2047,24 +2120,24 @@ ol.list-inline li, ul.list-inline li {
   border-style: solid;
   border-width: 1px;
 }
-/* line 64, components/_mixins.scss */
+/* line 63, components/_mixins.scss */
 .btn:hover, .btn:focus, .btn:active, .btn.active {
   color: #333333;
   background-color: #e3e3e3;
   border-color: #cccccc;
 }
-/* line 75, components/_mixins.scss */
+/* line 74, components/_mixins.scss */
 .btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled:active, .btn.disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled]:active, .btn[disabled].active {
   cursor: default;
   background-color: white;
   border-color: white;
 }
-/* line 81, components/_mixins.scss */
+/* line 80, components/_mixins.scss */
 .btn.block {
   display: block;
 }
 
-/* line 161, components/_typography.scss */
+/* line 198, components/_typography.scss */
 .btn-info {
   color: white;
   background-color: #3a87ad;
@@ -2078,24 +2151,24 @@ ol.list-inline li, ul.list-inline li {
   border-style: solid;
   border-width: 1px;
 }
-/* line 64, components/_mixins.scss */
+/* line 63, components/_mixins.scss */
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
   color: white;
   background-color: #306f8e;
   border-color: #24546c;
 }
-/* line 75, components/_mixins.scss */
+/* line 74, components/_mixins.scss */
 .btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled]:active, .btn-info[disabled].active {
   cursor: default;
   background-color: #5ca4c8;
   border-color: #77b3d1;
 }
-/* line 81, components/_mixins.scss */
+/* line 80, components/_mixins.scss */
 .btn-info.block {
   display: block;
 }
 
-/* line 164, components/_typography.scss */
+/* line 201, components/_typography.scss */
 .btn-success {
   color: white;
   background-color: #468847;
@@ -2109,24 +2182,24 @@ ol.list-inline li, ul.list-inline li {
   border-style: solid;
   border-width: 1px;
 }
-/* line 64, components/_mixins.scss */
+/* line 63, components/_mixins.scss */
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
   color: white;
   background-color: #386d39;
   border-color: #294f29;
 }
-/* line 75, components/_mixins.scss */
+/* line 74, components/_mixins.scss */
 .btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success[disabled].active {
   cursor: default;
   background-color: #5fac60;
   border-color: #76b977;
 }
-/* line 81, components/_mixins.scss */
+/* line 80, components/_mixins.scss */
 .btn-success.block {
   display: block;
 }
 
-/* line 167, components/_typography.scss */
+/* line 204, components/_typography.scss */
 .btn-warning {
   color: white;
   background-color: #c09853;
@@ -2140,24 +2213,24 @@ ol.list-inline li, ul.list-inline li {
   border-style: solid;
   border-width: 1px;
 }
-/* line 64, components/_mixins.scss */
+/* line 63, components/_mixins.scss */
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active {
   color: white;
   background-color: #ab843f;
   border-color: #8a6a32;
 }
-/* line 75, components/_mixins.scss */
+/* line 74, components/_mixins.scss */
 .btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled]:active, .btn-warning[disabled].active {
   cursor: default;
   background-color: #d0b380;
   border-color: #dac29a;
 }
-/* line 81, components/_mixins.scss */
+/* line 80, components/_mixins.scss */
 .btn-warning.block {
   display: block;
 }
 
-/* line 170, components/_typography.scss */
+/* line 207, components/_typography.scss */
 .btn-error {
   color: white;
   background-color: #b94a48;
@@ -2171,24 +2244,24 @@ ol.list-inline li, ul.list-inline li {
   border-style: solid;
   border-width: 1px;
 }
-/* line 64, components/_mixins.scss */
+/* line 63, components/_mixins.scss */
 .btn-error:hover, .btn-error:focus, .btn-error:active, .btn-error.active {
   color: white;
   background-color: #9c3e3c;
   border-color: #7b302f;
 }
-/* line 75, components/_mixins.scss */
+/* line 74, components/_mixins.scss */
 .btn-error.disabled, .btn-error.disabled:hover, .btn-error.disabled:focus, .btn-error.disabled:active, .btn-error.disabled.active, .btn-error[disabled], .btn-error[disabled]:hover, .btn-error[disabled]:focus, .btn-error[disabled]:active, .btn-error[disabled].active {
   cursor: default;
   background-color: #ca7674;
   border-color: #d48f8e;
 }
-/* line 81, components/_mixins.scss */
+/* line 80, components/_mixins.scss */
 .btn-error.block {
   display: block;
 }
 
-/* line 180, components/_typography.scss */
+/* line 217, components/_typography.scss */
 .table {
   width: 100%;
   border: 1px solid #dddddd;
@@ -2196,23 +2269,23 @@ ol.list-inline li, ul.list-inline li {
   -moz-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 183, components/_typography.scss */
+/* line 220, components/_typography.scss */
 .table caption {
   text-align: center;
   font-weight: bold;
   padding-bottom: 20px;
   font-size: 1.2em;
 }
-/* line 189, components/_typography.scss */
+/* line 226, components/_typography.scss */
 .table th {
   font-weight: bold;
 }
-/* line 192, components/_typography.scss */
+/* line 229, components/_typography.scss */
 .table th, .table td {
   padding: 10px;
   vertical-align: middle;
 }
-/* line 196, components/_typography.scss */
+/* line 233, components/_typography.scss */
 .table td {
   border: 1px solid #dddddd;
   -webkit-border-radius: 0px;
@@ -2221,61 +2294,59 @@ ol.list-inline li, ul.list-inline li {
   border-right: none;
   border-bottom: none;
 }
-/* line 203, components/_typography.scss */
+/* line 240, components/_typography.scss */
 .table.table-hover tbody tr:hover {
   background-color: #eeeeee;
 }
 
-/* line 213, components/_typography.scss */
+/* line 250, components/_typography.scss */
 code {
   display: block;
   border: 1px solid #dddddd;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+  box-shadow: inset 33px 0 0 #fbfbfc, inset 34px 0 0 #ececf0;
 }
-
-/* line 219, components/_typography.scss */
+/* line 254, components/_typography.scss */
 code.scrollable {
   max-height: 360px;
   overflow-y: scroll;
 }
 
-/* line 224, components/_typography.scss */
+/* line 259, components/_typography.scss */
 ol.linenums {
-  padding: 10px 0 10px 45px;
-  list-style-type: decimal;
+  padding: 10px 0 10px 42px;
+  list-style-type: decimal-leading-zero;
   list-style-position: outside;
   color: #bebec5;
 }
-/* line 229, components/_typography.scss */
+/* line 264, components/_typography.scss */
 ol.linenums li {
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   line-height: 20px;
-  padding-left: 10px;
 }
-/* line 233, components/_typography.scss */
+/* line 267, components/_typography.scss */
 ol.linenums li > div {
   word-break: break-all;
 }
-/* line 236, components/_typography.scss */
+/* line 270, components/_typography.scss */
 ol.linenums li .tag {
   color: #1e347b;
 }
-/* line 239, components/_typography.scss */
+/* line 273, components/_typography.scss */
 ol.linenums li .pln {
   color: #666666;
 }
-/* line 242, components/_typography.scss */
+/* line 276, components/_typography.scss */
 ol.linenums li .tab-1 {
   text-indent: 16px;
 }
-/* line 245, components/_typography.scss */
+/* line 279, components/_typography.scss */
 ol.linenums li .tab-2 {
   text-indent: 32px;
 }
-/* line 248, components/_typography.scss */
+/* line 282, components/_typography.scss */
 ol.linenums li .tab-3 {
   text-indent: 48px;
 }
@@ -2407,22 +2478,22 @@ ol.linenums li .tab-3 {
 /* ==========================================================================
    Layout (page-specified css)
    ========================================================================== */
-/* Layout */
 /* link */
-/* line 4, layout/_base.scss */
+/* line 2, layout/_layout.scss */
 a {
   color: #666666;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-/* line 11, layout/_base.scss */
+/* line 10, layout/_layout.scss */
 a:hover, a:focus, a:active, a.active {
   color: #00bbd7;
 }
 
 /* clear */
-/* line 18, layout/_base.scss */
+/* line 16, layout/_layout.scss */
 .clearfix {
   zoom: 1;
 }
@@ -2437,7 +2508,7 @@ a:hover, a:focus, a:active, a.active {
   visibility: hidden;
 }
 
-/* line 21, layout/_base.scss */
+/* line 19, layout/_layout.scss */
 .clearboth {
   font: 0px/0px sans-serif;
   clear: both;
@@ -2446,362 +2517,587 @@ a:hover, a:focus, a:active, a.active {
 }
 
 /* float */
-/* line 30, layout/_base.scss */
+/* line 27, layout/_layout.scss */
 .floatl {
   float: left;
 }
 
-/* line 33, layout/_base.scss */
+/* line 30, layout/_layout.scss */
 .floatr {
   float: right;
 }
 
-/* line 36, layout/_base.scss */
+/* line 33, layout/_layout.scss */
 .floatn {
   float: none;
 }
 
 /* text align */
-/* line 42, layout/_base.scss */
+/* line 38, layout/_layout.scss */
 .textl {
   text-align: left;
 }
 
-/* line 45, layout/_base.scss */
+/* line 41, layout/_layout.scss */
 .textr {
   text-align: right;
 }
 
-/* line 48, layout/_base.scss */
+/* line 44, layout/_layout.scss */
 .textc {
   text-align: center;
 }
 
-/* line 51, layout/_base.scss */
+/* line 47, layout/_layout.scss */
 .textj {
   text-align: justify;
 }
 
 /* hide and show */
-/* line 58, layout/_base.scss */
+/* line 52, layout/_layout.scss */
 .hidden {
   display: none;
   visibility: hidden;
 }
 
-/* line 62, layout/_base.scss */
+/* line 56, layout/_layout.scss */
 .shown {
   display: block;
   visibility: visible;
 }
 
-/* margin */
-/* line 70, layout/_base.scss */
-.mt5 {
-  margin-top: 5px;
-}
-
-/* line 71, layout/_base.scss */
-.mt10 {
-  margin-top: 10px;
-}
-
-/* line 72, layout/_base.scss */
-.mt15 {
-  margin-top: 15px;
-}
-
-/* line 73, layout/_base.scss */
-.mt20 {
-  margin-top: 20px;
-}
-
-/* line 74, layout/_base.scss */
-.mt25 {
-  margin-top: 25px;
-}
-
-/* line 75, layout/_base.scss */
-.mt30 {
-  margin-top: 30px;
-}
-
-/* line 76, layout/_base.scss */
-.mt40 {
-  margin-top: 40px;
-}
-
-/* line 77, layout/_base.scss */
-.mt50 {
-  margin-top: 40px;
-}
-
-/* line 78, layout/_base.scss */
-.mb5 {
-  margin-bottom: 5px;
-}
-
-/* line 79, layout/_base.scss */
-.mb10 {
-  margin-bottom: 10px;
-}
-
-/* line 80, layout/_base.scss */
-.mb15 {
-  margin-bottom: 15px;
-}
-
-/* line 81, layout/_base.scss */
-.mb20 {
-  margin-bottom: 20px;
-}
-
-/* line 82, layout/_base.scss */
-.mb25 {
-  margin-bottom: 25px;
-}
-
-/* line 83, layout/_base.scss */
-.mb30 {
-  margin-bottom: 30px;
-}
-
-/* line 84, layout/_base.scss */
-.mb40 {
-  margin-bottom: 40px;
-}
-
-/* line 85, layout/_base.scss */
-.mb50 {
-  margin-bottom: 40px;
-}
-
-/* padding */
-/* line 90, layout/_base.scss */
-.pt5 {
-  padding-top: 5px;
-}
-
-/* line 91, layout/_base.scss */
-.pt10 {
-  padding-top: 10px;
-}
-
-/* line 92, layout/_base.scss */
-.pt15 {
-  padding-top: 15px;
-}
-
-/* line 93, layout/_base.scss */
-.pt20 {
-  padding-top: 20px;
-}
-
-/* line 94, layout/_base.scss */
-.pt25 {
-  padding-top: 25px;
-}
-
-/* line 95, layout/_base.scss */
-.pt30 {
-  padding-top: 30px;
-}
-
-/* line 96, layout/_base.scss */
-.pt40 {
-  padding-top: 40px;
-}
-
-/* line 97, layout/_base.scss */
-.pt50 {
-  padding-top: 50px;
-}
-
-/* Layout */
-/* line 114, layout/_base.scss */
-body {
-  background: url("/images/body-bg.png") repeat;
-  color: #333333;
-}
-
-/* line 118, layout/_base.scss */
-.wrapper, .header, .billboard, .nav, .main, .footer, header, nav, main, footer {
-  width: 100%;
-}
-
-/* line 121, layout/_base.scss */
-.container {
-  width: 980px;
-  margin: 0 auto;
-  position: relative;
-  zoom: 1;
-}
-/* line 7, components/_mixins.scss */
-.container:after {
-  clear: both;
-  content: ".";
-  display: block;
-  font-size: 0;
-  height: 0;
-  line-height: 0;
-  visibility: hidden;
-}
-
-/* header */
-/* line 135, layout/_base.scss */
-header {
-  padding: 10px 0;
-  border-bottom: 5px solid #12BBD5;
-}
-
-/* line 139, layout/_base.scss */
+/* line 65, layout/_layout.scss */
 .logo {
-  color: #000000;
-  font-size: 3em;
-  float: left;
-}
-/* line 143, layout/_base.scss */
-.logo span {
   color: #00bbd7;
+  font-size: 2em;
 }
 
-/* nav */
-/* line 148, layout/_base.scss */
-nav {
-  line-height: 48px;
-}
-/* line 150, layout/_base.scss */
-nav .item {
-  font-size: 1.2em;
-  float: right;
-  padding: 0 25px;
-}
-
-/* main */
-/* line 172, layout/_base.scss */
-main .container {
-  zoom: 1;
-  padding: 30px 0;
-}
-/* line 7, components/_mixins.scss */
-main .container:after {
-  clear: both;
-  content: ".";
-  display: block;
-  font-size: 0;
-  height: 0;
-  line-height: 0;
-  visibility: hidden;
-}
-
-/* line 177, layout/_base.scss */
-aside {
-  width: 180px;
-  position: fixed;
-}
-
-/* line 182, layout/_base.scss */
-article {
-  margin-left: 230px;
-}
-
-/* line 185, layout/_base.scss */
+/* line 70, layout/_layout.scss */
 .search {
-  width: 180px;
+  display: block;
+  width: 100%;
   height: 30px;
-  padding: 0 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   outline: none;
+  padding: 0 10px;
+  background-color: #ddd;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   border: 1px solid #dddddd;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-/* line 194, layout/_base.scss */
-.search:focus {
-  border-color: #00bbd7;
-  -webkit-box-shadow: 0 0 10px rgba(0, 187, 217, 0.2);
-  box-shadow: 0 0 10px rgba(0, 187, 217, 0.2);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
 }
 
-/* line 200, layout/_base.scss */
-.menu a {
-  font-size: 1.1em;
-  border-bottom: 1px dashed #dddddd;
+/* line 90, layout/_layout.scss */
+.wrapper {
+  width: 100%;
+}
+
+/* nav */
+/* navigation */
+/* line 99, layout/_layout.scss */
+nav {
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #000;
+}
+/* line 106, layout/_layout.scss */
+nav a {
+  color: #999999;
+  font-size: 1.2em;
   display: block;
-  padding: 10px;
+  padding: 15px 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 /* line 23, components/_mixins.scss */
-.menu a:hover, .menu a:focus, .menu a:active {
+nav a:hover, nav a:focus, nav a:active {
   text-indent: 10px;
-  border-color: #12BBD5;
+}
+/* line 113, layout/_layout.scss */
+nav a .active {
+  background-color: #00bbd7;
+  color: #fff;
+  text-indent: 10px;
+}
+
+/* main */
+/* line 123, layout/_layout.scss */
+main {
+  padding-left: 180px;
+}
+
+/* header */
+/* line 127, layout/_layout.scss */
+header {
+  border-bottom: 1px solid #12BBD5;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+/* content */
+/* line 133, layout/_layout.scss */
+article {
+  padding: 30px;
 }
 
 /* footer */
-/* line 218, layout/_base.scss */
+/* line 137, layout/_layout.scss */
 footer {
-  color: #ffffff;
-  background: url("/images/footer-bg.png") repeat;
-  border-top: 2px solid #12BBD5;
-  padding: 10px 0;
-  position: fixed;
+  text-align: center;
+  font-size: 0.8em;
+  color: #999999;
+  border-top: 1px solid #12BBD5;
+  padding: 15px 30px;
+}
+
+/* line 1, layout/_home-page.scss */
+#home {
+  animation: changeBg 3.5s ease-in-out infinite alternate;
+  -webkit-animation: changeBg 3.5s ease-in-out infinite alternate;
+}
+/* line 4, layout/_home-page.scss */
+#home header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -200px;
+  z-index: 2;
+  width: 200px;
+  height: 240px;
+  background: url(../images/home-lightnight-bg.png) no-repeat center;
+  padding: 0;
+  border: none;
+}
+/* line 16, layout/_home-page.scss */
+#home header .lightning {
+  width: 200px;
+  height: 240px;
+  background: url(../images/home-lightnight.png) no-repeat 0 0;
+  animation: changeOpacity 1s ease-in-out infinite alternate;
+  -webkit-animation: changeOpacity 1s ease-in-out infinite alternate;
+}
+/* line 23, layout/_home-page.scss */
+#home header h1 {
+  position: absolute;
+  bottom: -100px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 30, layout/_home-page.scss */
+#home header h1.logo {
+  font-size: 4em;
+}
+/* line 35, layout/_home-page.scss */
+#home footer {
+  background-color: transparent;
+  position: absolute;
   bottom: 0;
-  z-index: 9999;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
 }
-/* line 226, layout/_base.scss */
-footer .logo {
-  font-size: 1.6em;
-  float: left;
+
+@media screen and (max-width: 480px) {
+  /* line 47, layout/_home-page.scss */
+  #home header {
+    margin-top: -160px;
+  }
+  /* line 49, layout/_home-page.scss */
+  #home header .logo {
+    bottom: -100px;
+    font-size: 3em;
+  }
 }
-/* line 230, layout/_base.scss */
-footer .submenu {
-  font-size: 1.1em;
-  line-height: 25px;
-  float: right;
+@keyframes changeOpacity {
+  /* line 71, layout/_home-page.scss */
+  from {
+    opacity: 0.1;
+  }
+
+  /* line 72, layout/_home-page.scss */
+  to {
+    opacity: 1;
+  }
 }
-/* line 234, layout/_base.scss */
-footer .submenu .icon-white {
-  margin-right: 5px;
+
+@-webkit-keyframes changeOpacity {
+  /* line 76, layout/_home-page.scss */
+  from {
+    opacity: 0.1;
+  }
+
+  /* line 77, layout/_home-page.scss */
+  to {
+    opacity: 1;
+  }
 }
-/* line 237, layout/_base.scss */
-footer .submenu a {
-  color: #eee;
-  margin-left: 40px;
-  text-decoration: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+
+@keyframes changeBg {
+  /* line 81, layout/_home-page.scss */
+  0% {
+    background: #ffffff;
+  }
+
+  /* line 82, layout/_home-page.scss */
+  10% {
+    background-image: radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+  }
+
+  /* line 89, layout/_home-page.scss */
+  15% {
+    background-image: radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+  }
+
+  /* line 96, layout/_home-page.scss */
+  20% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+  }
+
+  /* line 103, layout/_home-page.scss */
+  25% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, #d3d3d3 33%, #cdcdcd 70%, #cccccc 100%);
+  }
+
+  /* line 110, layout/_home-page.scss */
+  30% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+  }
+
+  /* line 117, layout/_home-page.scss */
+  35% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+  }
+
+  /* line 124, layout/_home-page.scss */
+  40% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+  }
+
+  /* line 131, layout/_home-page.scss */
+  45% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+  }
+
+  /* line 138, layout/_home-page.scss */
+  50% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+  }
+
+  /* line 145, layout/_home-page.scss */
+  55% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+  }
+
+  /* line 152, layout/_home-page.scss */
+  60% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+  }
+
+  /* line 159, layout/_home-page.scss */
+  65% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+  }
+
+  /* line 166, layout/_home-page.scss */
+  70% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, #d3d3d3 70%, #cccccc 100%);
+  }
+
+  /* line 173, layout/_home-page.scss */
+  75% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, #d3d3d3 70%, #cccccc 100%);
+  }
+
+  /* line 180, layout/_home-page.scss */
+  80% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+  }
+
+  /* line 187, layout/_home-page.scss */
+  85% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+  }
+
+  /* line 194, layout/_home-page.scss */
+  90% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+  }
+
+  /* line 201, layout/_home-page.scss */
+  95% {
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+  }
+
+  /* line 208, layout/_home-page.scss */
+  100% {
+    background-image: -o-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ffffff 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+  }
 }
-/* line 245, layout/_base.scss */
-footer .submenu a:hover, footer .submenu a:focus, footer .submenu a:active, footer .submenu a.active {
-  color: #00bbd7;
-}
-/* line 248, layout/_base.scss */
-footer .submenu a i {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-/* line 253, layout/_base.scss */
-footer .submenu a.active i {
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-}
-/* line 258, layout/_base.scss */
-footer .submenu a.goDown i {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+
+@-webkit-keyframes changeBg {
+  /* line 218, layout/_home-page.scss */
+  0% {
+    background: #ffffff;
+  }
+
+  /* line 219, layout/_home-page.scss */
+  10% {
+    background-image: radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+  }
+
+  /* line 226, layout/_home-page.scss */
+  15% {
+    background-image: radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+  }
+
+  /* line 233, layout/_home-page.scss */
+  20% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+  }
+
+  /* line 240, layout/_home-page.scss */
+  25% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, #d3d3d3 33%, #cdcdcd 70%, #cccccc 100%);
+  }
+
+  /* line 247, layout/_home-page.scss */
+  30% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+  }
+
+  /* line 254, layout/_home-page.scss */
+  35% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+  }
+
+  /* line 261, layout/_home-page.scss */
+  40% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+  }
+
+  /* line 268, layout/_home-page.scss */
+  45% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+  }
+
+  /* line 275, layout/_home-page.scss */
+  50% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+  }
+
+  /* line 282, layout/_home-page.scss */
+  55% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+  }
+
+  /* line 289, layout/_home-page.scss */
+  60% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+  }
+
+  /* line 296, layout/_home-page.scss */
+  65% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+  }
+
+  /* line 303, layout/_home-page.scss */
+  70% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, #d3d3d3 70%, #cccccc 100%);
+  }
+
+  /* line 310, layout/_home-page.scss */
+  75% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, #d3d3d3 70%, #cccccc 100%);
+  }
+
+  /* line 317, layout/_home-page.scss */
+  80% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+  }
+
+  /* line 324, layout/_home-page.scss */
+  85% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+  }
+
+  /* line 331, layout/_home-page.scss */
+  90% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+  }
+
+  /* line 338, layout/_home-page.scss */
+  95% {
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+  }
+
+  /* line 345, layout/_home-page.scss */
+  100% {
+    background-image: -o-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ffffff 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+  }
 }
 
 /* box wrapper style */
@@ -2823,12 +3119,11 @@ footer .submenu a.goDown i {
 }
 /* line 11, layout/_examples-page.scss */
 .example-box:last-child {
-  border: none;
   margin: 0;
 }
 
 /* box wrapper style */
-/* line 19, layout/_examples-page.scss */
+/* line 18, layout/_examples-page.scss */
 .the-icons li {
   float: left;
   width: 25%;
@@ -2836,7 +3131,7 @@ footer .submenu a.goDown i {
 }
 
 /* box wrapper style */
-/* line 27, layout/_examples-page.scss */
+/* line 26, layout/_examples-page.scss */
 #grid .row div, #grid .yui3-g div {
   background: green;
   line-height: 40px;
@@ -2852,577 +3147,90 @@ footer .submenu a.goDown i {
 }
 
 /* box wrapper style */
-/* line 41, layout/_examples-page.scss */
+/* line 40, layout/_examples-page.scss */
 .homepage-favicon {
   width: 32px;
   height: 32px;
 }
 
-/* line 46, layout/_examples-page.scss */
+/* line 45, layout/_examples-page.scss */
 .homepage-heading {
   width: 860px;
   height: 41px;
 }
 
-/* line 51, layout/_examples-page.scss */
+/* line 50, layout/_examples-page.scss */
 .homepage-icons {
   width: 469px;
   height: 159px;
 }
 
-/* line 56, layout/_examples-page.scss */
+/* line 55, layout/_examples-page.scss */
 .homepage-share {
   width: 158px;
   height: 165px;
 }
 
 /* box wrapper style */
-/* line 66, layout/_examples-page.scss */
+/* line 65, layout/_examples-page.scss */
 .carousel {
   position: relative;
 }
-/* line 68, layout/_examples-page.scss */
+/* line 67, layout/_examples-page.scss */
 .carousel .slidesjs-previous {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  z-index: 999;
-}
-/* line 74, layout/_examples-page.scss */
-.carousel .slidesjs-next {
-  position: absolute;
-  bottom: 10px;
-  left: 50px;
-  z-index: 999;
-}
-/* line 80, layout/_examples-page.scss */
-.carousel .slidesjs-pagination {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  z-index: 999;
-}
-/* line 86, layout/_examples-page.scss */
-.carousel .a {
+  bottom: 0px;
+  left: 20px;
+  z-index: 100;
+  line-height: 30px;
   color: #ffffff;
 }
-
-/* line 1, layout/_home-page.scss */
-#home {
-  animation: changeBg 3.5s cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -webkit-animation: changeBg 3.5s cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  background-image: radial-gradient(50% 45%, circle cover, #ffffff 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-  background-image: -o-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-  background-image: -ms-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-  background-image: -moz-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-  background-image: -webkit-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-}
-/* line 9, layout/_home-page.scss */
-#home header {
+/* line 75, layout/_examples-page.scss */
+.carousel .slidesjs-next {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -100px;
-  margin-top: -240px;
-  z-index: 2;
-  width: 200px;
-  height: 240px;
-  background: url(../images/home-lightnight-bg.png) no-repeat center;
-  padding: 0;
-  border: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  bottom: 0px;
+  right: 20px;
+  z-index: 100;
+  line-height: 30px;
+  color: #ffffff;
 }
-/* line 22, layout/_home-page.scss */
-#home header .lightning {
-  width: 200px;
-  height: 240px;
-  background: url(../images/home-lightnight.png) no-repeat 0 0;
-  animation: changeOpacity 1s ease-in-out infinite alternate;
-  -webkit-animation: changeOpacity 1s ease-in-out infinite alternate;
-}
-/* line 29, layout/_home-page.scss */
-#home header .logo-position {
+/* line 83, layout/_examples-page.scss */
+.carousel .slidesjs-pagination {
   position: absolute;
-  bottom: -100px;
-  left: 0px;
+  bottom: 0px;
+  right: 0px;
   width: 100%;
+  z-index: 99;
   text-align: center;
-  cursor: default;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 30px;
 }
-/* line 38, layout/_home-page.scss */
-#home header .logo {
-  left: -30px;
-  font-size: 4em;
-}
-/* line 42, layout/_home-page.scss */
-#home header .error {
-  font-size: 4em;
-  color: #00bbd7;
-}
-/* line 47, layout/_home-page.scss */
-#home nav {
-  position: absolute;
-  bottom: 20%;
-  left: 0;
-  z-index: 3;
-  text-align: center;
-}
-/* line 53, layout/_home-page.scss */
-#home nav a {
-  font-size: 1.2em;
+/* line 92, layout/_examples-page.scss */
+.carousel .slidesjs-pagination > li {
   display: inline-block;
-  width: 100px;
+  margin: 0 5px;
 }
-/* line 23, components/_mixins.scss */
-#home nav a:hover, #home nav a:focus, #home nav a:active {
-  text-indent: 10px;
-  border-color: #12BBD5;
+/* line 95, layout/_examples-page.scss */
+.carousel .slidesjs-pagination > li a {
+  width: 9px;
+  height: 9px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.35);
+  background-color: rgba(255, 255, 255, 0.4);
+  text-indent: 100px;
+  overflow: hidden;
+  display: block;
 }
-/* line 60, layout/_home-page.scss */
-#home footer {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  position: absolute;
-  padding: 20px 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  font-size: 0.8em;
-  color: #a8a8a8;
-}
-/* line 69, layout/_home-page.scss */
-#home footer .footer-logo {
-  color: #00bbd7;
-  display: none;
+/* line 104, layout/_examples-page.scss */
+.carousel .slidesjs-pagination > li a.active {
+  background-color: white;
 }
 
-@media screen and (max-width: 400px) {
-  /* line 78, layout/_home-page.scss */
-  #home header {
-    margin-top: -160px;
-  }
-  /* line 80, layout/_home-page.scss */
-  #home header .logo {
-    opacity: 0;
-    filter: alpha(opacity=0);
-  }
-  /* line 84, layout/_home-page.scss */
-  #home nav {
-    bottom: 15%;
-  }
-  /* line 87, layout/_home-page.scss */
-  #home footer {
-    padding: 15px 0;
-  }
-  /* line 89, layout/_home-page.scss */
-  #home footer .footer-logo {
-    display: inline;
-  }
-}
-@keyframes changeOpacity {
-  /* line 100, layout/_home-page.scss */
-  from {
-    opacity: 0.1;
-  }
-
-  /* line 101, layout/_home-page.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes changeOpacity {
-  /* line 105, layout/_home-page.scss */
-  from {
-    opacity: 0.1;
-  }
-
-  /* line 106, layout/_home-page.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes changeBg {
-  /* line 110, layout/_home-page.scss */
-  0% {
-    background: #ccc;
-  }
-
-  /* line 111, layout/_home-page.scss */
-  10% {
-    background-image: radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-  }
-
-  /* line 118, layout/_home-page.scss */
-  15% {
-    background-image: radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-  }
-
-  /* line 125, layout/_home-page.scss */
-  20% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-  }
-
-  /* line 132, layout/_home-page.scss */
-  25% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, #d3d3d3 33%, #cdcdcd 70%, #cccccc 100%);
-  }
-
-  /* line 139, layout/_home-page.scss */
-  30% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-  }
-
-  /* line 146, layout/_home-page.scss */
-  35% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-  }
-
-  /* line 153, layout/_home-page.scss */
-  40% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-  }
-
-  /* line 160, layout/_home-page.scss */
-  45% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-  }
-
-  /* line 167, layout/_home-page.scss */
-  50% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-  }
-
-  /* line 174, layout/_home-page.scss */
-  55% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-  }
-
-  /* line 181, layout/_home-page.scss */
-  60% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-  }
-
-  /* line 188, layout/_home-page.scss */
-  65% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-  }
-
-  /* line 195, layout/_home-page.scss */
-  70% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, #d3d3d3 70%, #cccccc 100%);
-  }
-
-  /* line 202, layout/_home-page.scss */
-  75% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, #d3d3d3 70%, #cccccc 100%);
-  }
-
-  /* line 209, layout/_home-page.scss */
-  80% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-  }
-
-  /* line 216, layout/_home-page.scss */
-  85% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-  }
-
-  /* line 223, layout/_home-page.scss */
-  90% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-  }
-
-  /* line 230, layout/_home-page.scss */
-  95% {
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-  }
-
-  /* line 237, layout/_home-page.scss */
-  100% {
-    background-image: -o-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #ffffff 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-  }
-}
-
-@-webkit-keyframes changeBg {
-  /* line 247, layout/_home-page.scss */
-  0% {
-    background: #ccc;
-  }
-
-  /* line 248, layout/_home-page.scss */
-  10% {
-    background-image: radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-  }
-
-  /* line 255, layout/_home-page.scss */
-  15% {
-    background-image: radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-  }
-
-  /* line 262, layout/_home-page.scss */
-  20% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-  }
-
-  /* line 269, layout/_home-page.scss */
-  25% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, #d3d3d3 33%, #cdcdcd 70%, #cccccc 100%);
-  }
-
-  /* line 276, layout/_home-page.scss */
-  30% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-  }
-
-  /* line 283, layout/_home-page.scss */
-  35% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-  }
-
-  /* line 290, layout/_home-page.scss */
-  40% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-  }
-
-  /* line 297, layout/_home-page.scss */
-  45% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-  }
-
-  /* line 304, layout/_home-page.scss */
-  50% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-  }
-
-  /* line 311, layout/_home-page.scss */
-  55% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-  }
-
-  /* line 318, layout/_home-page.scss */
-  60% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-  }
-
-  /* line 325, layout/_home-page.scss */
-  65% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-  }
-
-  /* line 332, layout/_home-page.scss */
-  70% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, #d3d3d3 70%, #cccccc 100%);
-  }
-
-  /* line 339, layout/_home-page.scss */
-  75% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, #d3d3d3 70%, #cccccc 100%);
-  }
-
-  /* line 346, layout/_home-page.scss */
-  80% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-  }
-
-  /* line 353, layout/_home-page.scss */
-  85% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-  }
-
-  /* line 360, layout/_home-page.scss */
-  90% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-  }
-
-  /* line 367, layout/_home-page.scss */
-  95% {
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-  }
-
-  /* line 374, layout/_home-page.scss */
-  100% {
-    background-image: -o-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #ffffff 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-  }
-}
-
-@media screen and (max-width: 400px) {
-  /* line 2, layout/_responsive.scss */
+/*@media screen and (min-width: 421px) and (max-width: 680px) {
   .container {
     width: 90%;
   }
-}
-@media screen and (min-width: 401px) and (max-width: 680px) {
-  /* line 7, layout/_responsive.scss */
-  .container {
-    width: 90%;
-  }
-}
-@media screen and (min-width: 681px) and (max-width: 1024px) {
-  /* line 12, layout/_responsive.scss */
-  .container {
-    width: 90%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  /* line 17, layout/_responsive.scss */
-  .container {
-    width: 90%;
-  }
-}
+}*/

@@ -9,7 +9,6 @@
   padding-bottom: 40px;
   margin-bottom: 40px;
   &:last-child {
-    border: none;
     margin: 0;
   }
 }
@@ -67,23 +66,45 @@
   position: relative;
   .slidesjs-previous{
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    z-index: 999;
+    bottom: 0px;
+    left: 20px;
+    z-index: 100;
+    line-height: 30px;
+    color: #ffffff;
   }
   .slidesjs-next{
     position: absolute;
-    bottom: 10px;
-    left: 50px;
-    z-index: 999;
+    bottom: 0px;
+    right: 20px;
+    z-index: 100;
+    line-height: 30px;
+    color: #ffffff;
   }
   .slidesjs-pagination{
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    z-index: 999;
-  }
-  .a{
-    color: #ffffff;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: 99;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    line-height: 30px;
+    > li {
+      display: inline-block;
+      margin: 0 5px;
+      a {
+        width: 9px;
+        height: 9px;
+        @include border-radius(5px);
+        @include box-shadow(inset 0 1px 2px rgba(0, 0, 0, 0.35));
+        background-color: rgba(255,255,255,0.4);
+        text-indent: 100px;
+        overflow: hidden;
+        display: block;
+        &.active {
+          background-color: rgba(255,255,255,1);
+        }
+      }
+    }
   }
 }

@@ -1,5 +1,5 @@
 /*
-YUI 3.11.0 (build d549e5c)
+YUI 3.13.0 (build 508226d)
 Copyright 2013 Yahoo! Inc. All rights reserved.
 Licensed under the BSD License.
 http://yuilibrary.com/license/
@@ -128,45 +128,11 @@ a:hover {
    ========================================================================== */
 
 /**
- * Address font sizes and margins set differently in IE 6/7.
- * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
- * and Chrome.
- */
-
-h1 {
-  font-size: 2em;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-h3 {
-  font-size: 1.17em;
-}
-
-h4 {
-  font-size: 1em;
-}
-
-h5 {
-  font-size: 0.83em;
-}
-
-h6 {
-  font-size: 0.67em;
-}
-
-/**
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
 
-abbr{
-  border-bottom:1px dotted #000;
-  cursor:help;
-}
-em{
-  font-style:italic
+abbr[title] {
+  border-bottom: 1px dotted;
 }
 
 /**
@@ -176,6 +142,10 @@ em{
 b,
 strong {
   font-weight: bold;
+}
+
+blockquote {
+  margin: 1em 40px;
 }
 
 /**
@@ -204,6 +174,15 @@ hr {
 mark {
   background: #ff0;
   color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+  margin: 1em 0;
 }
 
 /**
@@ -373,7 +352,6 @@ textarea {
   margin: 0; /* 2 */
   vertical-align: baseline; /* 3 */
   *vertical-align: middle; /* 3 */
-  outline: none;
 }
 
 /**
@@ -495,4 +473,25 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+abbr[title] {
+  border-bottom:1px dotted #000;
+  cursor:help;
+}
+em{
+  font-style:italic
+}
+blockquote {
+  margin: 0;
+}
+p,
+pre {
+  margin: 0;
+}
+button,
+input,
+select,
+textarea {
+  outline: none;
 }

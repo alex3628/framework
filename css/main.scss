@@ -33,9 +33,9 @@
    Layout (page-specified css)
    ========================================================================== */
 
-@import "layout/base";
-@import "layout/examples-page";
+@import "layout/layout";
 @import "layout/home-page";
+@import "layout/examples-page";
 @import "layout/blog-page";
 @import "layout/responsive";
 

@@ -1,38 +1,30 @@
 function pageCtrl($scope) {
     $scope.navs = [
-        {
-            "name": "Blog",
-            "link": "/blog"
-        },
-        {
-            "name": "Examples",
-            "link": "/examples"
-        }
     ];
     $scope.pages = [
         {
-            "title": "About",
-            "link": "/examples/about"
+            "name": "Carousel",
+            "link": "/simple/carousel"
         },
         {
-            "title": "Carousel",
-            "link": "/examples/carousel"
+            "name": "Compass",
+            "link": "/simple/compass"
         },
         {
-            "title": "Compass",
-            "link": "/examples/compass"
+            "name": "Grid",
+            "link": "/simple/grid"
         },
         {
-            "title": "Grid",
-            "link": "/examples/grid"
+            "name": "Icons",
+            "link": "/simple/icons"
         },
         {
-            "title": "Icons",
-            "link": "/examples/icons"
+            "name": "Typography",
+            "link": "/simple/typography"
         },
         {
-            "title": "Typography",
-            "link": "/examples/typography"
+            "name": "Blog",
+            "link": "/blog"
         }
     ];
     $scope.crumbFirst = 'Examples';
