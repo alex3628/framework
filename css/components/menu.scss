@@ -1,0 +1,19 @@
+
+
+.breadcrumbs {
+  > li {
+    display: inline-block;
+  }
+  line-height: 35px;
+  padding: 0 15px;
+  @include normal-border();
+  @include background-linear(#ffffff, #f5f5f5);
+  em{
+    margin: 0 5px;
+    color: #999;
+  }
+}
+
+
+
+

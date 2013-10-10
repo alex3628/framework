@@ -1,46 +1,56 @@
-/**
- * Address font sizes and margins set differently in IE 6/7.
- * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
- * and Chrome.
- */
+/* paragraph */
+p {
+  margin-bottom: $paragraph-margin;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
 
-/* body font size */
 
+/* body font size and color */
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.17em;
+}
+h4 {
+  font-size: 1em;
+}
+h5 {
+  font-size: 0.83em;
+}
+h6 {
+  font-size: 0.67em;
+}
 .headline {
   font-size: 6em;
   color: $highlight-color;
 }
 .title {
   font-size: 4em;
-  color: $main-color;
-}
-.subtitle {
-  font-size: 1.6em;
-  color: $fore-color;
-  margin-bottom: 15px;
 }
 .describe {
   font-size: 1.4em;
   color: $describe-color;
-  padding: $box-padding;
+  padding: 0 $box-margin;
+}
+.subtitle {
+  font-size: 1.6em;
+  color: $stress-color;
+  margin-bottom: 15px;
 }
 .lead {
   font-size: 1.3em;
-  color: $fore-color;
-  margin-bottom: 15px;
+  color: $stress-color;
+  margin-bottom: $paragraph-margin;
 }
 
-
-
-
-
-
-/* body copy */
-p {
-  margin: 0 0 $copy-margin 0;
-  &:last-child {
-    margin: 0;
-  }
+.text-stress {
+  color: $stress-color;
 }
 .text-info {
   color: $info-color;
@@ -57,101 +67,129 @@ p {
 
 
 
-
-.list-lead-stlye {
-  border-left: 4px solid #1BAACC;
-  color: #1BAACC;
-  padding-left: 10px;
+/* clear */
+.clearfix {
+  @include clearfix();
+}
+.clearboth {
+  font: 0px/0px sans-serif;
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
+/* float */
+.floatl {
+  float: left;
+}
+.floatr {
+  float: right;
+}
+.floatn {
+  float: none;
+}
+/* text align */
+.alignl {
+  text-align: left;
+}
+.alignr {
+  text-align: right;
+}
+.alignc {
+  text-align: center;
+}
+.alignj {
+  text-align: justify;
+}
+/* hide and show */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+.shown {
+  display: block;
+  visibility: visible;
 }
 
 
 
-.breadcrumbs {
+
+
+
+
+ul, ol, dl {
+  margin-bottom: $box-margin;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  > ul, ol, dd {
+    padding: 5px 0 5px 20px;
+  }
+}
+ul.ordered, ol.ordered {
+  li {
+    list-style-type: decimal;
+  }
+}
+ul.unordered, ol.unordered {
+  li {
+    list-style-type: disc;
+  }
+}
+ul.list-inline, ol.list-inline, dl.list-inline {
   > li {
     display: inline-block;
   }
-  line-height: 35px;
-  padding: 0 15px;
+  > dt, dd {
+    display: inline-block;
+    padding: 0;
+  }
+}
+
+
+
+
+
+
+
+code {
+  display: block;
   @include normal-border();
-  @include background-linear(#ffffff, #f5f5f5);
-  em{
-    margin: 0 5px;
-    color: #999;
+  background-color: $content-bg-color;
+  text-align: center;
+  word-break: break-all;
+  padding: 20px;
+  line-height: 1.6em;
+  &.scrollable {
+    max-height: 360px;
+    overflow-y: scroll;
+  }
+  ol {
+    text-align: left;
+  }
+  .tag {
+    color: #008;;
+  }
+  .pln {
+    color: #000;
+  }
+  .attr {
+    color: #080;
+  }
+  .tab-1 {
+    text-indent: 16px;
+  }
+  .tab-2 {
+    text-indent: 32px;
+  }
+  .tab-3 {
+    text-indent: 48px;
+  }
+  .tab-4 {
+    text-indent: 64px;
   }
 }
 
 
-
-
-address {
-  display: block;
-  margin-bottom: $box-margin;
-  &:last-child {
-    margin: 0;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-blockquote {
-  display: block;
-  margin-bottom: $box-margin;
-  padding: 0 0 0 15px;
-  border-left: 5px solid #eeeeee;
-  p {
-    font-size: 1.2em;
-  }
-  small {
-    color: #999999;
-    font-size: 1em;
-  }
-  &.quote-right {
-    margin-bottom: $box-margin;
-    text-align: right;
-    padding: 0 15px 0 0;
-    border-left: none;
-    border-right: 5px solid #eeeeee;
-  }
-  &:last-child {
-    margin: 0;
-  }
-}
-
-
-
-
-
-
-
-
-dl {
-  margin-bottom: $box-margin;
-  dt {
-    font-weight: bold;
-  }
-  dd {
-    margin: 0 0 0 20px;
-  }
-  &.dl-horizontal dt {
-    float: left;
-    width: 160px;
-    text-align: right;
-    clear: left;
-  }
-  &.dl-horizontal dd {
-    margin: 0 0 0 180px;
-  }
-  &:last-child {
-    margin: 0;
-  }
-}
 
 
 
@@ -208,72 +246,5 @@ dl {
         background-color: #eeeeee;
       }
     }
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-ul, ol {
-  margin-bottom: $box-margin;
-  &:last-child {
-    margin: 0;
-  }
-}
-ol.list-inline li, ul.list-inline li {
-  display: inline-block;
-}
-ol.linenums {
-  li {
-    list-style-type: decimal-leading-zero;
-    list-style-position: outside;
-  }
-}
-
-
-
-
-code {
-  display: block;
-  @include normal-border();
-  background-color: $content-bg-color;
-  text-align: center;
-  word-break: break-all;
-  padding: 20px;
-  line-height: 1.6em;
-  &.scrollable {
-    max-height: 360px;
-    overflow-y: scroll;
-  }
-  ol {
-    text-align: left;
-  }
-  .tag {
-    color: #008;;
-  }
-  .pln {
-    color: #000;
-  }
-  .attr {
-    color: #080;
-  }
-  .tab-1 {
-    text-indent: 16px;
-  }
-  .tab-2 {
-    text-indent: 32px;
-  }
-  .tab-3 {
-    text-indent: 48px;
-  }
-  .tab-4 {
-    text-indent: 64px;
   }
 }

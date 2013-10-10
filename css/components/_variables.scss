@@ -3,13 +3,35 @@
    ========================================================================== */
 $content-width: 100%;
 
+$content-bg-color: #fafafa;
+
 $box-margin: 40px;
 
-$box-padding: 0 30px;
 
-$copy-margin: 15px;
 
 $grid-columns: 12;
+
+$paragraph-margin: 10px;
+
+
+
+
+
+
+// color
+// -------------------------
+$default-color:        #ffffff;
+$highlight-color:      #00bbd7;
+
+$main-color:           #666666;
+$describe-color:       #999999;
+
+$stress-color:         #333333;
+$info-color:           #3a87ad;
+$success-color:        #468847;
+$warning-color:        #c09853;
+$error-color:          #b94a48;
+$progress-color:       #0e90d2;
 
 
 
@@ -20,28 +42,6 @@ $border-width:      1px;
 $border-color:      #dddddd;
 $border-style:      solid;
 $border-radius:     0px;
-
-
-
-
-
-// color
-// -------------------------
-$content-bg-color:     #fafafa;
-
-$default-color:        #ffffff;
-$highlight-color:      #00bbd7;
-$main-color:           #666666;
-$describe-color:       #999999;
-$fore-color:           #333333;
-
-
-$info-color:           #3a87ad;
-$success-color:        #468847;
-$warning-color:        #c09853;
-$error-color:          #b94a48;
-$progress-color:       #0e90d2;
-
 
 
 

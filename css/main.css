@@ -88,15 +88,16 @@ var {
 ol,
 ul {
   list-style: none;
+  list-style-position: inside;
 }
 
-/* line 83, base/_reset.scss */
+/* line 84, base/_reset.scss */
 caption,
 th {
   text-align: left;
 }
 
-/* line 91, base/_reset.scss */
+/* line 92, base/_reset.scss */
 h1,
 h2,
 h3,
@@ -107,13 +108,13 @@ h6 {
   font-weight: normal;
 }
 
-/* line 96, base/_reset.scss */
+/* line 97, base/_reset.scss */
 q:before,
 q:after {
   content: '';
 }
 
-/* line 100, base/_reset.scss */
+/* line 101, base/_reset.scss */
 abbr,
 acronym {
   border: 0;
@@ -121,17 +122,17 @@ acronym {
 }
 
 /* to preserve line-height and selector appearance */
-/* line 105, base/_reset.scss */
+/* line 106, base/_reset.scss */
 sup {
   vertical-align: text-top;
 }
 
-/* line 108, base/_reset.scss */
+/* line 109, base/_reset.scss */
 sub {
   vertical-align: text-bottom;
 }
 
-/* line 113, base/_reset.scss */
+/* line 114, base/_reset.scss */
 input,
 textarea,
 select {
@@ -141,7 +142,7 @@ select {
 }
 
 /*to enable resizing for IE*/
-/* line 121, base/_reset.scss */
+/* line 122, base/_reset.scss */
 input,
 textarea,
 select {
@@ -149,7 +150,7 @@ select {
 }
 
 /*because legend doesn't inherit in IE */
-/* line 125, base/_reset.scss */
+/* line 126, base/_reset.scss */
 legend {
   color: #000;
 }
@@ -898,6 +899,455 @@ tt {
 /* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .homepage-share {
   background-position: 0 -359px;
+}
+
+/* paragraph */
+/* line 2, components/_typography.scss */
+p {
+  margin-bottom: 10px;
+}
+/* line 4, components/_typography.scss */
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* body font size and color */
+/* line 11, components/_typography.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 14, components/_typography.scss */
+h2 {
+  font-size: 1.5em;
+}
+
+/* line 17, components/_typography.scss */
+h3 {
+  font-size: 1.17em;
+}
+
+/* line 20, components/_typography.scss */
+h4 {
+  font-size: 1em;
+}
+
+/* line 23, components/_typography.scss */
+h5 {
+  font-size: 0.83em;
+}
+
+/* line 26, components/_typography.scss */
+h6 {
+  font-size: 0.67em;
+}
+
+/* line 29, components/_typography.scss */
+.headline {
+  font-size: 6em;
+  color: #00bbd7;
+}
+
+/* line 33, components/_typography.scss */
+.title {
+  font-size: 4em;
+}
+
+/* line 36, components/_typography.scss */
+.describe {
+  font-size: 1.4em;
+  color: #999999;
+  padding: 0 40px;
+}
+
+/* line 41, components/_typography.scss */
+.subtitle {
+  font-size: 1.6em;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+/* line 46, components/_typography.scss */
+.lead {
+  font-size: 1.3em;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* line 52, components/_typography.scss */
+.text-stress {
+  color: #333333;
+}
+
+/* line 55, components/_typography.scss */
+.text-info {
+  color: #3a87ad;
+}
+
+/* line 58, components/_typography.scss */
+.text-success {
+  color: #468847;
+}
+
+/* line 61, components/_typography.scss */
+.text-warning {
+  color: #c09853;
+}
+
+/* line 64, components/_typography.scss */
+.text-error {
+  color: #b94a48;
+}
+
+/* clear */
+/* line 71, components/_typography.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 7, components/_mixins.scss */
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+/* line 74, components/_typography.scss */
+.clearboth {
+  font: 0px/0px sans-serif;
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
+
+/* float */
+/* line 81, components/_typography.scss */
+.floatl {
+  float: left;
+}
+
+/* line 84, components/_typography.scss */
+.floatr {
+  float: right;
+}
+
+/* line 87, components/_typography.scss */
+.floatn {
+  float: none;
+}
+
+/* text align */
+/* line 91, components/_typography.scss */
+.alignl {
+  text-align: left;
+}
+
+/* line 94, components/_typography.scss */
+.alignr {
+  text-align: right;
+}
+
+/* line 97, components/_typography.scss */
+.alignc {
+  text-align: center;
+}
+
+/* line 100, components/_typography.scss */
+.alignj {
+  text-align: justify;
+}
+
+/* hide and show */
+/* line 104, components/_typography.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 108, components/_typography.scss */
+.shown {
+  display: block;
+  visibility: visible;
+}
+
+/* line 119, components/_typography.scss */
+ul, ol, dl {
+  margin-bottom: 40px;
+}
+/* line 121, components/_typography.scss */
+ul:last-child, ol:last-child, dl:last-child {
+  margin-bottom: 0;
+}
+/* line 124, components/_typography.scss */
+ul > ul, ul ol, ul dd, ol > ul, ol ol, ol dd, dl > ul, dl ol, dl dd {
+  padding: 5px 0 5px 20px;
+}
+
+/* line 129, components/_typography.scss */
+ul.ordered li, ol.ordered li {
+  list-style-type: decimal;
+}
+
+/* line 134, components/_typography.scss */
+ul.unordered li, ol.unordered li {
+  list-style-type: disc;
+}
+
+/* line 139, components/_typography.scss */
+ul.list-inline > li, ol.list-inline > li, dl.list-inline > li {
+  display: inline-block;
+}
+/* line 142, components/_typography.scss */
+ul.list-inline > dt, ul.list-inline dd, ol.list-inline > dt, ol.list-inline dd, dl.list-inline > dt, dl.list-inline dd {
+  display: inline-block;
+  padding: 0;
+}
+
+/* line 154, components/_typography.scss */
+code {
+  display: block;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  background-color: #fafafa;
+  text-align: center;
+  word-break: break-all;
+  padding: 20px;
+  line-height: 1.6em;
+}
+/* line 162, components/_typography.scss */
+code.scrollable {
+  max-height: 360px;
+  overflow-y: scroll;
+}
+/* line 166, components/_typography.scss */
+code ol {
+  text-align: left;
+}
+/* line 169, components/_typography.scss */
+code .tag {
+  color: #008;
+}
+/* line 172, components/_typography.scss */
+code .pln {
+  color: #000;
+}
+/* line 175, components/_typography.scss */
+code .attr {
+  color: #080;
+}
+/* line 178, components/_typography.scss */
+code .tab-1 {
+  text-indent: 16px;
+}
+/* line 181, components/_typography.scss */
+code .tab-2 {
+  text-indent: 32px;
+}
+/* line 184, components/_typography.scss */
+code .tab-3 {
+  text-indent: 48px;
+}
+/* line 187, components/_typography.scss */
+code .tab-4 {
+  text-indent: 64px;
+}
+
+/* line 200, components/_typography.scss */
+.btn {
+  color: #333333;
+  background-color: white;
+  border-color: #f2f2f2;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 62, components/_mixins.scss */
+.btn:hover, .btn:focus, .btn:active, .btn.active {
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #d4d4d4;
+}
+/* line 73, components/_mixins.scss */
+.btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled:active, .btn.disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled]:active, .btn[disabled].active {
+  cursor: default;
+  background-color: white;
+  border-color: white;
+}
+/* line 79, components/_mixins.scss */
+.btn.block {
+  display: block;
+}
+
+/* line 203, components/_typography.scss */
+.btn-info {
+  color: white;
+  background-color: #3a87ad;
+  border-color: #34789a;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 62, components/_mixins.scss */
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
+  color: white;
+  background-color: #306f8e;
+  border-color: #24546c;
+}
+/* line 73, components/_mixins.scss */
+.btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled]:active, .btn-info[disabled].active {
+  cursor: default;
+  background-color: #5ca4c8;
+  border-color: #77b3d1;
+}
+/* line 79, components/_mixins.scss */
+.btn-info.block {
+  display: block;
+}
+
+/* line 206, components/_typography.scss */
+.btn-success {
+  color: white;
+  background-color: #468847;
+  border-color: #3d773e;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 62, components/_mixins.scss */
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
+  color: white;
+  background-color: #386d39;
+  border-color: #294f29;
+}
+/* line 73, components/_mixins.scss */
+.btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success[disabled].active {
+  cursor: default;
+  background-color: #5fac60;
+  border-color: #76b977;
+}
+/* line 79, components/_mixins.scss */
+.btn-success.block {
+  display: block;
+}
+
+/* line 209, components/_typography.scss */
+.btn-warning {
+  color: white;
+  background-color: #c09853;
+  border-color: #b78c43;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 62, components/_mixins.scss */
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active {
+  color: white;
+  background-color: #ab843f;
+  border-color: #8a6a32;
+}
+/* line 73, components/_mixins.scss */
+.btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled]:active, .btn-warning[disabled].active {
+  cursor: default;
+  background-color: #d0b380;
+  border-color: #dac29a;
+}
+/* line 79, components/_mixins.scss */
+.btn-warning.block {
+  display: block;
+}
+
+/* line 212, components/_typography.scss */
+.btn-error {
+  color: white;
+  background-color: #b94a48;
+  border-color: #a74240;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 62, components/_mixins.scss */
+.btn-error:hover, .btn-error:focus, .btn-error:active, .btn-error.active {
+  color: white;
+  background-color: #9c3e3c;
+  border-color: #7b302f;
+}
+/* line 73, components/_mixins.scss */
+.btn-error.disabled, .btn-error.disabled:hover, .btn-error.disabled:focus, .btn-error.disabled:active, .btn-error.disabled.active, .btn-error[disabled], .btn-error[disabled]:hover, .btn-error[disabled]:focus, .btn-error[disabled]:active, .btn-error[disabled].active {
+  cursor: default;
+  background-color: #ca7674;
+  border-color: #d48f8e;
+}
+/* line 79, components/_mixins.scss */
+.btn-error.block {
+  display: block;
+}
+
+/* line 222, components/_typography.scss */
+.table {
+  width: 100%;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+/* line 225, components/_typography.scss */
+.table caption {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 1.2em;
+}
+/* line 231, components/_typography.scss */
+.table th {
+  font-weight: bold;
+}
+/* line 234, components/_typography.scss */
+.table th, .table td {
+  padding: 10px;
+  vertical-align: middle;
+}
+/* line 238, components/_typography.scss */
+.table td {
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border-right: none;
+  border-bottom: none;
+}
+/* line 245, components/_typography.scss */
+.table.table-hover tbody tr:hover {
+  background-color: #eeeeee;
 }
 
 /*
@@ -2022,440 +2472,6 @@ this the same font stack that Normalize.css sets for the `body`.
   background-position: -456px -144px;
 }
 
-/**
- * Address font sizes and margins set differently in IE 6/7.
- * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
- * and Chrome.
- */
-/* body font size */
-/* line 9, components/_typography.scss */
-.headline {
-  font-size: 6em;
-  color: #00bbd7;
-}
-
-/* line 13, components/_typography.scss */
-.title {
-  font-size: 4em;
-  color: #666666;
-}
-
-/* line 17, components/_typography.scss */
-.subtitle {
-  font-size: 1.6em;
-  color: #333333;
-  margin-bottom: 15px;
-}
-
-/* line 22, components/_typography.scss */
-.describe {
-  font-size: 1.4em;
-  color: #999999;
-  padding: 0 30px;
-}
-
-/* line 27, components/_typography.scss */
-.lead {
-  font-size: 1.3em;
-  color: #333333;
-  margin-bottom: 15px;
-}
-
-/* body copy */
-/* line 39, components/_typography.scss */
-p {
-  margin: 0 0 15px 0;
-}
-/* line 41, components/_typography.scss */
-p:last-child {
-  margin: 0;
-}
-
-/* line 45, components/_typography.scss */
-.text-info {
-  color: #3a87ad;
-}
-
-/* line 48, components/_typography.scss */
-.text-success {
-  color: #468847;
-}
-
-/* line 51, components/_typography.scss */
-.text-warning {
-  color: #c09853;
-}
-
-/* line 54, components/_typography.scss */
-.text-error {
-  color: #b94a48;
-}
-
-/* line 61, components/_typography.scss */
-.list-lead-stlye {
-  border-left: 4px solid #1BAACC;
-  color: #1BAACC;
-  padding-left: 10px;
-}
-
-/* line 69, components/_typography.scss */
-.breadcrumbs {
-  line-height: 35px;
-  padding: 0 15px;
-  border: 1px solid #dddddd;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  background-image: -moz-linear-gradient(white, whitesmoke);
-  /* FF 3.6+ */
-  background-image: -webkit-linear-gradient(white, whitesmoke);
-  /* Safari 5.1+, Chrome 10+ */
-  background-image: -o-linear-gradient(white, whitesmoke);
-  /* Opera 11.10 */
-  background-image: linear-gradient(#ffffff, #f5f5f5);
-  /* the standard */
-}
-/* line 70, components/_typography.scss */
-.breadcrumbs > li {
-  display: inline-block;
-}
-/* line 77, components/_typography.scss */
-.breadcrumbs em {
-  margin: 0 5px;
-  color: #999;
-}
-
-/* line 86, components/_typography.scss */
-address {
-  display: block;
-  margin-bottom: 40px;
-}
-/* line 89, components/_typography.scss */
-address:last-child {
-  margin: 0;
-}
-
-/* line 103, components/_typography.scss */
-blockquote {
-  display: block;
-  margin-bottom: 40px;
-  padding: 0 0 0 15px;
-  border-left: 5px solid #eeeeee;
-}
-/* line 108, components/_typography.scss */
-blockquote p {
-  font-size: 1.2em;
-}
-/* line 111, components/_typography.scss */
-blockquote small {
-  color: #999999;
-  font-size: 1em;
-}
-/* line 115, components/_typography.scss */
-blockquote.quote-right {
-  margin-bottom: 40px;
-  text-align: right;
-  padding: 0 15px 0 0;
-  border-left: none;
-  border-right: 5px solid #eeeeee;
-}
-/* line 122, components/_typography.scss */
-blockquote:last-child {
-  margin: 0;
-}
-
-/* line 134, components/_typography.scss */
-dl {
-  margin-bottom: 40px;
-}
-/* line 136, components/_typography.scss */
-dl dt {
-  font-weight: bold;
-}
-/* line 139, components/_typography.scss */
-dl dd {
-  margin: 0 0 0 20px;
-}
-/* line 142, components/_typography.scss */
-dl.dl-horizontal dt {
-  float: left;
-  width: 160px;
-  text-align: right;
-  clear: left;
-}
-/* line 148, components/_typography.scss */
-dl.dl-horizontal dd {
-  margin: 0 0 0 180px;
-}
-/* line 151, components/_typography.scss */
-dl:last-child {
-  margin: 0;
-}
-
-/* line 162, components/_typography.scss */
-.btn {
-  color: #333333;
-  background-color: white;
-  border-color: #f2f2f2;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  white-space: nowrap;
-  padding: 5px 10px;
-  border-style: solid;
-  border-width: 1px;
-}
-/* line 62, components/_mixins.scss */
-.btn:hover, .btn:focus, .btn:active, .btn.active {
-  color: #333333;
-  background-color: #ebebeb;
-  border-color: #d4d4d4;
-}
-/* line 73, components/_mixins.scss */
-.btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled:active, .btn.disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled]:active, .btn[disabled].active {
-  cursor: default;
-  background-color: white;
-  border-color: white;
-}
-/* line 79, components/_mixins.scss */
-.btn.block {
-  display: block;
-}
-
-/* line 165, components/_typography.scss */
-.btn-info {
-  color: white;
-  background-color: #3a87ad;
-  border-color: #34789a;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  white-space: nowrap;
-  padding: 5px 10px;
-  border-style: solid;
-  border-width: 1px;
-}
-/* line 62, components/_mixins.scss */
-.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
-  color: white;
-  background-color: #306f8e;
-  border-color: #24546c;
-}
-/* line 73, components/_mixins.scss */
-.btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled]:active, .btn-info[disabled].active {
-  cursor: default;
-  background-color: #5ca4c8;
-  border-color: #77b3d1;
-}
-/* line 79, components/_mixins.scss */
-.btn-info.block {
-  display: block;
-}
-
-/* line 168, components/_typography.scss */
-.btn-success {
-  color: white;
-  background-color: #468847;
-  border-color: #3d773e;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  white-space: nowrap;
-  padding: 5px 10px;
-  border-style: solid;
-  border-width: 1px;
-}
-/* line 62, components/_mixins.scss */
-.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
-  color: white;
-  background-color: #386d39;
-  border-color: #294f29;
-}
-/* line 73, components/_mixins.scss */
-.btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success[disabled].active {
-  cursor: default;
-  background-color: #5fac60;
-  border-color: #76b977;
-}
-/* line 79, components/_mixins.scss */
-.btn-success.block {
-  display: block;
-}
-
-/* line 171, components/_typography.scss */
-.btn-warning {
-  color: white;
-  background-color: #c09853;
-  border-color: #b78c43;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  white-space: nowrap;
-  padding: 5px 10px;
-  border-style: solid;
-  border-width: 1px;
-}
-/* line 62, components/_mixins.scss */
-.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active {
-  color: white;
-  background-color: #ab843f;
-  border-color: #8a6a32;
-}
-/* line 73, components/_mixins.scss */
-.btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled]:active, .btn-warning[disabled].active {
-  cursor: default;
-  background-color: #d0b380;
-  border-color: #dac29a;
-}
-/* line 79, components/_mixins.scss */
-.btn-warning.block {
-  display: block;
-}
-
-/* line 174, components/_typography.scss */
-.btn-error {
-  color: white;
-  background-color: #b94a48;
-  border-color: #a74240;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  white-space: nowrap;
-  padding: 5px 10px;
-  border-style: solid;
-  border-width: 1px;
-}
-/* line 62, components/_mixins.scss */
-.btn-error:hover, .btn-error:focus, .btn-error:active, .btn-error.active {
-  color: white;
-  background-color: #9c3e3c;
-  border-color: #7b302f;
-}
-/* line 73, components/_mixins.scss */
-.btn-error.disabled, .btn-error.disabled:hover, .btn-error.disabled:focus, .btn-error.disabled:active, .btn-error.disabled.active, .btn-error[disabled], .btn-error[disabled]:hover, .btn-error[disabled]:focus, .btn-error[disabled]:active, .btn-error[disabled].active {
-  cursor: default;
-  background-color: #ca7674;
-  border-color: #d48f8e;
-}
-/* line 79, components/_mixins.scss */
-.btn-error.block {
-  display: block;
-}
-
-/* line 184, components/_typography.scss */
-.table {
-  width: 100%;
-  border: 1px solid #dddddd;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-}
-/* line 187, components/_typography.scss */
-.table caption {
-  text-align: center;
-  font-weight: bold;
-  padding-bottom: 20px;
-  font-size: 1.2em;
-}
-/* line 193, components/_typography.scss */
-.table th {
-  font-weight: bold;
-}
-/* line 196, components/_typography.scss */
-.table th, .table td {
-  padding: 10px;
-  vertical-align: middle;
-}
-/* line 200, components/_typography.scss */
-.table td {
-  border: 1px solid #dddddd;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  border-right: none;
-  border-bottom: none;
-}
-/* line 207, components/_typography.scss */
-.table.table-hover tbody tr:hover {
-  background-color: #eeeeee;
-}
-
-/* line 224, components/_typography.scss */
-ul, ol {
-  margin-bottom: 40px;
-}
-/* line 226, components/_typography.scss */
-ul:last-child, ol:last-child {
-  margin: 0;
-}
-
-/* line 230, components/_typography.scss */
-ol.list-inline li, ul.list-inline li {
-  display: inline-block;
-}
-
-/* line 234, components/_typography.scss */
-ol.linenums li {
-  list-style-type: decimal-leading-zero;
-  list-style-position: outside;
-}
-
-/* line 243, components/_typography.scss */
-code {
-  display: block;
-  border: 1px solid #dddddd;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  background-color: #fafafa;
-  text-align: center;
-  word-break: break-all;
-  padding: 20px;
-  line-height: 1.6em;
-}
-/* line 251, components/_typography.scss */
-code.scrollable {
-  max-height: 360px;
-  overflow-y: scroll;
-}
-/* line 255, components/_typography.scss */
-code ol {
-  text-align: left;
-}
-/* line 258, components/_typography.scss */
-code .tag {
-  color: #008;
-}
-/* line 261, components/_typography.scss */
-code .pln {
-  color: #000;
-}
-/* line 264, components/_typography.scss */
-code .attr {
-  color: #080;
-}
-/* line 267, components/_typography.scss */
-code .tab-1 {
-  text-indent: 16px;
-}
-/* line 270, components/_typography.scss */
-code .tab-2 {
-  text-indent: 32px;
-}
-/* line 273, components/_typography.scss */
-code .tab-3 {
-  text-indent: 48px;
-}
-/* line 276, components/_typography.scss */
-code .tab-4 {
-  text-indent: 64px;
-}
-
 /* line 1, components/_progressBar.scss */
 .progress {
   overflow: hidden;
@@ -2600,94 +2616,47 @@ a:hover, a:focus, a:active, a.active {
   color: #00bbd7;
 }
 
-/* clear */
-/* line 18, layout/_layout.scss */
-.clearfix {
-  zoom: 1;
-}
-/* line 7, components/_mixins.scss */
-.clearfix:after {
-  clear: both;
-  content: ".";
-  display: block;
-  font-size: 0;
-  height: 0;
-  line-height: 0;
-  visibility: hidden;
-}
-
-/* line 21, layout/_layout.scss */
-.clearboth {
-  font: 0px/0px sans-serif;
-  clear: both;
-  visibility: hidden;
-  display: block;
-}
-
-/* float */
-/* line 28, layout/_layout.scss */
-.floatl {
-  float: left;
-}
-
-/* line 31, layout/_layout.scss */
-.floatr {
-  float: right;
-}
-
-/* line 34, layout/_layout.scss */
-.floatn {
-  float: none;
-}
-
-/* text align */
-/* line 38, layout/_layout.scss */
-.textl {
-  text-align: left;
-}
-
-/* line 41, layout/_layout.scss */
-.textr {
-  text-align: right;
-}
-
-/* line 44, layout/_layout.scss */
-.textc {
-  text-align: center;
-}
-
-/* line 47, layout/_layout.scss */
-.textj {
-  text-align: justify;
-}
-
-/* hide and show */
-/* line 51, layout/_layout.scss */
-.hidden {
-  display: none;
-  visibility: hidden;
-}
-
-/* line 55, layout/_layout.scss */
-.shown {
-  display: block;
-  visibility: visible;
-}
-
-/* line 61, layout/_layout.scss */
+/* custom margin and padding */
+/* line 19, layout/_layout.scss */
 .box-margin {
   margin-top: 40px;
 }
 
+/* ==========================================================================
+   layout css
+   ========================================================================== */
+/* line 31, layout/_layout.scss */
+body {
+  background-color: white;
+  color: #666666;
+}
+
+/* line 35, layout/_layout.scss */
+.wrapper {
+  width: 100%;
+}
+
+/* line 38, layout/_layout.scss */
+.container {
+  margin: 40px auto 0;
+  border-bottom: 1px #dddddd solid;
+  padding-bottom: 40px;
+}
+/* line 42, layout/_layout.scss */
+.container .pure-g > div {
+  padding: 0 40px;
+}
+
 /* logo */
-/* line 69, layout/_layout.scss */
+/* line 51, layout/_layout.scss */
 .logo {
   color: #00bbd7;
   font-size: 2em;
+  padding: 20px 10px;
 }
 
 /* search */
-/* line 74, layout/_layout.scss */
+/* line 57, layout/_layout.scss */
 .search {
   display: block;
   width: 100%;
@@ -2701,39 +2670,14 @@ a:hover, a:focus, a:active, a.active {
   box-sizing: border-box;
   background-color: #dddddd;
 }
-/* line 84, layout/_layout.scss */
+/* line 67, layout/_layout.scss */
 .search:focus {
   background-color: white;
 }
 
-/* ==========================================================================
-   layout css
-   ========================================================================== */
-/* line 96, layout/_layout.scss */
-body {
-  background-color: white;
-  color: #666666;
-}
-
-/* line 100, layout/_layout.scss */
-.wrapper {
-  width: 100%;
-}
-
-/* line 103, layout/_layout.scss */
-.container {
-  margin: 40px auto 0;
-  border-bottom: 1px #dddddd solid;
-  padding-bottom: 40px;
-}
-/* line 107, layout/_layout.scss */
-.container .pure-g > div {
-  padding: 0 30px;
-}
-
 /* nav */
 /* navigation */
-/* line 117, layout/_layout.scss */
+/* line 78, layout/_layout.scss */
 nav {
   width: 180px;
   height: 100%;
@@ -2742,12 +2686,12 @@ nav {
   top: 0;
   background: #000000;
 }
-/* line 124, layout/_layout.scss */
+/* line 85, layout/_layout.scss */
 nav a {
   color: #999999;
   font-size: 1.2em;
   display: block;
-  padding: 15px 10px;
+  padding: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -2756,7 +2700,7 @@ nav a {
 nav a:hover, nav a:focus, nav a:active {
   text-indent: 10px;
 }
-/* line 131, layout/_layout.scss */
+/* line 92, layout/_layout.scss */
 nav a .active {
   background-color: #00bbd7;
   color: white;
@@ -2764,22 +2708,21 @@ nav a .active {
 }
 
 /* main */
-/* line 139, layout/_layout.scss */
+/* line 100, layout/_layout.scss */
 main {
   padding-left: 180px;
 }
 
 /* header */
-/* line 143, layout/_layout.scss */
+/* line 104, layout/_layout.scss */
 header {
   padding: 50px 0;
   border-bottom: 1px #dddddd solid;
   text-align: center;
 }
 
-/* content */
 /* footer */
-/* line 152, layout/_layout.scss */
+/* line 110, layout/_layout.scss */
 footer {
   text-align: center;
   font-size: 0.8em;
@@ -2788,6 +2731,7 @@ footer {
   padding: 15px 0px;
 }
 
+/* content */
 /* line 1, layout/_home-page.scss */
 #home {
   animation: changeBg 3.5s ease-in-out infinite alternate;

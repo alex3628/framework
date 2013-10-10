@@ -3,12 +3,24 @@ function pageCtrl($scope) {
     ];
     $scope.pages = [
         {
-            "name": "Carousel",
-            "link": "/simple/carousel"
+            "name": "Base",
+            "link": "/simple/base"
         },
         {
-            "name": "Compass",
-            "link": "/simple/compass"
+            "name": "Typography",
+            "link": "/simple/typography"
+        },
+        {
+            "name": "Buttons",
+            "link": "/simple/buttons"
+        },
+        {
+            "name": "Table",
+            "link": "/simple/table"
+        },
+        {
+            "name": "Menu",
+            "link": "/simple/menu"
         },
         {
             "name": "Grid",
@@ -19,8 +31,12 @@ function pageCtrl($scope) {
             "link": "/simple/icons"
         },
         {
-            "name": "Typography",
-            "link": "/simple/typography"
+            "name": "Carousel",
+            "link": "/simple/carousel"
+        },
+        {
+            "name": "Compass",
+            "link": "/simple/compass"
         },
         {
             "name": "Blog",
