@@ -1,18 +1,3 @@
-/* box wrapper style */
-.bs-docs-example {
-  @include normal-border();
-  margin: 15px 0;
-  padding: 20px;
-}
-.example-box {
-  border-bottom: dashed $border-width $border-color;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
-  &:last-child {
-    margin: 0;
-  }
-}
-
 
 /* box wrapper style */
 .the-icons li {

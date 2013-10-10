@@ -6,45 +6,30 @@
 
 /* body font size */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0;
-}
-h3 {
-  font-size: 1.17em;
-  margin: 1em 0;
-}
-h4 {
-  font-size: 1em;
-  margin: 1.33em 0;
-}
-h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0;
-}
-h6 {
-  font-size: 0.67em;
-  margin: 2.33em 0;
-}
 .headline {
-  font-size: 3em;
+  font-size: 6em;
+  color: $highlight-color;
 }
 .title {
-  font-size: 2em;
+  font-size: 4em;
+  color: $main-color;
+}
+.subtitle {
+  font-size: 1.6em;
+  color: $fore-color;
+  margin-bottom: 15px;
 }
 .describe {
-  font-size: 1.5em;
-}
-.subtext {
   font-size: 1.4em;
+  color: $describe-color;
+  padding: $box-padding;
 }
 .lead {
   font-size: 1.3em;
+  color: $fore-color;
+  margin-bottom: 15px;
 }
+
 
 
 
@@ -174,24 +159,6 @@ dl {
 
 
 
-
-ul, ol {
-  margin-bottom: $box-margin;
-  &:last-child {
-    margin: 0;
-  }
-}
-ol.list-inline li, ul.list-inline li {
-  display: inline-block;
-}
-
-
-
-
-
-
-
-
 .btn {
   @include button-variant($btn-default-text-color, $btn-default-bg-color, $btn-default-border-color);
 }
@@ -247,40 +214,66 @@ ol.list-inline li, ul.list-inline li {
 
 
 
+
+
+
+
+
+
+
+ul, ol {
+  margin-bottom: $box-margin;
+  &:last-child {
+    margin: 0;
+  }
+}
+ol.list-inline li, ul.list-inline li {
+  display: inline-block;
+}
+ol.linenums {
+  li {
+    list-style-type: decimal-leading-zero;
+    list-style-position: outside;
+  }
+}
+
+
+
+
 code {
   display: block;
   @include normal-border();
-  box-shadow: inset 33px 0 0 #fbfbfc, inset 34px 0 0 #ececf0;
+  background-color: $content-bg-color;
+  text-align: center;
+  word-break: break-all;
+  padding: 20px;
+  line-height: 1.6em;
   &.scrollable {
     max-height: 360px;
     overflow-y: scroll;
   }
-}
-ol.linenums {
-  padding: 10px 0 10px 42px;
-  list-style-type: decimal-leading-zero;
-  list-style-position: outside;
-  color: #bebec5;
-  li {
-    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-    line-height: 20px;
-    > div {
-      word-break: break-all;
-    }
-    .tag {
-      color: #1e347b;
-    }
-    .pln {
-      color: #666666;
-    }
-    .tab-1 {
-      text-indent: 16px;
-    }
-    .tab-2 {
-      text-indent: 32px;
-    }
-    .tab-3 {
-      text-indent: 48px;
-    }
+  ol {
+    text-align: left;
+  }
+  .tag {
+    color: #008;;
+  }
+  .pln {
+    color: #000;
+  }
+  .attr {
+    color: #080;
+  }
+  .tab-1 {
+    text-indent: 16px;
+  }
+  .tab-2 {
+    text-indent: 32px;
+  }
+  .tab-3 {
+    text-indent: 48px;
+  }
+  .tab-4 {
+    text-indent: 64px;
   }
 }

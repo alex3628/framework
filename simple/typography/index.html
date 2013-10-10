@@ -3,7 +3,7 @@
 <!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js" ng-app  ng-controller="pageCtrl"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>About | Examples | AKQA</title>
+    <title>template | Simple CSS | AKQA</title>
     <meta name="author" content="AKQA Shanghai technology Team" />
     <meta name="copyright" content="AKQA Inc." />
 
@@ -40,305 +40,393 @@
     <input type="hidden" value="">
     <input type="hidden" value="">
 </div>
+
+
 <!-- html5 -->
 <div class="wrapper">
-    <header>
-        <div class="container clearfix">
-            <a href="/" class="logo">Frame<span>Work</span></a>
-            <nav>
-                <a ng-repeat="nav in navs" href="{{nav.link}}" class="item">{{nav.name}}</a>
-            </nav>
-        </div>
-    </header>
+
+    <aside>
+    </aside>
+
+    <nav>
+        <a href="{{logo.link}}" class="logo" title="{{logo.name}}">{{logo.name}}</a>
+        <input type="text" ng-model="search.name" placeholder="search the ex." class="search">
+        <ul>
+            <li ng-repeat="page in pages | filter:search:strict">
+                <a href="{{page.link}}" title="{{page.name}}">{{page.name}}</a>
+            </li>
+        </ul>
+    </nav>
 
     <main>
-        <div class="container">
-            <aside>
-                <input type="text" ng-model="search.title" placeholder="search the ex." class="search">
-                <ul class="menu">
-                    <li ng-repeat="page in pages | filter:search:strict">
-                        <a href="{{page.link}}" title="{{page.title}}">{{page.title}}</a>
-                    </li>
-                </ul>
-            </aside>
-            <article>
-                <ul class="breadcrumbs">
-                    <li><a href="##">{{crumbFirst}}</a> <em class="divider">/</em></li>
-                    <li><a href="##" class="active">{{crumbSecond}}</a></li>
-                </ul>
-                <div id="page-content">
-                    <h1 class="title">{{submenuOverview}}</h1>
-                    <div>
+        <header>
+            <h1 class="title">Typography</h1>
+            <h2 class="describe">It help us fast write html and css.</h2>
+        </header>
 
-                    <h1>Headings</h1>
-                    <div class="bs-docs-example">
-                        <h1>h1. Heading 1</h1>
-                        <h2>h2. Heading 2</h2>
-                        <h3>h3. Heading 3</h3>
-                        <h4>h4. Heading 4</h4>
-                        <h5>h5. Heading 5</h5>
-                        <h6>h6. Heading 6</h6>
+        <article id="page-content">
+
+
+            <div class="container">
+                <div class="pure-g">
+                    <div class="pure-u-1">
+                        <div>To keep Pure lean and extensible, we do not add any typographic styles over the foundational layer provided by Normalize. This means that you get headings with different sizes, blockquotes, lists, definition lists, and more, but their styles are minimal and easy to override.</div>
                     </div>
+                </div>
+            </div>
 
 
-
-
-                    <h1>Body copy</h1>
-                    <div class="bs-docs-example">
-                        <p class="lead">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                        <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                        <p class="text-success">Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                        <p class="text-warning">Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                        <p class="text-error">Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            <div class="container">
+                <div class="pure-g">
+                    <div class="pure-u-1-2">
+                        <p class="subtitle">Headings</p>
+                        <p>Headings run from 1 to 6 in decreasing size. Font sizes are defined in em.</p>
                     </div>
-
-
-
-
-
-                    <h1>Emphasis</h1>
-                    <div class="bs-docs-example">
-                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. <small>Cum sociis natoque penatibus et magnis dis parturient montes</small>, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. <strong>Cum sociis natoque penatibus et magnis dis parturient montes</strong>, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. <em>Cum sociis natoque penatibus et magnis dis parturient montes</em>, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. <abbr title="Cum sociis natoque penatibus et magnis dis parturient montes">Cum sociis natoque penatibus et magnis dis parturient montes</abbr>, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-                    </div>
-
-
-
-
-                    <h1>Alignment</h1>
-                    <div class="bs-docs-example">
-                        <p class="textl">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                        <p class="textr">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                        <p class="textc">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                        <p class="textj">Nullam quis risus eget urna ornare vel eu leo. Nullam quis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                    </div>
-
-
-
-
-                    <h1>Addresses</h1>
-                    <div class="bs-docs-example">
-                        <address>
-                            <strong>Twitter, Inc.</strong><br>
-                            795 Folsom Ave, Suite 600<br>
-                            San Francisco, CA 94107<br>
-                            <abbr title="Phone">P:</abbr> (123) 456-7890
-                        </address>
-                        <address>
-                            <strong>Full Name</strong><br>
-                            <a href="mailto:#">first.last@example.com</a>
-                        </address>
-                    </div>
-
-
-
-
-                    <h1>Blockquote</h1>
-                    <div class="bs-docs-example">
-                        <blockquote>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <small>- Someone famous <cite title="Source Title">Source Title</cite></small>
-                        </blockquote>
-                        <blockquote class="quote-right">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <small>Someone famous <cite title="Source Title">Source Title</cite> -</small>
-                        </blockquote>
-                    </div>
-
-
-
-
-                    <h1>Description</h1>
-                    <div class="bs-docs-example">
-                        <dl>
-                            <dt>Description lists</dt>
-                            <dd>A description list is perfect for defining terms.</dd>
-                            <dt>Euismod</dt>
-                            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-                            <dd>Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.</dd>
-                            <dt>Malesuada porta</dt>
-                            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-                        </dl>
-                        <dl class="dl-horizontal">
-                            <dt>Description lists</dt>
-                            <dd>A description list is perfect for defining terms.</dd>
-                            <dt>Euismod</dt>
-                            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-                            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-                            <dt>Malesuada porta</dt>
-                            <dd>Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod.</dd>
-                        </dl>
-                    </div>
-
-
-
-
-                    <h1>Lists</h1>
-                    <div class="bs-docs-example">
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Consectetur adipiscing elit</li>
-                            <li>Integer molestie lorem at massa</li>
-                            <li>Facilisis in pretium nisl aliquet</li>
-                            <li>Nulla volutpat aliquam velit</li>
-                            <li>Faucibus porta lacus fringilla vel</li>
-                            <li>Aenean sit amet erat nunc</li>
-                            <li>Eget porttitor lorem</li>
-                        </ul>
-                        <ul class="list-inline">
-                            <li>Phasellus iaculis neque</li>
-                            <li>Purus sodales ultricies</li>
-                            <li>Vestibulum laoreet porttitor sem</li>
-                            <li>Ac tristique libero volutpat at</li>
-                        </ul>
-                        <ol>
-                            <li>Lorem ipsum dolor sit amet</li>
-                            <li>Consectetur adipiscing elit</li>
-                            <li>Integer molestie lorem at massa</li>
-                            <li>Facilisis in pretium nisl aliquet</li>
-                            <li>Nulla volutpat aliquam velit</li>
-                            <li>Faucibus porta lacus fringilla vel</li>
-                            <li>Aenean sit amet erat nunc</li>
-                            <li>Eget porttitor lorem</li>
-                        </ol>
-                        <ol class="list-inline">
-                            <li>Phasellus iaculis neque</li>
-                            <li>Purus sodales ultricies</li>
-                            <li>Vestibulum laoreet porttitor sem</li>
-                            <li>Ac tristique libero volutpat at</li>
-                        </ol>
-                    </div>
-
-
-
-
-                    <h1>Default buttons</h1>
-                    <div class="bs-docs-example">
-                        <div class="btn">Default</div>
-                        <div class="btn-info">info</div>
-                        <div class="btn-success">success</div>
-                        <div class="btn-warning">warning</div>
-                        <div class="btn-error">error</div>
-
-                        <div class="btn-info disabled">disabled</div>
-                        <div class="btn-info block mt20 mb20">block</div>
-
-                        <a class="btn" href="">Link</a>
-                        <button class="btn" type="submit">Button</button>
-                        <input class="btn" type="button" value="Input">
-                        <input class="btn" type="submit" value="Submit">
-                    </div>
-
-
-
-
-                    <h1>Tables</h1>
-                    <div class="bs-docs-example">
-                        <table class="table table-hover">
-                            <caption>Monthly savings</caption>
-                            <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Username</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@TwBootstrap</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Larry</td>
-                                <td>Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-
-
-
-                    <h1>Progress bar</h1>
-                    <div class="bs-docs-example">
-                        <div class="progress">
-                            <div class="bar" style="width: 20%"></div>
+                    <div class="pure-u-1-2">
+                        <div class="pure-u-1-4">
+                            <h1 class="title">text</h1>
                         </div>
-                        <div class="progress striped">
-                            <div class="bar" style="width: 40%"></div>
+                        <div class="pure-u-1-4">
+                            <h2 class="subtitle">text</h2>
                         </div>
-                        <div class="progress striped active">
-                            <div class="bar" style="width: 60%"></div>
+                        <div class="pure-u-1-4">
+                            <h3 class="describe">text</h3>
+                        </div>
+                        <div class="pure-u-1-4">
+                            <h4 class="lead">text</h4>
                         </div>
                     </div>
+                    <div class="pure-u-1-2">
+                        <p class="subtitle">Headings</p>
+                        <p>Headings run from 1 to 6 in decreasing size. Font sizes are defined in em.</p>
+                    </div>
+                    <div class="pure-u-1-2">
+                        <p>The important thing in life is to have a great aim, and the determination to attain it.</p>
+                        <p class="text-info">The important thing in life is to have a great aim, and the determination to attain it.</p>
+                        <p class="text-success">The important thing in life is to have a great aim, and the determination to attain it.</p>
+                        <p class="text-warning">The important thing in life is to have a great aim, and the determination to attain it.</p>
+                        <p class="text-error">The important thing in life is to have a great aim, and the determination to attain it.</p>
+                        <p class="lead">The important thing in life is to have a great aim, and the determination to attain it.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="pure-g">
+                    <div class="pure-u-1">
+                        <h1>Emphasis</h1>
+                        <div class="bs-docs-example">
+                            <p>Nullam quis risus eget urna mollis ornare vel eu leo. <small>Cum sociis natoque penatibus et magnis dis parturient montes</small>, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                            <p>Nullam quis risus eget urna mollis ornare vel eu leo. <strong>Cum sociis natoque penatibus et magnis dis parturient montes</strong>, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                            <p>Nullam quis risus eget urna mollis ornare vel eu leo. <em>Cum sociis natoque penatibus et magnis dis parturient montes</em>, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                            <p>Nullam quis risus eget urna mollis ornare vel eu leo. <abbr title="Cum sociis natoque penatibus et magnis dis parturient montes">Cum sociis natoque penatibus et magnis dis parturient montes</abbr>, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
 
-                    <h1>Code</h1>
-                    <code>
-                        <ol class="linenums">
-                            <li>
-                                <div class="tag tab"> &lt;div id="slides" class="carousel"&gt; </div>
-                            </li>
-                            <li>
-                                <div class="pln tab-1"> &lt;img src="/images/billboard/slide-1.jpg" width="100%"&gt; </div>
-                            </li>
-                            <li>
-                                <div class="pln tab-1"> &lt;img src="/images/billboard/slide-2.jpg" width="100%"&gt; </div>
-                            </li>
-                            <li>
-                                <div class="pln tab-1"> &lt;img src="/images/billboard/slide-3.jpg" width="100%"&gt; </div>
-                            </li>
-                            <li>
-                                <div class="pln tab-1"> &lt;img src="/images/billboard/slide-4.jpg" width="100%"&gt; </div>
-                            </li>
-                            <li>
-                                <div class="tag tab"> &lt;div&gt; </div>
-                            </li>
-                        </ol>
-                    </code>
+
+
+            <div class="container">
+                <div class="pure-g">
+                    <div class="pure-u-1">
+
+
+                        <h1>Alignment</h1>
+                        <div class="bs-docs-example">
+                            <p class="textl">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            <p class="textr">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            <p class="textc">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            <p class="textj">Nullam quis risus eget urna ornare vel eu leo. Nullam quis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="pure-g">
+                    <div class="pure-u-1">
+                        <h1>Addresses</h1>
+                        <div class="bs-docs-example">
+                            <address>
+                                <strong>Twitter, Inc.</strong><br>
+                                795 Folsom Ave, Suite 600<br>
+                                San Francisco, CA 94107<br>
+                                <abbr title="Phone">P:</abbr> (123) 456-7890
+                            </address>
+                            <address>
+                                <strong>Full Name</strong><br>
+                                <a href="mailto:#">first.last@example.com</a>
+                            </address>
+                        </div>
 
 
                     </div>
                 </div>
-            </article>
-        </div>
-    </main>
-
-    <footer id="footer">
-        <div class="container">
-            <div class="logo">Frame<span>Work</span></div>
-            <div class="submenu">
-                <a href="##" id="toOverview" class="item"><i class="icon-arrow-up icon-white"></i>{{submenuOverview}}</a>
-                <a href="##" id="toCode" class="item"><i class="icon-arrow-up icon-white"></i>{{submenuCode}}</a>
-                <a href="##" id="toDemo" class="item"><i class="icon-arrow-up icon-white"></i>{{submenuDemo}}</a>
-                <a href="##" id="toTop" class="item"><i class="icon-arrow-up icon-white"></i>{{submenuTop}}</a>
             </div>
-        </div>
-    </footer>
+
+
+            <div class="container">
+                <div class="pure-g">
+                    <div class="pure-u-1">
+
+
+                        <h1>Blockquote</h1>
+                        <div class="bs-docs-example">
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <small>- Someone famous <cite title="Source Title">Source Title</cite></small>
+                            </blockquote>
+                            <blockquote class="quote-right">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <small>Someone famous <cite title="Source Title">Source Title</cite> -</small>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="pure-g">
+                    <div class="pure-u-1">
+
+                        <h1>Description</h1>
+                        <div class="bs-docs-example">
+                            <dl>
+                                <dt>Description lists</dt>
+                                <dd>A description list is perfect for defining terms.</dd>
+                                <dt>Euismod</dt>
+                                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                <dd>Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.</dd>
+                                <dt>Malesuada porta</dt>
+                                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                            </dl>
+                            <dl class="dl-horizontal">
+                                <dt>Description lists</dt>
+                                <dd>A description list is perfect for defining terms.</dd>
+                                <dt>Euismod</dt>
+                                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                                <dt>Malesuada porta</dt>
+                                <dd>Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod.</dd>
+                            </dl>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="pure-g">
+                    <div class="pure-u-1">
+
+
+
+
+
+                        <h1>Lists</h1>
+                        <div class="bs-docs-example">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Integer molestie lorem at massa</li>
+                                <li>Facilisis in pretium nisl aliquet</li>
+                                <li>Nulla volutpat aliquam velit</li>
+                                <li>Faucibus porta lacus fringilla vel</li>
+                                <li>Aenean sit amet erat nunc</li>
+                                <li>Eget porttitor lorem</li>
+                            </ul>
+                            <ul class="list-inline">
+                                <li>Phasellus iaculis neque</li>
+                                <li>Purus sodales ultricies</li>
+                                <li>Vestibulum laoreet porttitor sem</li>
+                                <li>Ac tristique libero volutpat at</li>
+                            </ul>
+                            <ol>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Integer molestie lorem at massa</li>
+                                <li>Facilisis in pretium nisl aliquet</li>
+                                <li>Nulla volutpat aliquam velit</li>
+                                <li>Faucibus porta lacus fringilla vel</li>
+                                <li>Aenean sit amet erat nunc</li>
+                                <li>Eget porttitor lorem</li>
+                            </ol>
+                            <ol class="list-inline">
+                                <li>Phasellus iaculis neque</li>
+                                <li>Purus sodales ultricies</li>
+                                <li>Vestibulum laoreet porttitor sem</li>
+                                <li>Ac tristique libero volutpat at</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="container">
+                <div class="pure-g">
+                    <div class="pure-u-1">
+
+                        <h1>Default buttons</h1>
+                        <div class="bs-docs-example">
+                            <div class="btn">Default</div>
+                            <div class="btn-info">info</div>
+                            <div class="btn-success">success</div>
+                            <div class="btn-warning">warning</div>
+                            <div class="btn-error">error</div>
+
+                            <div class="btn-info disabled">disabled</div>
+                            <div class="btn-info block mt20 mb20">block</div>
+
+                            <a class="btn" href="">Link</a>
+                            <button class="btn" type="submit">Button</button>
+                            <input class="btn" type="button" value="Input">
+                            <input class="btn" type="submit" value="Submit">
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="container">
+                <div class="pure-g">
+                    <div class="pure-u-1">
+
+
+
+
+
+                        <h1>Tables</h1>
+                        <div class="bs-docs-example">
+                            <table class="table table-hover">
+                                <caption>Monthly savings</caption>
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Username</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@TwBootstrap</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Larry</td>
+                                    <td>Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="container">
+                <div class="pure-g">
+                    <div class="pure-u-1">
+
+
+
+                        <h1>Progress bar</h1>
+                        <div class="bs-docs-example">
+                            <div class="progress">
+                                <div class="bar" style="width: 20%"></div>
+                            </div>
+                            <div class="progress striped">
+                                <div class="bar" style="width: 40%"></div>
+                            </div>
+                            <div class="progress striped active">
+                                <div class="bar" style="width: 60%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="container">
+                <div class="pure-g">
+                    <div class="pure-u-1">
+
+
+
+                        <h1>Code</h1>
+                        <code>
+                            <ol>
+                                <li>
+                                    <div class="tag tab"> &lt;div id="slides" class="carousel"&gt; </div>
+                                </li>
+                                <li>
+                                    <div class="pln tab-1"> &lt;img src="/images/billboard/slide-1.jpg" width="100%"&gt; </div>
+                                </li>
+                                <li>
+                                    <div class="pln tab-1"> &lt;img src="/images/billboard/slide-2.jpg" width="100%"&gt; </div>
+                                </li>
+                                <li>
+                                    <div class="pln tab-1"> &lt;img src="/images/billboard/slide-3.jpg" width="100%"&gt; </div>
+                                </li>
+                                <li>
+                                    <div class="pln tab-1"> &lt;img src="/images/billboard/slide-4.jpg" width="100%"&gt; </div>
+                                </li>
+                                <li>
+                                    <div class="tag tab"> &lt;div&gt; </div>
+                                </li>
+                            </ol>
+                        </code>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+        </article>
+
+        <footer id="footer">{{footer}}</footer>
+    </main>
 </div>
 
 

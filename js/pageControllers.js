@@ -27,12 +27,11 @@ function pageCtrl($scope) {
             "link": "/blog"
         }
     ];
-    $scope.crumbFirst = 'Examples';
-    $scope.crumbSecond = 'About';
 
+    $scope.logo ={
+        "name": "Simple CSS",
+        "link": "/simple/about"
+    };
 
-    $scope.submenuOverview = 'Overview';
-    $scope.submenuCode = 'Code';
-    $scope.submenuDemo = 'Demo';
-    $scope.submenuTop = 'Top';
+    $scope.footer = '@ 2013 AKQA SH TECHNOLOGY';
 }
