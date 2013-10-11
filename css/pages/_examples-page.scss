@@ -1,27 +1,26 @@
-
-/* box wrapper style */
+/* icon */
 .the-icons li {
    float: left;
    width: 25%;
-   line-height: 20px;
  }
 
 
-/* box wrapper style */
-#grid .row div, #grid .yui3-g div {
+
+/* grid style */
+.grid .pure-g div {
   background: green;
-  line-height: 40px;
-  height: 40px;
   text-align: center;
   color: #ffffff;
   border-left: solid 1px #000;
   border-bottom: solid 1px #000;
-  font-family: arial;
-
+  padding: 10px 0;
   @include box-sizing(border-box);
 }
 
-/* box wrapper style */
+
+
+
+/* homepage img sprite */
 .homepage-favicon{
   @extend .homepage-favicon;
   width: 32px;
@@ -46,7 +45,7 @@
 
 
 
-/* box wrapper style */
+/* carousel style */
 .carousel {
   position: relative;
   .slidesjs-previous{
@@ -91,5 +90,18 @@
         }
       }
     }
+  }
+}
+
+
+
+
+
+/* category */
+.category {
+  > div {
+    padding: 1em 0;
+    text-align: center;
+    color: #fff;
   }
 }

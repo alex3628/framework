@@ -1,0 +1,36 @@
+
+
+
+
+.table {
+  width: 100%;
+  @include border();
+  caption {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+  }
+  th {
+    font-weight: bold;
+  }
+  th, td {
+    padding: 10px;
+    vertical-align: middle;
+  }
+  td {
+    @include border();
+    border-right: none;
+    border-bottom: none;
+  }
+  &.table-hover {
+    tbody {
+      tr:hover {
+        background-color: #eeeeee;
+      }
+    }
+  }
+}
+
+
+

@@ -794,7 +794,7 @@ http://yuilibrary.com/license/
  */
 /* line 12, base/_font.scss */
 body {
-  font: 14px/1.8 "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  font: 14px/1.6 "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
   *font-size: small;
   /* for IE */
   *font: x-small;
@@ -844,13 +844,13 @@ tt {
 }
 
 /* ==========================================================================
-   Layout (components css)
-   ========================================================================== */
-/* ==========================================================================
    Global Variable
    ========================================================================== */
 /* ==========================================================================
    Global mixins
+   ========================================================================== */
+/* ==========================================================================
+   components (simple css)
    ========================================================================== */
 /* ==========================================================================
    compass sprite
@@ -901,110 +901,1126 @@ tt {
   background-position: 0 -359px;
 }
 
+@-webkit-keyframes changeOpacity {
+  /* line 3, components/_animation.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 4, components/_animation.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes changeOpacity {
+  /* line 8, components/_animation.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 9, components/_animation.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes changeOpacity {
+  /* line 13, components/_animation.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 14, components/_animation.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes changeOpacity {
+  /* line 18, components/_animation.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 19, components/_animation.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes changeOpacity {
+  /* line 23, components/_animation.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 24, components/_animation.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes changeBg {
+  /* line 33, components/_animation.scss */
+  0% {
+    background: #ffffff;
+  }
+
+  /* line 34, components/_animation.scss */
+  10% {
+    background-image: radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+  }
+
+  /* line 41, components/_animation.scss */
+  15% {
+    background-image: radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+  }
+
+  /* line 48, components/_animation.scss */
+  20% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+  }
+
+  /* line 55, components/_animation.scss */
+  25% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, #d3d3d3 33%, #cdcdcd 70%, #cccccc 100%);
+  }
+
+  /* line 62, components/_animation.scss */
+  30% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+  }
+
+  /* line 69, components/_animation.scss */
+  35% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+  }
+
+  /* line 76, components/_animation.scss */
+  40% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+  }
+
+  /* line 83, components/_animation.scss */
+  45% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+  }
+
+  /* line 90, components/_animation.scss */
+  50% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+  }
+
+  /* line 97, components/_animation.scss */
+  55% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+  }
+
+  /* line 104, components/_animation.scss */
+  60% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+  }
+
+  /* line 111, components/_animation.scss */
+  65% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+  }
+
+  /* line 118, components/_animation.scss */
+  70% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, #d3d3d3 70%, #cccccc 100%);
+  }
+
+  /* line 125, components/_animation.scss */
+  75% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, #d3d3d3 70%, #cccccc 100%);
+  }
+
+  /* line 132, components/_animation.scss */
+  80% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+  }
+
+  /* line 139, components/_animation.scss */
+  85% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+  }
+
+  /* line 146, components/_animation.scss */
+  90% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+  }
+
+  /* line 153, components/_animation.scss */
+  95% {
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+  }
+
+  /* line 160, components/_animation.scss */
+  100% {
+    background-image: -o-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ffffff 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+  }
+}
+
+@-moz-keyframes changeBg {
+  /* line 170, components/_animation.scss */
+  0% {
+    background: #ffffff;
+  }
+
+  /* line 171, components/_animation.scss */
+  10% {
+    background-image: radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+  }
+
+  /* line 178, components/_animation.scss */
+  15% {
+    background-image: radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+  }
+
+  /* line 185, components/_animation.scss */
+  20% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+  }
+
+  /* line 192, components/_animation.scss */
+  25% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, #d3d3d3 33%, #cdcdcd 70%, #cccccc 100%);
+  }
+
+  /* line 199, components/_animation.scss */
+  30% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+  }
+
+  /* line 206, components/_animation.scss */
+  35% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+  }
+
+  /* line 213, components/_animation.scss */
+  40% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+  }
+
+  /* line 220, components/_animation.scss */
+  45% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+  }
+
+  /* line 227, components/_animation.scss */
+  50% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+  }
+
+  /* line 234, components/_animation.scss */
+  55% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+  }
+
+  /* line 241, components/_animation.scss */
+  60% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+  }
+
+  /* line 248, components/_animation.scss */
+  65% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+  }
+
+  /* line 255, components/_animation.scss */
+  70% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, #d3d3d3 70%, #cccccc 100%);
+  }
+
+  /* line 262, components/_animation.scss */
+  75% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, #d3d3d3 70%, #cccccc 100%);
+  }
+
+  /* line 269, components/_animation.scss */
+  80% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+  }
+
+  /* line 276, components/_animation.scss */
+  85% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+  }
+
+  /* line 283, components/_animation.scss */
+  90% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+  }
+
+  /* line 290, components/_animation.scss */
+  95% {
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+  }
+
+  /* line 297, components/_animation.scss */
+  100% {
+    background-image: -o-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ffffff 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+  }
+}
+
+@-ms-keyframes changeBg {
+  /* line 307, components/_animation.scss */
+  0% {
+    background: #ffffff;
+  }
+
+  /* line 308, components/_animation.scss */
+  10% {
+    background-image: radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+  }
+
+  /* line 315, components/_animation.scss */
+  15% {
+    background-image: radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+  }
+
+  /* line 322, components/_animation.scss */
+  20% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+  }
+
+  /* line 329, components/_animation.scss */
+  25% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, #d3d3d3 33%, #cdcdcd 70%, #cccccc 100%);
+  }
+
+  /* line 336, components/_animation.scss */
+  30% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+  }
+
+  /* line 343, components/_animation.scss */
+  35% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+  }
+
+  /* line 350, components/_animation.scss */
+  40% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+  }
+
+  /* line 357, components/_animation.scss */
+  45% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+  }
+
+  /* line 364, components/_animation.scss */
+  50% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+  }
+
+  /* line 371, components/_animation.scss */
+  55% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+  }
+
+  /* line 378, components/_animation.scss */
+  60% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+  }
+
+  /* line 385, components/_animation.scss */
+  65% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+  }
+
+  /* line 392, components/_animation.scss */
+  70% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, #d3d3d3 70%, #cccccc 100%);
+  }
+
+  /* line 399, components/_animation.scss */
+  75% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, #d3d3d3 70%, #cccccc 100%);
+  }
+
+  /* line 406, components/_animation.scss */
+  80% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+  }
+
+  /* line 413, components/_animation.scss */
+  85% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+  }
+
+  /* line 420, components/_animation.scss */
+  90% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+  }
+
+  /* line 427, components/_animation.scss */
+  95% {
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+  }
+
+  /* line 434, components/_animation.scss */
+  100% {
+    background-image: -o-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ffffff 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+  }
+}
+
+@-o-keyframes changeBg {
+  /* line 444, components/_animation.scss */
+  0% {
+    background: #ffffff;
+  }
+
+  /* line 445, components/_animation.scss */
+  10% {
+    background-image: radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+  }
+
+  /* line 452, components/_animation.scss */
+  15% {
+    background-image: radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+  }
+
+  /* line 459, components/_animation.scss */
+  20% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+  }
+
+  /* line 466, components/_animation.scss */
+  25% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, #d3d3d3 33%, #cdcdcd 70%, #cccccc 100%);
+  }
+
+  /* line 473, components/_animation.scss */
+  30% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+  }
+
+  /* line 480, components/_animation.scss */
+  35% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+  }
+
+  /* line 487, components/_animation.scss */
+  40% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+  }
+
+  /* line 494, components/_animation.scss */
+  45% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+  }
+
+  /* line 501, components/_animation.scss */
+  50% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+  }
+
+  /* line 508, components/_animation.scss */
+  55% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+  }
+
+  /* line 515, components/_animation.scss */
+  60% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+  }
+
+  /* line 522, components/_animation.scss */
+  65% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+  }
+
+  /* line 529, components/_animation.scss */
+  70% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, #d3d3d3 70%, #cccccc 100%);
+  }
+
+  /* line 536, components/_animation.scss */
+  75% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, #d3d3d3 70%, #cccccc 100%);
+  }
+
+  /* line 543, components/_animation.scss */
+  80% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+  }
+
+  /* line 550, components/_animation.scss */
+  85% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+  }
+
+  /* line 557, components/_animation.scss */
+  90% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+  }
+
+  /* line 564, components/_animation.scss */
+  95% {
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+  }
+
+  /* line 571, components/_animation.scss */
+  100% {
+    background-image: -o-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ffffff 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+  }
+}
+
+@keyframes changeBg {
+  /* line 581, components/_animation.scss */
+  0% {
+    background: #ffffff;
+  }
+
+  /* line 582, components/_animation.scss */
+  10% {
+    background-image: radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
+  }
+
+  /* line 589, components/_animation.scss */
+  15% {
+    background-image: radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
+  }
+
+  /* line 596, components/_animation.scss */
+  20% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
+  }
+
+  /* line 603, components/_animation.scss */
+  25% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, #d3d3d3 33%, #cdcdcd 70%, #cccccc 100%);
+  }
+
+  /* line 610, components/_animation.scss */
+  30% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
+  }
+
+  /* line 617, components/_animation.scss */
+  35% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
+  }
+
+  /* line 624, components/_animation.scss */
+  40% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
+  }
+
+  /* line 631, components/_animation.scss */
+  45% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
+  }
+
+  /* line 638, components/_animation.scss */
+  50% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
+  }
+
+  /* line 645, components/_animation.scss */
+  55% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
+  }
+
+  /* line 652, components/_animation.scss */
+  60% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
+  }
+
+  /* line 659, components/_animation.scss */
+  65% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
+  }
+
+  /* line 666, components/_animation.scss */
+  70% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, #d3d3d3 70%, #cccccc 100%);
+  }
+
+  /* line 673, components/_animation.scss */
+  75% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, #d3d3d3 70%, #cccccc 100%);
+  }
+
+  /* line 680, components/_animation.scss */
+  80% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
+  }
+
+  /* line 687, components/_animation.scss */
+  85% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
+  }
+
+  /* line 694, components/_animation.scss */
+  90% {
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
+  }
+
+  /* line 701, components/_animation.scss */
+  95% {
+    background-image: -moz-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -o-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
+  }
+
+  /* line 708, components/_animation.scss */
+  100% {
+    background-image: -o-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -ms-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -moz-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: radial-gradient(50% 45%, circle cover, #ffffff 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+    background-image: -webkit-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
+  }
+}
+
+@-webkit-keyframes progress-active {
+  /* line 724, components/_animation.scss */
+  from {
+    background-position: 40px 0;
+  }
+
+  /* line 727, components/_animation.scss */
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-moz-keyframes progress-active {
+  /* line 733, components/_animation.scss */
+  from {
+    background-position: 40px 0;
+  }
+
+  /* line 736, components/_animation.scss */
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-ms-keyframes progress-active {
+  /* line 742, components/_animation.scss */
+  from {
+    background-position: 40px 0;
+  }
+
+  /* line 745, components/_animation.scss */
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-o-keyframes progress-active {
+  /* line 751, components/_animation.scss */
+  from {
+    background-position: 0 0;
+  }
+
+  /* line 754, components/_animation.scss */
+  to {
+    background-position: 40px 0;
+  }
+}
+
+@keyframes progress-active {
+  /* line 760, components/_animation.scss */
+  from {
+    background-position: 40px 0;
+  }
+
+  /* line 763, components/_animation.scss */
+  to {
+    background-position: 0 0;
+  }
+}
+
+/* ==========================================================================
+   simple (simple css)
+   ========================================================================== */
+/* ==========================================================================
+   variables css
+   ========================================================================== */
 /* paragraph */
-/* line 2, components/_typography.scss */
+/* line 8, simple/_typography.scss */
 p {
   margin-bottom: 10px;
 }
-/* line 4, components/_typography.scss */
+/* line 10, simple/_typography.scss */
 p:last-child {
   margin-bottom: 0;
 }
 
 /* body font size and color */
-/* line 11, components/_typography.scss */
+/* line 17, simple/_typography.scss */
 h1 {
   font-size: 2em;
 }
 
-/* line 14, components/_typography.scss */
+/* line 20, simple/_typography.scss */
 h2 {
   font-size: 1.5em;
 }
 
-/* line 17, components/_typography.scss */
+/* line 23, simple/_typography.scss */
 h3 {
   font-size: 1.17em;
 }
 
-/* line 20, components/_typography.scss */
+/* line 26, simple/_typography.scss */
 h4 {
   font-size: 1em;
 }
 
-/* line 23, components/_typography.scss */
+/* line 29, simple/_typography.scss */
 h5 {
   font-size: 0.83em;
 }
 
-/* line 26, components/_typography.scss */
+/* line 32, simple/_typography.scss */
 h6 {
   font-size: 0.67em;
 }
 
-/* line 29, components/_typography.scss */
+/* line 35, simple/_typography.scss */
 .headline {
   font-size: 6em;
   color: #00bbd7;
 }
 
-/* line 33, components/_typography.scss */
+/* line 39, simple/_typography.scss */
 .title {
   font-size: 4em;
 }
 
-/* line 36, components/_typography.scss */
+/* line 42, simple/_typography.scss */
 .describe {
   font-size: 1.4em;
   color: #999999;
-  padding: 0 40px;
 }
 
-/* line 41, components/_typography.scss */
+/* line 46, simple/_typography.scss */
 .subtitle {
   font-size: 1.6em;
   color: #333333;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-/* line 46, components/_typography.scss */
+/* line 51, simple/_typography.scss */
 .lead {
   font-size: 1.3em;
   color: #333333;
   margin-bottom: 10px;
 }
 
-/* line 52, components/_typography.scss */
+/* line 57, simple/_typography.scss */
 .text-stress {
   color: #333333;
 }
 
-/* line 55, components/_typography.scss */
+/* line 60, simple/_typography.scss */
 .text-info {
   color: #3a87ad;
 }
 
-/* line 58, components/_typography.scss */
+/* line 63, simple/_typography.scss */
 .text-success {
   color: #468847;
 }
 
-/* line 61, components/_typography.scss */
+/* line 66, simple/_typography.scss */
 .text-warning {
   color: #c09853;
 }
 
-/* line 64, components/_typography.scss */
+/* line 69, simple/_typography.scss */
 .text-error {
   color: #b94a48;
 }
 
 /* clear */
-/* line 71, components/_typography.scss */
+/* line 78, simple/_typography.scss */
 .clearfix {
   zoom: 1;
+  *overflow: hidden;
 }
-/* line 7, components/_mixins.scss */
+/* line 8, base/_mixins.scss */
 .clearfix:after {
   clear: both;
   content: ".";
@@ -1015,7 +2031,7 @@ h6 {
   visibility: hidden;
 }
 
-/* line 74, components/_typography.scss */
+/* line 81, simple/_typography.scss */
 .clearboth {
   font: 0px/0px sans-serif;
   clear: both;
@@ -1024,89 +2040,109 @@ h6 {
 }
 
 /* float */
-/* line 81, components/_typography.scss */
+/* line 88, simple/_typography.scss */
 .floatl {
   float: left;
 }
 
-/* line 84, components/_typography.scss */
+/* line 91, simple/_typography.scss */
 .floatr {
   float: right;
 }
 
-/* line 87, components/_typography.scss */
+/* line 94, simple/_typography.scss */
 .floatn {
   float: none;
 }
 
 /* text align */
-/* line 91, components/_typography.scss */
+/* line 98, simple/_typography.scss */
 .alignl {
   text-align: left;
 }
 
-/* line 94, components/_typography.scss */
+/* line 101, simple/_typography.scss */
 .alignr {
   text-align: right;
 }
 
-/* line 97, components/_typography.scss */
+/* line 104, simple/_typography.scss */
 .alignc {
   text-align: center;
 }
 
-/* line 100, components/_typography.scss */
+/* line 107, simple/_typography.scss */
 .alignj {
   text-align: justify;
 }
 
 /* hide and show */
-/* line 104, components/_typography.scss */
+/* line 111, simple/_typography.scss */
 .hidden {
   display: none;
   visibility: hidden;
 }
 
-/* line 108, components/_typography.scss */
+/* line 115, simple/_typography.scss */
 .shown {
   display: block;
   visibility: visible;
 }
 
-/* line 119, components/_typography.scss */
+/* link */
+/* line 120, simple/_typography.scss */
+a {
+  color: #666666;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* line 128, simple/_typography.scss */
+a:hover, a:focus, a:active, a.active {
+  color: #00bbd7;
+}
+
+/* line 132, simple/_typography.scss */
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* line 142, simple/_typography.scss */
 ul, ol, dl {
   margin-bottom: 40px;
 }
-/* line 121, components/_typography.scss */
+/* line 144, simple/_typography.scss */
 ul:last-child, ol:last-child, dl:last-child {
   margin-bottom: 0;
 }
-/* line 124, components/_typography.scss */
+/* line 147, simple/_typography.scss */
 ul > ul, ul ol, ul dd, ol > ul, ol ol, ol dd, dl > ul, dl ol, dl dd {
   padding: 5px 0 5px 20px;
 }
 
-/* line 129, components/_typography.scss */
+/* line 152, simple/_typography.scss */
 ul.ordered li, ol.ordered li {
   list-style-type: decimal;
 }
 
-/* line 134, components/_typography.scss */
+/* line 157, simple/_typography.scss */
 ul.unordered li, ol.unordered li {
   list-style-type: disc;
 }
 
-/* line 139, components/_typography.scss */
+/* line 162, simple/_typography.scss */
 ul.list-inline > li, ol.list-inline > li, dl.list-inline > li {
   display: inline-block;
 }
-/* line 142, components/_typography.scss */
+/* line 165, simple/_typography.scss */
 ul.list-inline > dt, ul.list-inline dd, ol.list-inline > dt, ol.list-inline dd, dl.list-inline > dt, dl.list-inline dd {
   display: inline-block;
   padding: 0;
 }
 
-/* line 154, components/_typography.scss */
+/* line 177, simple/_typography.scss */
 code {
   display: block;
   border: 1px solid #dddddd;
@@ -1119,235 +2155,102 @@ code {
   padding: 20px;
   line-height: 1.6em;
 }
-/* line 162, components/_typography.scss */
+/* line 185, simple/_typography.scss */
 code.scrollable {
   max-height: 360px;
   overflow-y: scroll;
 }
-/* line 166, components/_typography.scss */
-code ol {
+/* line 189, simple/_typography.scss */
+code ol, code ul {
   text-align: left;
 }
-/* line 169, components/_typography.scss */
+/* line 192, simple/_typography.scss */
 code .tag {
-  color: #008;
+  color: #905fdb;
 }
-/* line 172, components/_typography.scss */
-code .pln {
-  color: #000;
-}
-/* line 175, components/_typography.scss */
+/* line 195, simple/_typography.scss */
 code .attr {
   color: #080;
 }
-/* line 178, components/_typography.scss */
+/* line 198, simple/_typography.scss */
+code .element {
+  color: #f42871;
+}
+/* line 201, simple/_typography.scss */
 code .tab-1 {
   text-indent: 16px;
 }
-/* line 181, components/_typography.scss */
+/* line 204, simple/_typography.scss */
 code .tab-2 {
   text-indent: 32px;
 }
-/* line 184, components/_typography.scss */
+/* line 207, simple/_typography.scss */
 code .tab-3 {
   text-indent: 48px;
 }
-/* line 187, components/_typography.scss */
+/* line 210, simple/_typography.scss */
 code .tab-4 {
   text-indent: 64px;
 }
 
-/* line 200, components/_typography.scss */
-.btn {
-  color: #333333;
-  background-color: white;
-  border-color: #f2f2f2;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  white-space: nowrap;
-  padding: 5px 10px;
-  border-style: solid;
-  border-width: 1px;
-}
-/* line 62, components/_mixins.scss */
-.btn:hover, .btn:focus, .btn:active, .btn.active {
-  color: #333333;
-  background-color: #ebebeb;
-  border-color: #d4d4d4;
-}
-/* line 73, components/_mixins.scss */
-.btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled:active, .btn.disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled]:active, .btn[disabled].active {
-  cursor: default;
-  background-color: white;
-  border-color: white;
-}
-/* line 79, components/_mixins.scss */
-.btn.block {
-  display: block;
-}
-
-/* line 203, components/_typography.scss */
-.btn-info {
-  color: white;
-  background-color: #3a87ad;
-  border-color: #34789a;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  white-space: nowrap;
-  padding: 5px 10px;
-  border-style: solid;
-  border-width: 1px;
-}
-/* line 62, components/_mixins.scss */
-.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
-  color: white;
-  background-color: #306f8e;
-  border-color: #24546c;
-}
-/* line 73, components/_mixins.scss */
-.btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled]:active, .btn-info[disabled].active {
-  cursor: default;
-  background-color: #5ca4c8;
-  border-color: #77b3d1;
-}
-/* line 79, components/_mixins.scss */
-.btn-info.block {
-  display: block;
-}
-
-/* line 206, components/_typography.scss */
-.btn-success {
-  color: white;
-  background-color: #468847;
-  border-color: #3d773e;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  white-space: nowrap;
-  padding: 5px 10px;
-  border-style: solid;
-  border-width: 1px;
-}
-/* line 62, components/_mixins.scss */
-.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
-  color: white;
-  background-color: #386d39;
-  border-color: #294f29;
-}
-/* line 73, components/_mixins.scss */
-.btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success[disabled].active {
-  cursor: default;
-  background-color: #5fac60;
-  border-color: #76b977;
-}
-/* line 79, components/_mixins.scss */
-.btn-success.block {
-  display: block;
-}
-
-/* line 209, components/_typography.scss */
-.btn-warning {
-  color: white;
-  background-color: #c09853;
-  border-color: #b78c43;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  white-space: nowrap;
-  padding: 5px 10px;
-  border-style: solid;
-  border-width: 1px;
-}
-/* line 62, components/_mixins.scss */
-.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active {
-  color: white;
-  background-color: #ab843f;
-  border-color: #8a6a32;
-}
-/* line 73, components/_mixins.scss */
-.btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled]:active, .btn-warning[disabled].active {
-  cursor: default;
-  background-color: #d0b380;
-  border-color: #dac29a;
-}
-/* line 79, components/_mixins.scss */
-.btn-warning.block {
-  display: block;
-}
-
-/* line 212, components/_typography.scss */
-.btn-error {
-  color: white;
-  background-color: #b94a48;
-  border-color: #a74240;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  white-space: nowrap;
-  padding: 5px 10px;
-  border-style: solid;
-  border-width: 1px;
-}
-/* line 62, components/_mixins.scss */
-.btn-error:hover, .btn-error:focus, .btn-error:active, .btn-error.active {
-  color: white;
-  background-color: #9c3e3c;
-  border-color: #7b302f;
-}
-/* line 73, components/_mixins.scss */
-.btn-error.disabled, .btn-error.disabled:hover, .btn-error.disabled:focus, .btn-error.disabled:active, .btn-error.disabled.active, .btn-error[disabled], .btn-error[disabled]:hover, .btn-error[disabled]:focus, .btn-error[disabled]:active, .btn-error[disabled].active {
-  cursor: default;
-  background-color: #ca7674;
-  border-color: #d48f8e;
-}
-/* line 79, components/_mixins.scss */
-.btn-error.block {
-  display: block;
-}
-
-/* line 222, components/_typography.scss */
-.table {
+/* line 220, simple/_typography.scss */
+.progress {
   width: 100%;
-  border: 1px solid #dddddd;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
+  height: 20px;
+  background-color: white;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
-/* line 225, components/_typography.scss */
-.table caption {
-  text-align: center;
-  font-weight: bold;
-  padding-bottom: 20px;
-  font-size: 1.2em;
+/* line 227, simple/_typography.scss */
+.progress .bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  background-color: #0e90d2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width 0.6s ease;
+  transition: width 0.6s ease;
 }
-/* line 231, components/_typography.scss */
-.table th {
-  font-weight: bold;
+/* line 236, simple/_typography.scss */
+.progress.active .bar {
+  background-color: #149bdf;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 40px 40px;
+  -moz-background-size: 40px 40px;
+  -o-background-size: 40px 40px;
+  background-size: 40px 40px;
+  -webkit-animation: progress-active 2s linear infinite;
+  -moz-animation: progress-active 2s linear infinite;
+  -ms-animation: progress-active 2s linear infinite;
+  -o-animation: progress-active 2s linear infinite;
+  animation: progress-active 2s linear infinite;
 }
-/* line 234, components/_typography.scss */
-.table th, .table td {
-  padding: 10px;
-  vertical-align: middle;
+
+/* line 248, simple/_typography.scss */
+.back-to-top {
+  cursor: pointer;
+  border-bottom: solid 30px #00bbd7;
+  border-top: solid 30px transparent;
+  border-right: solid 30px transparent;
+  border-left: solid 30px transparent;
 }
-/* line 238, components/_typography.scss */
-.table td {
-  border: 1px solid #dddddd;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  border-right: none;
-  border-bottom: none;
-}
-/* line 245, components/_typography.scss */
-.table.table-hover tbody tr:hover {
-  background-color: #eeeeee;
+/* line 254, simple/_typography.scss */
+.back-to-top.position {
+  float: left;
+  position: relative;
+  bottom: 0px;
+  right: 0px;
 }
 
 /*
@@ -1357,7 +2260,7 @@ Licensed under the BSD License.
 https://github.com/yui/pure/blob/master/LICENSE.md
 */
 /*csslint regex-selectors:false, known-properties:false, duplicate-properties:false*/
-/* line 9, components/_grid.scss */
+/* line 9, simple/_grid.scss */
 .pure-g {
   letter-spacing: -0.31em;
   /* Webkit: collapse white-space between units */
@@ -1401,13 +2304,13 @@ https://github.com/yui/pure/blob/master/LICENSE.md
    The ".opera-only" selector is used to prevent actual prefocus styling
    and is not required in markup.
 */
-/* line 53, components/_grid.scss */
+/* line 53, simple/_grid.scss */
 .opera-only :-o-prefocus,
 .pure-g {
   word-spacing: -0.43em;
 }
 
-/* line 57, components/_grid.scss */
+/* line 57, simple/_grid.scss */
 .pure-u {
   display: inline-block;
   *display: inline;
@@ -1423,12 +2326,12 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 Resets the font family back to the OS/browser's default sans-serif font,
 this the same font stack that Normalize.css sets for the `body`.
 */
-/* line 71, components/_grid.scss */
+/* line 71, simple/_grid.scss */
 .pure-g [class*="pure-u"] {
   font-family: sans-serif;
 }
 
-/* line 102, components/_grid.scss */
+/* line 102, simple/_grid.scss */
 .pure-u-1,
 .pure-u-1-2,
 .pure-u-1-3,
@@ -1468,177 +2371,178 @@ this the same font stack that Normalize.css sets for the `body`.
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 0 40px;
 }
 
-/* line 113, components/_grid.scss */
+/* line 114, simple/_grid.scss */
 .pure-u-1 {
   width: 100%;
 }
 
-/* line 117, components/_grid.scss */
+/* line 118, simple/_grid.scss */
 .pure-u-1-2 {
   width: 50%;
   *width: 49.969%;
 }
 
-/* line 122, components/_grid.scss */
+/* line 123, simple/_grid.scss */
 .pure-u-1-3 {
   width: 33.3333%;
   *width: 33.3023%;
 }
 
-/* line 127, components/_grid.scss */
+/* line 128, simple/_grid.scss */
 .pure-u-2-3 {
   width: 66.6667%;
   *width: 66.6357%;
 }
 
-/* line 132, components/_grid.scss */
+/* line 133, simple/_grid.scss */
 .pure-u-1-4 {
   width: 25%;
   *width: 24.969%;
 }
 
-/* line 137, components/_grid.scss */
+/* line 138, simple/_grid.scss */
 .pure-u-3-4 {
   width: 75%;
   *width: 74.969%;
 }
 
-/* line 142, components/_grid.scss */
+/* line 143, simple/_grid.scss */
 .pure-u-1-5 {
   width: 20%;
   *width: 19.969%;
 }
 
-/* line 147, components/_grid.scss */
+/* line 148, simple/_grid.scss */
 .pure-u-2-5 {
   width: 40%;
   *width: 39.969%;
 }
 
-/* line 152, components/_grid.scss */
+/* line 153, simple/_grid.scss */
 .pure-u-3-5 {
   width: 60%;
   *width: 59.969%;
 }
 
-/* line 157, components/_grid.scss */
+/* line 158, simple/_grid.scss */
 .pure-u-4-5 {
   width: 80%;
   *width: 79.969%;
 }
 
-/* line 162, components/_grid.scss */
+/* line 163, simple/_grid.scss */
 .pure-u-1-6 {
   width: 16.6667%;
   *width: 16.6357%;
 }
 
-/* line 167, components/_grid.scss */
+/* line 168, simple/_grid.scss */
 .pure-u-5-6 {
   width: 83.3333%;
   *width: 83.3023%;
 }
 
-/* line 172, components/_grid.scss */
+/* line 173, simple/_grid.scss */
 .pure-u-1-8 {
   width: 12.5%;
   *width: 12.469%;
 }
 
-/* line 177, components/_grid.scss */
+/* line 178, simple/_grid.scss */
 .pure-u-3-8 {
   width: 37.5%;
   *width: 37.469%;
 }
 
-/* line 182, components/_grid.scss */
+/* line 183, simple/_grid.scss */
 .pure-u-5-8 {
   width: 62.5%;
   *width: 62.469%;
 }
 
-/* line 187, components/_grid.scss */
+/* line 188, simple/_grid.scss */
 .pure-u-7-8 {
   width: 87.5%;
   *width: 87.469%;
 }
 
-/* line 192, components/_grid.scss */
+/* line 193, simple/_grid.scss */
 .pure-u-1-12 {
   width: 8.3333%;
   *width: 8.3023%;
 }
 
-/* line 197, components/_grid.scss */
+/* line 198, simple/_grid.scss */
 .pure-u-5-12 {
   width: 41.6667%;
   *width: 41.6357%;
 }
 
-/* line 202, components/_grid.scss */
+/* line 203, simple/_grid.scss */
 .pure-u-7-12 {
   width: 58.3333%;
   *width: 58.3023%;
 }
 
-/* line 207, components/_grid.scss */
+/* line 208, simple/_grid.scss */
 .pure-u-11-12 {
   width: 91.6667%;
   *width: 91.6357%;
 }
 
-/* line 212, components/_grid.scss */
+/* line 213, simple/_grid.scss */
 .pure-u-1-24 {
   width: 4.1667%;
   *width: 4.1357%;
 }
 
-/* line 217, components/_grid.scss */
+/* line 218, simple/_grid.scss */
 .pure-u-5-24 {
   width: 20.8333%;
   *width: 20.8023%;
 }
 
-/* line 222, components/_grid.scss */
+/* line 223, simple/_grid.scss */
 .pure-u-7-24 {
   width: 29.1667%;
   *width: 29.1357%;
 }
 
-/* line 227, components/_grid.scss */
+/* line 228, simple/_grid.scss */
 .pure-u-11-24 {
   width: 45.8333%;
   *width: 45.8023%;
 }
 
-/* line 232, components/_grid.scss */
+/* line 233, simple/_grid.scss */
 .pure-u-13-24 {
   width: 54.1667%;
   *width: 54.1357%;
 }
 
-/* line 237, components/_grid.scss */
+/* line 238, simple/_grid.scss */
 .pure-u-17-24 {
   width: 70.8333%;
   *width: 70.8023%;
 }
 
-/* line 242, components/_grid.scss */
+/* line 243, simple/_grid.scss */
 .pure-u-19-24 {
   width: 79.1667%;
   *width: 79.1357%;
 }
 
-/* line 247, components/_grid.scss */
+/* line 248, simple/_grid.scss */
 .pure-u-23-24 {
   width: 95.8333%;
   *width: 95.8023%;
 }
 
 /*csslint regex-selectors:false, known-properties:false, duplicate-properties:false*/
-/* line 254, components/_grid.scss */
+/* line 255, simple/_grid.scss */
 .pure-g-r {
   letter-spacing: -0.31em;
   *letter-spacing: normal;
@@ -1677,7 +2581,7 @@ this the same font stack that Normalize.css sets for the `body`.
    The ".opera-only" selector is used to prevent actual prefocus styling
    and is not required in markup.
 */
-/* line 297, components/_grid.scss */
+/* line 298, simple/_grid.scss */
 .opera-only :-o-prefocus,
 .pure-g-r {
   word-spacing: -0.43em;
@@ -1687,69 +2591,69 @@ this the same font stack that Normalize.css sets for the `body`.
 Resets the font family back to the OS/browser's default sans-serif font,
 this the same font stack that Normalize.css sets for the `body`.
 */
-/* line 305, components/_grid.scss */
+/* line 306, simple/_grid.scss */
 .pure-g-r [class*="pure-u"] {
   font-family: sans-serif;
 }
 
-/* line 309, components/_grid.scss */
+/* line 310, simple/_grid.scss */
 .pure-g-r img {
   max-width: 100%;
   height: auto;
 }
 
 @media (min-width: 980px) {
-  /* line 315, components/_grid.scss */
+  /* line 316, simple/_grid.scss */
   .pure-visible-phone {
     display: none;
   }
 
-  /* line 318, components/_grid.scss */
+  /* line 319, simple/_grid.scss */
   .pure-visible-tablet {
     display: none;
   }
 
-  /* line 321, components/_grid.scss */
+  /* line 322, simple/_grid.scss */
   .pure-hidden-desktop {
     display: none;
   }
 }
 @media (max-width: 480px) {
-  /* line 328, components/_grid.scss */
+  /* line 329, simple/_grid.scss */
   .pure-g-r > .pure-u,
   .pure-g-r > [class*="pure-u-"] {
     width: 100%;
   }
 }
 @media (max-width: 767px) {
-  /* line 335, components/_grid.scss */
+  /* line 336, simple/_grid.scss */
   .pure-g-r > .pure-u,
   .pure-g-r > [class*="pure-u-"] {
     width: 100%;
   }
 
-  /* line 338, components/_grid.scss */
+  /* line 339, simple/_grid.scss */
   .pure-hidden-phone {
     display: none;
   }
 
-  /* line 341, components/_grid.scss */
+  /* line 342, simple/_grid.scss */
   .pure-visible-desktop {
     display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 347, components/_grid.scss */
+  /* line 348, simple/_grid.scss */
   .pure-hidden-tablet {
     display: none;
   }
 
-  /* line 350, components/_grid.scss */
+  /* line 351, simple/_grid.scss */
   .pure-visible-desktop {
     display: none;
   }
 }
-/* line 4, components/_icons.scss */
+/* line 4, simple/_icons.scss */
 [class^="icon-"],
 [class*=" icon-"],
 [class^="icon-white"],
@@ -1764,904 +2668,994 @@ this the same font stack that Normalize.css sets for the `body`.
   background-repeat: no-repeat;
 }
 
-/* line 14, components/_icons.scss */
+/* line 14, simple/_icons.scss */
 .icon-white {
   background-image: url("/images/icons-white.png");
 }
 
-/* line 18, components/_icons.scss */
+/* line 18, simple/_icons.scss */
 .icon-glass {
   background-position: 0 0;
 }
 
-/* line 22, components/_icons.scss */
+/* line 22, simple/_icons.scss */
 .icon-music {
   background-position: -24px 0;
 }
 
-/* line 26, components/_icons.scss */
+/* line 26, simple/_icons.scss */
 .icon-search {
   background-position: -48px 0;
 }
 
-/* line 30, components/_icons.scss */
+/* line 30, simple/_icons.scss */
 .icon-envelope {
   background-position: -72px 0;
 }
 
-/* line 34, components/_icons.scss */
+/* line 34, simple/_icons.scss */
 .icon-heart {
   background-position: -96px 0;
 }
 
-/* line 38, components/_icons.scss */
+/* line 38, simple/_icons.scss */
 .icon-star {
   background-position: -120px 0;
 }
 
-/* line 42, components/_icons.scss */
+/* line 42, simple/_icons.scss */
 .icon-star-empty {
   background-position: -144px 0;
 }
 
-/* line 46, components/_icons.scss */
+/* line 46, simple/_icons.scss */
 .icon-user {
   background-position: -168px 0;
 }
 
-/* line 50, components/_icons.scss */
+/* line 50, simple/_icons.scss */
 .icon-film {
   background-position: -192px 0;
 }
 
-/* line 54, components/_icons.scss */
+/* line 54, simple/_icons.scss */
 .icon-th-large {
   background-position: -216px 0;
 }
 
-/* line 58, components/_icons.scss */
+/* line 58, simple/_icons.scss */
 .icon-th {
   background-position: -240px 0;
 }
 
-/* line 62, components/_icons.scss */
+/* line 62, simple/_icons.scss */
 .icon-th-list {
   background-position: -264px 0;
 }
 
-/* line 66, components/_icons.scss */
+/* line 66, simple/_icons.scss */
 .icon-ok {
   background-position: -288px 0;
 }
 
-/* line 70, components/_icons.scss */
+/* line 70, simple/_icons.scss */
 .icon-remove {
   background-position: -312px 0;
 }
 
-/* line 74, components/_icons.scss */
+/* line 74, simple/_icons.scss */
 .icon-zoom-in {
   background-position: -336px 0;
 }
 
-/* line 78, components/_icons.scss */
+/* line 78, simple/_icons.scss */
 .icon-zoom-out {
   background-position: -360px 0;
 }
 
-/* line 82, components/_icons.scss */
+/* line 82, simple/_icons.scss */
 .icon-off {
   background-position: -384px 0;
 }
 
-/* line 86, components/_icons.scss */
+/* line 86, simple/_icons.scss */
 .icon-signal {
   background-position: -408px 0;
 }
 
-/* line 90, components/_icons.scss */
+/* line 90, simple/_icons.scss */
 .icon-cog {
   background-position: -432px 0;
 }
 
-/* line 94, components/_icons.scss */
+/* line 94, simple/_icons.scss */
 .icon-trash {
   background-position: -456px 0;
 }
 
-/* line 98, components/_icons.scss */
+/* line 98, simple/_icons.scss */
 .icon-home {
   background-position: 0 -24px;
 }
 
-/* line 102, components/_icons.scss */
+/* line 102, simple/_icons.scss */
 .icon-file {
   background-position: -24px -24px;
 }
 
-/* line 106, components/_icons.scss */
+/* line 106, simple/_icons.scss */
 .icon-time {
   background-position: -48px -24px;
 }
 
-/* line 110, components/_icons.scss */
+/* line 110, simple/_icons.scss */
 .icon-road {
   background-position: -72px -24px;
 }
 
-/* line 114, components/_icons.scss */
+/* line 114, simple/_icons.scss */
 .icon-download-alt {
   background-position: -96px -24px;
 }
 
-/* line 118, components/_icons.scss */
+/* line 118, simple/_icons.scss */
 .icon-download {
   background-position: -120px -24px;
 }
 
-/* line 122, components/_icons.scss */
+/* line 122, simple/_icons.scss */
 .icon-upload {
   background-position: -144px -24px;
 }
 
-/* line 126, components/_icons.scss */
+/* line 126, simple/_icons.scss */
 .icon-inbox {
   background-position: -168px -24px;
 }
 
-/* line 130, components/_icons.scss */
+/* line 130, simple/_icons.scss */
 .icon-play-circle {
   background-position: -192px -24px;
 }
 
-/* line 134, components/_icons.scss */
+/* line 134, simple/_icons.scss */
 .icon-repeat {
   background-position: -216px -24px;
 }
 
-/* line 138, components/_icons.scss */
+/* line 138, simple/_icons.scss */
 .icon-refresh {
   background-position: -240px -24px;
 }
 
-/* line 142, components/_icons.scss */
+/* line 142, simple/_icons.scss */
 .icon-list-alt {
   background-position: -264px -24px;
 }
 
-/* line 146, components/_icons.scss */
+/* line 146, simple/_icons.scss */
 .icon-lock {
   background-position: -287px -24px;
 }
 
-/* line 150, components/_icons.scss */
+/* line 150, simple/_icons.scss */
 .icon-flag {
   background-position: -312px -24px;
 }
 
-/* line 154, components/_icons.scss */
+/* line 154, simple/_icons.scss */
 .icon-headphones {
   background-position: -336px -24px;
 }
 
-/* line 158, components/_icons.scss */
+/* line 158, simple/_icons.scss */
 .icon-volume-off {
   background-position: -360px -24px;
 }
 
-/* line 162, components/_icons.scss */
+/* line 162, simple/_icons.scss */
 .icon-volume-down {
   background-position: -384px -24px;
 }
 
-/* line 166, components/_icons.scss */
+/* line 166, simple/_icons.scss */
 .icon-volume-up {
   background-position: -408px -24px;
 }
 
-/* line 170, components/_icons.scss */
+/* line 170, simple/_icons.scss */
 .icon-qrcode {
   background-position: -432px -24px;
 }
 
-/* line 174, components/_icons.scss */
+/* line 174, simple/_icons.scss */
 .icon-barcode {
   background-position: -456px -24px;
 }
 
-/* line 178, components/_icons.scss */
+/* line 178, simple/_icons.scss */
 .icon-tag {
   background-position: 0 -48px;
 }
 
-/* line 182, components/_icons.scss */
+/* line 182, simple/_icons.scss */
 .icon-tags {
   background-position: -25px -48px;
 }
 
-/* line 186, components/_icons.scss */
+/* line 186, simple/_icons.scss */
 .icon-book {
   background-position: -48px -48px;
 }
 
-/* line 190, components/_icons.scss */
+/* line 190, simple/_icons.scss */
 .icon-bookmark {
   background-position: -72px -48px;
 }
 
-/* line 194, components/_icons.scss */
+/* line 194, simple/_icons.scss */
 .icon-print {
   background-position: -96px -48px;
 }
 
-/* line 198, components/_icons.scss */
+/* line 198, simple/_icons.scss */
 .icon-camera {
   background-position: -120px -48px;
 }
 
-/* line 202, components/_icons.scss */
+/* line 202, simple/_icons.scss */
 .icon-font {
   background-position: -144px -48px;
 }
 
-/* line 206, components/_icons.scss */
+/* line 206, simple/_icons.scss */
 .icon-bold {
   background-position: -167px -48px;
 }
 
-/* line 210, components/_icons.scss */
+/* line 210, simple/_icons.scss */
 .icon-italic {
   background-position: -192px -48px;
 }
 
-/* line 214, components/_icons.scss */
+/* line 214, simple/_icons.scss */
 .icon-text-height {
   background-position: -216px -48px;
 }
 
-/* line 218, components/_icons.scss */
+/* line 218, simple/_icons.scss */
 .icon-text-width {
   background-position: -240px -48px;
 }
 
-/* line 222, components/_icons.scss */
+/* line 222, simple/_icons.scss */
 .icon-align-left {
   background-position: -264px -48px;
 }
 
-/* line 226, components/_icons.scss */
+/* line 226, simple/_icons.scss */
 .icon-align-center {
   background-position: -288px -48px;
 }
 
-/* line 230, components/_icons.scss */
+/* line 230, simple/_icons.scss */
 .icon-align-right {
   background-position: -312px -48px;
 }
 
-/* line 234, components/_icons.scss */
+/* line 234, simple/_icons.scss */
 .icon-align-justify {
   background-position: -336px -48px;
 }
 
-/* line 238, components/_icons.scss */
+/* line 238, simple/_icons.scss */
 .icon-list {
   background-position: -360px -48px;
 }
 
-/* line 242, components/_icons.scss */
+/* line 242, simple/_icons.scss */
 .icon-indent-left {
   background-position: -384px -48px;
 }
 
-/* line 246, components/_icons.scss */
+/* line 246, simple/_icons.scss */
 .icon-indent-right {
   background-position: -408px -48px;
 }
 
-/* line 250, components/_icons.scss */
+/* line 250, simple/_icons.scss */
 .icon-facetime-video {
   background-position: -432px -48px;
 }
 
-/* line 254, components/_icons.scss */
+/* line 254, simple/_icons.scss */
 .icon-picture {
   background-position: -456px -48px;
 }
 
-/* line 258, components/_icons.scss */
+/* line 258, simple/_icons.scss */
 .icon-pencil {
   background-position: 0 -72px;
 }
 
-/* line 262, components/_icons.scss */
+/* line 262, simple/_icons.scss */
 .icon-map-marker {
   background-position: -24px -72px;
 }
 
-/* line 266, components/_icons.scss */
+/* line 266, simple/_icons.scss */
 .icon-adjust {
   background-position: -48px -72px;
 }
 
-/* line 270, components/_icons.scss */
+/* line 270, simple/_icons.scss */
 .icon-tint {
   background-position: -72px -72px;
 }
 
-/* line 274, components/_icons.scss */
+/* line 274, simple/_icons.scss */
 .icon-edit {
   background-position: -96px -72px;
 }
 
-/* line 278, components/_icons.scss */
+/* line 278, simple/_icons.scss */
 .icon-share {
   background-position: -120px -72px;
 }
 
-/* line 282, components/_icons.scss */
+/* line 282, simple/_icons.scss */
 .icon-check {
   background-position: -144px -72px;
 }
 
-/* line 286, components/_icons.scss */
+/* line 286, simple/_icons.scss */
 .icon-move {
   background-position: -168px -72px;
 }
 
-/* line 290, components/_icons.scss */
+/* line 290, simple/_icons.scss */
 .icon-step-backward {
   background-position: -192px -72px;
 }
 
-/* line 294, components/_icons.scss */
+/* line 294, simple/_icons.scss */
 .icon-fast-backward {
   background-position: -216px -72px;
 }
 
-/* line 298, components/_icons.scss */
+/* line 298, simple/_icons.scss */
 .icon-backward {
   background-position: -240px -72px;
 }
 
-/* line 302, components/_icons.scss */
+/* line 302, simple/_icons.scss */
 .icon-play {
   background-position: -264px -72px;
 }
 
-/* line 306, components/_icons.scss */
+/* line 306, simple/_icons.scss */
 .icon-pause {
   background-position: -288px -72px;
 }
 
-/* line 310, components/_icons.scss */
+/* line 310, simple/_icons.scss */
 .icon-stop {
   background-position: -312px -72px;
 }
 
-/* line 314, components/_icons.scss */
+/* line 314, simple/_icons.scss */
 .icon-forward {
   background-position: -336px -72px;
 }
 
-/* line 318, components/_icons.scss */
+/* line 318, simple/_icons.scss */
 .icon-fast-forward {
   background-position: -360px -72px;
 }
 
-/* line 322, components/_icons.scss */
+/* line 322, simple/_icons.scss */
 .icon-step-forward {
   background-position: -384px -72px;
 }
 
-/* line 326, components/_icons.scss */
+/* line 326, simple/_icons.scss */
 .icon-eject {
   background-position: -408px -72px;
 }
 
-/* line 330, components/_icons.scss */
+/* line 330, simple/_icons.scss */
 .icon-chevron-left {
   background-position: -432px -72px;
 }
 
-/* line 334, components/_icons.scss */
+/* line 334, simple/_icons.scss */
 .icon-chevron-right {
   background-position: -456px -72px;
 }
 
-/* line 338, components/_icons.scss */
+/* line 338, simple/_icons.scss */
 .icon-plus-sign {
   background-position: 0 -96px;
 }
 
-/* line 342, components/_icons.scss */
+/* line 342, simple/_icons.scss */
 .icon-minus-sign {
   background-position: -24px -96px;
 }
 
-/* line 346, components/_icons.scss */
+/* line 346, simple/_icons.scss */
 .icon-remove-sign {
   background-position: -48px -96px;
 }
 
-/* line 350, components/_icons.scss */
+/* line 350, simple/_icons.scss */
 .icon-ok-sign {
   background-position: -72px -96px;
 }
 
-/* line 354, components/_icons.scss */
+/* line 354, simple/_icons.scss */
 .icon-question-sign {
   background-position: -96px -96px;
 }
 
-/* line 358, components/_icons.scss */
+/* line 358, simple/_icons.scss */
 .icon-info-sign {
   background-position: -120px -96px;
 }
 
-/* line 362, components/_icons.scss */
+/* line 362, simple/_icons.scss */
 .icon-screenshot {
   background-position: -144px -96px;
 }
 
-/* line 366, components/_icons.scss */
+/* line 366, simple/_icons.scss */
 .icon-remove-circle {
   background-position: -168px -96px;
 }
 
-/* line 370, components/_icons.scss */
+/* line 370, simple/_icons.scss */
 .icon-ok-circle {
   background-position: -192px -96px;
 }
 
-/* line 374, components/_icons.scss */
+/* line 374, simple/_icons.scss */
 .icon-ban-circle {
   background-position: -216px -96px;
 }
 
-/* line 378, components/_icons.scss */
+/* line 378, simple/_icons.scss */
 .icon-arrow-left {
   background-position: -240px -96px;
 }
 
-/* line 382, components/_icons.scss */
+/* line 382, simple/_icons.scss */
 .icon-arrow-right {
   background-position: -264px -96px;
 }
 
-/* line 386, components/_icons.scss */
+/* line 386, simple/_icons.scss */
 .icon-arrow-up {
   background-position: -289px -96px;
 }
 
-/* line 390, components/_icons.scss */
+/* line 390, simple/_icons.scss */
 .icon-arrow-down {
   background-position: -312px -96px;
 }
 
-/* line 394, components/_icons.scss */
+/* line 394, simple/_icons.scss */
 .icon-share-alt {
   background-position: -336px -96px;
 }
 
-/* line 398, components/_icons.scss */
+/* line 398, simple/_icons.scss */
 .icon-resize-full {
   background-position: -360px -96px;
 }
 
-/* line 402, components/_icons.scss */
+/* line 402, simple/_icons.scss */
 .icon-resize-small {
   background-position: -384px -96px;
 }
 
-/* line 406, components/_icons.scss */
+/* line 406, simple/_icons.scss */
 .icon-plus {
   background-position: -408px -96px;
 }
 
-/* line 410, components/_icons.scss */
+/* line 410, simple/_icons.scss */
 .icon-minus {
   background-position: -433px -96px;
 }
 
-/* line 414, components/_icons.scss */
+/* line 414, simple/_icons.scss */
 .icon-asterisk {
   background-position: -456px -96px;
 }
 
-/* line 418, components/_icons.scss */
+/* line 418, simple/_icons.scss */
 .icon-exclamation-sign {
   background-position: 0 -120px;
 }
 
-/* line 422, components/_icons.scss */
+/* line 422, simple/_icons.scss */
 .icon-gift {
   background-position: -24px -120px;
 }
 
-/* line 426, components/_icons.scss */
+/* line 426, simple/_icons.scss */
 .icon-leaf {
   background-position: -48px -120px;
 }
 
-/* line 430, components/_icons.scss */
+/* line 430, simple/_icons.scss */
 .icon-fire {
   background-position: -72px -120px;
 }
 
-/* line 434, components/_icons.scss */
+/* line 434, simple/_icons.scss */
 .icon-eye-open {
   background-position: -96px -120px;
 }
 
-/* line 438, components/_icons.scss */
+/* line 438, simple/_icons.scss */
 .icon-eye-close {
   background-position: -120px -120px;
 }
 
-/* line 442, components/_icons.scss */
+/* line 442, simple/_icons.scss */
 .icon-warning-sign {
   background-position: -144px -120px;
 }
 
-/* line 446, components/_icons.scss */
+/* line 446, simple/_icons.scss */
 .icon-plane {
   background-position: -168px -120px;
 }
 
-/* line 450, components/_icons.scss */
+/* line 450, simple/_icons.scss */
 .icon-calendar {
   background-position: -192px -120px;
 }
 
-/* line 454, components/_icons.scss */
+/* line 454, simple/_icons.scss */
 .icon-random {
   width: 16px;
   background-position: -216px -120px;
 }
 
-/* line 459, components/_icons.scss */
+/* line 459, simple/_icons.scss */
 .icon-comment {
   background-position: -240px -120px;
 }
 
-/* line 463, components/_icons.scss */
+/* line 463, simple/_icons.scss */
 .icon-magnet {
   background-position: -264px -120px;
 }
 
-/* line 467, components/_icons.scss */
+/* line 467, simple/_icons.scss */
 .icon-chevron-up {
   background-position: -288px -120px;
 }
 
-/* line 471, components/_icons.scss */
+/* line 471, simple/_icons.scss */
 .icon-chevron-down {
   background-position: -313px -119px;
 }
 
-/* line 475, components/_icons.scss */
+/* line 475, simple/_icons.scss */
 .icon-retweet {
   background-position: -336px -120px;
 }
 
-/* line 479, components/_icons.scss */
+/* line 479, simple/_icons.scss */
 .icon-shopping-cart {
   background-position: -360px -120px;
 }
 
-/* line 483, components/_icons.scss */
+/* line 483, simple/_icons.scss */
 .icon-folder-close {
   width: 16px;
   background-position: -384px -120px;
 }
 
-/* line 488, components/_icons.scss */
+/* line 488, simple/_icons.scss */
 .icon-folder-open {
   width: 16px;
   background-position: -408px -120px;
 }
 
-/* line 493, components/_icons.scss */
+/* line 493, simple/_icons.scss */
 .icon-resize-vertical {
   background-position: -432px -119px;
 }
 
-/* line 497, components/_icons.scss */
+/* line 497, simple/_icons.scss */
 .icon-resize-horizontal {
   background-position: -456px -118px;
 }
 
-/* line 501, components/_icons.scss */
+/* line 501, simple/_icons.scss */
 .icon-hdd {
   background-position: 0 -144px;
 }
 
-/* line 505, components/_icons.scss */
+/* line 505, simple/_icons.scss */
 .icon-bullhorn {
   background-position: -24px -144px;
 }
 
-/* line 509, components/_icons.scss */
+/* line 509, simple/_icons.scss */
 .icon-bell {
   background-position: -48px -144px;
 }
 
-/* line 513, components/_icons.scss */
+/* line 513, simple/_icons.scss */
 .icon-certificate {
   background-position: -72px -144px;
 }
 
-/* line 517, components/_icons.scss */
+/* line 517, simple/_icons.scss */
 .icon-thumbs-up {
   background-position: -96px -144px;
 }
 
-/* line 521, components/_icons.scss */
+/* line 521, simple/_icons.scss */
 .icon-thumbs-down {
   background-position: -120px -144px;
 }
 
-/* line 525, components/_icons.scss */
+/* line 525, simple/_icons.scss */
 .icon-hand-right {
   background-position: -144px -144px;
 }
 
-/* line 529, components/_icons.scss */
+/* line 529, simple/_icons.scss */
 .icon-hand-left {
   background-position: -168px -144px;
 }
 
-/* line 533, components/_icons.scss */
+/* line 533, simple/_icons.scss */
 .icon-hand-up {
   background-position: -192px -144px;
 }
 
-/* line 537, components/_icons.scss */
+/* line 537, simple/_icons.scss */
 .icon-hand-down {
   background-position: -216px -144px;
 }
 
-/* line 541, components/_icons.scss */
+/* line 541, simple/_icons.scss */
 .icon-circle-arrow-right {
   background-position: -240px -144px;
 }
 
-/* line 545, components/_icons.scss */
+/* line 545, simple/_icons.scss */
 .icon-circle-arrow-left {
   background-position: -264px -144px;
 }
 
-/* line 549, components/_icons.scss */
+/* line 549, simple/_icons.scss */
 .icon-circle-arrow-up {
   background-position: -288px -144px;
 }
 
-/* line 553, components/_icons.scss */
+/* line 553, simple/_icons.scss */
 .icon-circle-arrow-down {
   background-position: -312px -144px;
 }
 
-/* line 557, components/_icons.scss */
+/* line 557, simple/_icons.scss */
 .icon-globe {
   background-position: -336px -144px;
 }
 
-/* line 561, components/_icons.scss */
+/* line 561, simple/_icons.scss */
 .icon-wrench {
   background-position: -360px -144px;
 }
 
-/* line 565, components/_icons.scss */
+/* line 565, simple/_icons.scss */
 .icon-tasks {
   background-position: -384px -144px;
 }
 
-/* line 569, components/_icons.scss */
+/* line 569, simple/_icons.scss */
 .icon-filter {
   background-position: -408px -144px;
 }
 
-/* line 573, components/_icons.scss */
+/* line 573, simple/_icons.scss */
 .icon-briefcase {
   background-position: -432px -144px;
 }
 
-/* line 577, components/_icons.scss */
+/* line 577, simple/_icons.scss */
 .icon-fullscreen {
   background-position: -456px -144px;
 }
 
-/* line 1, components/_progressBar.scss */
-.progress {
-  overflow: hidden;
-  height: 20px;
+/* line 3, simple/_menu.scss */
+.breadcrumbs {
+  line-height: 35px;
+  padding: 0 15px;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  background-image: -moz-linear-gradient(white, whitesmoke);
+  /* FF 3.6+ */
+  background-image: -webkit-linear-gradient(white, whitesmoke);
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -o-linear-gradient(white, whitesmoke);
+  /* Opera 11.10 */
+  background-image: linear-gradient(#ffffff, #f5f5f5);
+  /* the standard */
+}
+/* line 4, simple/_menu.scss */
+.breadcrumbs > li {
+  display: inline-block;
+}
+/* line 11, simple/_menu.scss */
+.breadcrumbs em {
+  margin: 0 5px;
+  color: #999;
+}
+
+/* line 1, simple/_buttons.scss */
+.btn {
+  color: #333333;
   background-color: white;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
-}
-/* line 8, components/_progressBar.scss */
-.progress:last-child {
-  margin: 0;
-}
-
-/* line 13, components/_progressBar.scss */
-.progress .bar {
-  float: left;
-  width: 0%;
-  height: 100%;
+  border-color: #f2f2f2;
+  display: inline-block;
   text-align: center;
-  background-color: #0e90d2;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -webkit-transition: width 0.6s ease;
-  transition: width 0.6s ease;
-}
-
-/* line 23, components/_progressBar.scss */
-.progress.striped .bar {
-  background-color: #149bdf;
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  -webkit-background-size: 40px 40px;
-  -moz-background-size: 40px 40px;
-  -o-background-size: 40px 40px;
-  background-size: 40px 40px;
-}
-
-/* line 30, components/_progressBar.scss */
-.progress.active .bar {
-  -webkit-animation: progress-bar-stripes 2s linear infinite;
-  -moz-animation: progress-bar-stripes 2s linear infinite;
-  -ms-animation: progress-bar-stripes 2s linear infinite;
-  -o-animation: progress-bar-stripes 2s linear infinite;
-  animation: progress-bar-stripes 2s linear infinite;
-}
-
-@-webkit-keyframes progress-bar-stripes {
-  /* line 40, components/_progressBar.scss */
-  from {
-    background-position: 40px 0;
-  }
-
-  /* line 43, components/_progressBar.scss */
-  to {
-    background-position: 0 0;
-  }
-}
-
-@-moz-keyframes progress-bar-stripes {
-  /* line 49, components/_progressBar.scss */
-  from {
-    background-position: 40px 0;
-  }
-
-  /* line 52, components/_progressBar.scss */
-  to {
-    background-position: 0 0;
-  }
-}
-
-@-ms-keyframes progress-bar-stripes {
-  /* line 58, components/_progressBar.scss */
-  from {
-    background-position: 40px 0;
-  }
-
-  /* line 61, components/_progressBar.scss */
-  to {
-    background-position: 0 0;
-  }
-}
-
-@-o-keyframes progress-bar-stripes {
-  /* line 67, components/_progressBar.scss */
-  from {
-    background-position: 0 0;
-  }
-
-  /* line 70, components/_progressBar.scss */
-  to {
-    background-position: 40px 0;
-  }
-}
-
-@keyframes progress-bar-stripes {
-  /* line 76, components/_progressBar.scss */
-  from {
-    background-position: 40px 0;
-  }
-
-  /* line 79, components/_progressBar.scss */
-  to {
-    background-position: 0 0;
-  }
-}
-
-/* line 1, components/_backToTop.scss */
-#back-to-top {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
+  vertical-align: middle;
   cursor: pointer;
-  border-bottom: solid 30px green;
-  border-top: solid 30px transparent;
-  border-right: solid 30px transparent;
-  border-left: solid 30px transparent;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 63, base/_mixins.scss */
+.btn:hover, .btn:focus, .btn:active, .btn.active {
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #d4d4d4;
+}
+/* line 74, base/_mixins.scss */
+.btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled:active, .btn.disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled]:active, .btn[disabled].active {
+  cursor: default;
+  background-color: white;
+  border-color: white;
+}
+/* line 80, base/_mixins.scss */
+.btn.block {
+  display: block;
+}
+
+/* line 4, simple/_buttons.scss */
+.btn-info {
+  color: white;
+  background-color: #3a87ad;
+  border-color: #34789a;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 63, base/_mixins.scss */
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
+  color: white;
+  background-color: #306f8e;
+  border-color: #24546c;
+}
+/* line 74, base/_mixins.scss */
+.btn-info.disabled, .btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled:active, .btn-info.disabled.active, .btn-info[disabled], .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled]:active, .btn-info[disabled].active {
+  cursor: default;
+  background-color: #5ca4c8;
+  border-color: #77b3d1;
+}
+/* line 80, base/_mixins.scss */
+.btn-info.block {
+  display: block;
+}
+
+/* line 7, simple/_buttons.scss */
+.btn-success {
+  color: white;
+  background-color: #468847;
+  border-color: #3d773e;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 63, base/_mixins.scss */
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
+  color: white;
+  background-color: #386d39;
+  border-color: #294f29;
+}
+/* line 74, base/_mixins.scss */
+.btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success[disabled].active {
+  cursor: default;
+  background-color: #5fac60;
+  border-color: #76b977;
+}
+/* line 80, base/_mixins.scss */
+.btn-success.block {
+  display: block;
+}
+
+/* line 10, simple/_buttons.scss */
+.btn-warning {
+  color: white;
+  background-color: #c09853;
+  border-color: #b78c43;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 63, base/_mixins.scss */
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active {
+  color: white;
+  background-color: #ab843f;
+  border-color: #8a6a32;
+}
+/* line 74, base/_mixins.scss */
+.btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled]:active, .btn-warning[disabled].active {
+  cursor: default;
+  background-color: #d0b380;
+  border-color: #dac29a;
+}
+/* line 80, base/_mixins.scss */
+.btn-warning.block {
+  display: block;
+}
+
+/* line 13, simple/_buttons.scss */
+.btn-error {
+  color: white;
+  background-color: #b94a48;
+  border-color: #a74240;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 63, base/_mixins.scss */
+.btn-error:hover, .btn-error:focus, .btn-error:active, .btn-error.active {
+  color: white;
+  background-color: #9c3e3c;
+  border-color: #7b302f;
+}
+/* line 74, base/_mixins.scss */
+.btn-error.disabled, .btn-error.disabled:hover, .btn-error.disabled:focus, .btn-error.disabled:active, .btn-error.disabled.active, .btn-error[disabled], .btn-error[disabled]:hover, .btn-error[disabled]:focus, .btn-error[disabled]:active, .btn-error[disabled].active {
+  cursor: default;
+  background-color: #ca7674;
+  border-color: #d48f8e;
+}
+/* line 80, base/_mixins.scss */
+.btn-error.block {
+  display: block;
+}
+
+/* line 5, simple/_table.scss */
+.table {
+  width: 100%;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+/* line 8, simple/_table.scss */
+.table caption {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 1.2em;
+}
+/* line 14, simple/_table.scss */
+.table th {
+  font-weight: bold;
+}
+/* line 17, simple/_table.scss */
+.table th, .table td {
+  padding: 10px;
+  vertical-align: middle;
+}
+/* line 21, simple/_table.scss */
+.table td {
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border-right: none;
+  border-bottom: none;
+}
+/* line 28, simple/_table.scss */
+.table.table-hover tbody tr:hover {
+  background-color: #eeeeee;
 }
 
 /* ==========================================================================
    Layout (page-specified css)
    ========================================================================== */
 /* ==========================================================================
-   common css
+   variables css
    ========================================================================== */
-/* link */
-/* line 5, layout/_layout.scss */
-a {
-  color: #666666;
-  text-decoration: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-/* line 13, layout/_layout.scss */
-a:hover, a:focus, a:active, a.active {
-  color: #00bbd7;
-}
-
-/* custom margin and padding */
-/* line 19, layout/_layout.scss */
-.box-margin {
-  margin-top: 40px;
-}
-
 /* ==========================================================================
-   layout css
+   pages css
    ========================================================================== */
-/* line 31, layout/_layout.scss */
+/* line 13, pages/_layout.scss */
 body {
   background-color: white;
   color: #666666;
 }
 
-/* line 35, layout/_layout.scss */
-.wrapper {
-  width: 100%;
+/* aside */
+/* navigation */
+/* line 21, pages/_layout.scss */
+nav {
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #000000;
+  /* logo */
+  /* search */
 }
-
-/* line 38, layout/_layout.scss */
-.container {
-  margin: 40px auto 0;
-  border-bottom: 1px #dddddd solid;
-  padding-bottom: 40px;
+/* line 28, pages/_layout.scss */
+nav a {
+  color: #999999;
+  font-size: 1.2em;
+  display: block;
+  padding: 12px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-/* line 42, layout/_layout.scss */
-.container .pure-g > div {
-  padding: 0 40px;
+/* line 23, base/_mixins.scss */
+nav a:hover, nav a:focus, nav a:active {
+  text-indent: 10px;
 }
-
-/* logo */
-/* line 51, layout/_layout.scss */
-.logo {
+/* line 35, pages/_layout.scss */
+nav a .active {
+  background-color: #00bbd7;
+  color: white;
+  text-indent: 10px;
+}
+/* line 42, pages/_layout.scss */
+nav .logo {
   color: #00bbd7;
   font-size: 2em;
-  padding: 20px 10px;
+  padding: 15px 10px;
 }
-
-/* search */
-/* line 57, layout/_layout.scss */
-.search {
+/* line 48, pages/_layout.scss */
+nav .search {
   display: block;
   width: 100%;
   height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   padding: 0 10px;
   outline: none;
   border: none;
@@ -2670,74 +3664,63 @@ body {
   box-sizing: border-box;
   background-color: #dddddd;
 }
-/* line 67, layout/_layout.scss */
-.search:focus {
+/* line 58, pages/_layout.scss */
+nav .search:focus {
   background-color: white;
 }
 
-/* nav */
-/* navigation */
-/* line 78, layout/_layout.scss */
-nav {
-  width: 180px;
-  height: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background: #000000;
-}
-/* line 85, layout/_layout.scss */
-nav a {
-  color: #999999;
-  font-size: 1.2em;
-  display: block;
-  padding: 10px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-/* line 22, components/_mixins.scss */
-nav a:hover, nav a:focus, nav a:active {
-  text-indent: 10px;
-}
-/* line 92, layout/_layout.scss */
-nav a .active {
-  background-color: #00bbd7;
-  color: white;
-  text-indent: 10px;
-}
-
 /* main */
-/* line 100, layout/_layout.scss */
+/* line 64, pages/_layout.scss */
 main {
   padding-left: 180px;
 }
 
 /* header */
-/* line 104, layout/_layout.scss */
+/* line 68, pages/_layout.scss */
 header {
-  padding: 50px 0;
-  border-bottom: 1px #dddddd solid;
   text-align: center;
-}
-
-/* footer */
-/* line 110, layout/_layout.scss */
-footer {
-  text-align: center;
-  font-size: 0.8em;
-  color: #999999;
-  border-top: 1px solid #00bbd7;
-  padding: 15px 0px;
 }
 
 /* content */
-/* line 1, layout/_home-page.scss */
-#home {
-  animation: changeBg 3.5s ease-in-out infinite alternate;
-  -webkit-animation: changeBg 3.5s ease-in-out infinite alternate;
+/* line 72, pages/_layout.scss */
+article {
+  position: relative;
 }
-/* line 4, layout/_home-page.scss */
+
+/* footer */
+/* line 76, pages/_layout.scss */
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 1.4em;
+  color: #999999;
+  border-top: 1px solid #00bbd7;
+}
+
+/* ==========================================================================
+   common css
+   ========================================================================== */
+/* line 89, pages/_layout.scss */
+.container {
+  padding: 40px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* custom margin and padding */
+/* line 94, pages/_layout.scss */
+.box-margin {
+  margin-top: 40px;
+}
+
+/* line 1, pages/_home-page.scss */
+#home {
+  -webkit-animation: changeBg 3.5s ease-in-out infinite alternate;
+  -moz-animation: changeBg 3.5s ease-in-out infinite alternate;
+  -ms-animation: changeBg 3.5s ease-in-out infinite alternate;
+  -o-animation: changeBg 3.5s ease-in-out infinite alternate;
+  animation: changeBg 3.5s ease-in-out infinite alternate;
+}
+/* line 3, pages/_home-page.scss */
 #home header {
   position: absolute;
   top: 50%;
@@ -2751,15 +3734,18 @@ footer {
   padding: 0;
   border: none;
 }
-/* line 16, layout/_home-page.scss */
+/* line 15, pages/_home-page.scss */
 #home header .lightning {
   width: 200px;
   height: 240px;
-  background: url(../images/home-lightnight.png) no-repeat 0 0;
-  animation: changeOpacity 1s ease-in-out infinite alternate;
+  background: url(../images/home-lightnight.png) no-repeat;
   -webkit-animation: changeOpacity 1s ease-in-out infinite alternate;
+  -moz-animation: changeOpacity 1s ease-in-out infinite alternate;
+  -ms-animation: changeOpacity 1s ease-in-out infinite alternate;
+  -o-animation: changeOpacity 1s ease-in-out infinite alternate;
+  animation: changeOpacity 1s ease-in-out infinite alternate;
 }
-/* line 23, layout/_home-page.scss */
+/* line 21, pages/_home-page.scss */
 #home header h1 {
   position: absolute;
   bottom: -100px;
@@ -2768,11 +3754,11 @@ footer {
   text-align: center;
   cursor: pointer;
 }
-/* line 30, layout/_home-page.scss */
+/* line 28, pages/_home-page.scss */
 #home header h1.logo {
   font-size: 4em;
 }
-/* line 35, layout/_home-page.scss */
+/* line 33, pages/_home-page.scss */
 #home footer {
   background-color: transparent;
   position: absolute;
@@ -2783,451 +3769,68 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 47, layout/_home-page.scss */
+  /* line 45, pages/_home-page.scss */
   #home header {
     margin-top: -160px;
   }
-  /* line 49, layout/_home-page.scss */
+  /* line 47, pages/_home-page.scss */
   #home header .logo {
     bottom: -100px;
     font-size: 3em;
   }
 }
-@keyframes changeOpacity {
-  /* line 71, layout/_home-page.scss */
-  from {
-    opacity: 0.1;
-  }
-
-  /* line 72, layout/_home-page.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes changeOpacity {
-  /* line 76, layout/_home-page.scss */
-  from {
-    opacity: 0.1;
-  }
-
-  /* line 77, layout/_home-page.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes changeBg {
-  /* line 81, layout/_home-page.scss */
-  0% {
-    background: #ffffff;
-  }
-
-  /* line 82, layout/_home-page.scss */
-  10% {
-    background-image: radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-  }
-
-  /* line 89, layout/_home-page.scss */
-  15% {
-    background-image: radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-  }
-
-  /* line 96, layout/_home-page.scss */
-  20% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-  }
-
-  /* line 103, layout/_home-page.scss */
-  25% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, #d3d3d3 33%, #cdcdcd 70%, #cccccc 100%);
-  }
-
-  /* line 110, layout/_home-page.scss */
-  30% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-  }
-
-  /* line 117, layout/_home-page.scss */
-  35% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-  }
-
-  /* line 124, layout/_home-page.scss */
-  40% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-  }
-
-  /* line 131, layout/_home-page.scss */
-  45% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-  }
-
-  /* line 138, layout/_home-page.scss */
-  50% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-  }
-
-  /* line 145, layout/_home-page.scss */
-  55% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-  }
-
-  /* line 152, layout/_home-page.scss */
-  60% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-  }
-
-  /* line 159, layout/_home-page.scss */
-  65% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-  }
-
-  /* line 166, layout/_home-page.scss */
-  70% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, #d3d3d3 70%, #cccccc 100%);
-  }
-
-  /* line 173, layout/_home-page.scss */
-  75% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, #d3d3d3 70%, #cccccc 100%);
-  }
-
-  /* line 180, layout/_home-page.scss */
-  80% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-  }
-
-  /* line 187, layout/_home-page.scss */
-  85% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-  }
-
-  /* line 194, layout/_home-page.scss */
-  90% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-  }
-
-  /* line 201, layout/_home-page.scss */
-  95% {
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-  }
-
-  /* line 208, layout/_home-page.scss */
-  100% {
-    background-image: -o-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #ffffff 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-  }
-}
-
-@-webkit-keyframes changeBg {
-  /* line 218, layout/_home-page.scss */
-  0% {
-    background: #ffffff;
-  }
-
-  /* line 219, layout/_home-page.scss */
-  10% {
-    background-image: radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e5e5e5 12%, #cccccc 30%, #cccccc 70%, #cccccc 100%);
-  }
-
-  /* line 226, layout/_home-page.scss */
-  15% {
-    background-image: radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e6e6e6 12.5%, #cecece 31%, #cccccc 70%, #cccccc 100%);
-  }
-
-  /* line 233, layout/_home-page.scss */
-  20% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #e8e8e8 13%, #d1d1d1 32%, #cdcdcd 70%, #cccccc 100%);
-  }
-
-  /* line 240, layout/_home-page.scss */
-  25% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, lightgrey 33%, #cdcdcd 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #e9e9e9 13.5%, #d3d3d3 33%, #cdcdcd 70%, #cccccc 100%);
-  }
-
-  /* line 247, layout/_home-page.scss */
-  30% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #eaeaea 14%, #d6d6d6 34%, #cecece 70%, #cccccc 100%);
-  }
-
-  /* line 254, layout/_home-page.scss */
-  35% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #ebebeb 14.5%, #d8d8d8 34.5%, #cecece 70%, #cccccc 100%);
-  }
-
-  /* line 261, layout/_home-page.scss */
-  40% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #ededed 15%, #dbdbdb 35%, #cfcfcf 70%, #cccccc 100%);
-  }
-
-  /* line 268, layout/_home-page.scss */
-  45% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #eeeeee 15.5%, #dddddd 35.5%, #cfcfcf 70%, #cccccc 100%);
-  }
-
-  /* line 275, layout/_home-page.scss */
-  50% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #efefef 16%, #e0e0e0 36%, #d1d1d1 70%, #cccccc 100%);
-  }
-
-  /* line 282, layout/_home-page.scss */
-  55% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f0f0f0 16.5%, #e2e2e2 36.5%, #d1d1d1 70%, #cccccc 100%);
-  }
-
-  /* line 289, layout/_home-page.scss */
-  60% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f2f2f2 17%, #e5e5e5 37%, #d2d2d2 70%, #cccccc 100%);
-  }
-
-  /* line 296, layout/_home-page.scss */
-  65% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f3f3f3 17.5%, #e8e8e8 37.5%, #d2d2d2 70%, #cccccc 100%);
-  }
-
-  /* line 303, layout/_home-page.scss */
-  70% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, lightgrey 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f4f4f4 18%, #eaeaea 38%, #d3d3d3 70%, #cccccc 100%);
-  }
-
-  /* line 310, layout/_home-page.scss */
-  75% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, lightgrey 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f6f6f6 18.5%, #ededed 38.5%, #d3d3d3 70%, #cccccc 100%);
-  }
-
-  /* line 317, layout/_home-page.scss */
-  80% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f7f7f7 19%, #efefef 39%, #d4d4d4 70%, #cccccc 100%);
-  }
-
-  /* line 324, layout/_home-page.scss */
-  85% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f8f8f8 19.5%, #f0f0f0 39.3%, #d4d4d4 70%, #cccccc 100%);
-  }
-
-  /* line 331, layout/_home-page.scss */
-  90% {
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #f9f9f9 20%, #f0f0f2 39%, #d6d6d6 70%, #cccccc 100%);
-  }
-
-  /* line 338, layout/_home-page.scss */
-  95% {
-    background-image: -moz-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -o-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, #fcfcfc 20.5%, #f1f1f1 39.5%, #d6d6d6 70%, #cccccc 100%);
-  }
-
-  /* line 345, layout/_home-page.scss */
-  100% {
-    background-image: -o-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: -ms-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: -moz-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: radial-gradient(50% 45%, circle cover, #ffffff 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-    background-image: -webkit-radial-gradient(50% 45%, circle cover, white 21%, #f2f2f2 40%, #d8d8d8 70%, #cccccc 100%);
-  }
-}
-
-/* box wrapper style */
-/* line 3, layout/_examples-page.scss */
+/* icon */
+/* line 2, pages/_examples-page.scss */
 .the-icons li {
   float: left;
   width: 25%;
-  line-height: 20px;
 }
 
-/* box wrapper style */
-/* line 11, layout/_examples-page.scss */
-#grid .row div, #grid .yui3-g div {
+/* grid style */
+/* line 10, pages/_examples-page.scss */
+.grid .pure-g div {
   background: green;
-  line-height: 40px;
-  height: 40px;
   text-align: center;
   color: #ffffff;
   border-left: solid 1px #000;
   border-bottom: solid 1px #000;
-  font-family: arial;
+  padding: 10px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* box wrapper style */
-/* line 25, layout/_examples-page.scss */
+/* homepage img sprite */
+/* line 24, pages/_examples-page.scss */
 .homepage-favicon {
   width: 32px;
   height: 32px;
 }
 
-/* line 30, layout/_examples-page.scss */
+/* line 29, pages/_examples-page.scss */
 .homepage-heading {
   width: 860px;
   height: 41px;
 }
 
-/* line 35, layout/_examples-page.scss */
+/* line 34, pages/_examples-page.scss */
 .homepage-icons {
   width: 469px;
   height: 159px;
 }
 
-/* line 40, layout/_examples-page.scss */
+/* line 39, pages/_examples-page.scss */
 .homepage-share {
   width: 158px;
   height: 165px;
 }
 
-/* box wrapper style */
-/* line 50, layout/_examples-page.scss */
+/* carousel style */
+/* line 49, pages/_examples-page.scss */
 .carousel {
   position: relative;
 }
-/* line 52, layout/_examples-page.scss */
+/* line 51, pages/_examples-page.scss */
 .carousel .slidesjs-previous {
   position: absolute;
   bottom: 0px;
@@ -3236,7 +3839,7 @@ footer {
   line-height: 30px;
   color: #ffffff;
 }
-/* line 60, layout/_examples-page.scss */
+/* line 59, pages/_examples-page.scss */
 .carousel .slidesjs-next {
   position: absolute;
   bottom: 0px;
@@ -3245,7 +3848,7 @@ footer {
   line-height: 30px;
   color: #ffffff;
 }
-/* line 68, layout/_examples-page.scss */
+/* line 67, pages/_examples-page.scss */
 .carousel .slidesjs-pagination {
   position: absolute;
   bottom: 0px;
@@ -3256,12 +3859,12 @@ footer {
   background-color: rgba(0, 0, 0, 0.5);
   line-height: 30px;
 }
-/* line 77, layout/_examples-page.scss */
+/* line 76, pages/_examples-page.scss */
 .carousel .slidesjs-pagination > li {
   display: inline-block;
   margin: 0 5px;
 }
-/* line 80, layout/_examples-page.scss */
+/* line 79, pages/_examples-page.scss */
 .carousel .slidesjs-pagination > li a {
   width: 9px;
   height: 9px;
@@ -3275,9 +3878,17 @@ footer {
   overflow: hidden;
   display: block;
 }
-/* line 89, layout/_examples-page.scss */
+/* line 88, pages/_examples-page.scss */
 .carousel .slidesjs-pagination > li a.active {
   background-color: white;
+}
+
+/* category */
+/* line 102, pages/_examples-page.scss */
+.category > div {
+  padding: 1em 0;
+  text-align: center;
+  color: #fff;
 }
 
 /*@media screen and (min-width: 421px) and (max-width: 680px) {

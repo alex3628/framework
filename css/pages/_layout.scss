@@ -1,0 +1,96 @@
+/* ==========================================================================
+   variables css
+   ========================================================================== */
+
+
+
+
+
+
+/* ==========================================================================
+   pages css
+   ========================================================================== */
+body {
+  background-color: $default-color;
+  color: $main-color;
+}
+/* aside */
+aside {
+}
+/* navigation */
+nav {
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #000000;
+  a {
+    color: $describe-color;
+    font-size: 1.2em;
+    display: block;
+    padding: $nav-area-margin*1.2 $nav-area-margin;
+    @include text-animation();
+    @include text-overflow();
+    .active {
+      background-color: $highlight-color;;
+      color: $default-color;
+      text-indent: $nav-area-margin;
+    }
+  }
+  /* logo */
+  .logo {
+    color: $highlight-color;
+    font-size: 2em;
+    padding: $nav-area-margin*1.5 $nav-area-margin;
+  }
+  /* search */
+  .search {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-bottom: $nav-area-margin*1.2;
+    padding: 0 $nav-area-margin;
+    outline: none;
+    border: none;
+    @include box-sizing(border-box);
+    background-color: $border-color;
+    &:focus{
+      background-color: $default-color;
+    }
+  }
+}
+/* main */
+main {
+  padding-left: 180px;
+}
+/* header */
+header {
+  text-align: center;
+}
+/* content */
+article {
+  position: relative;
+}
+/* footer */
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 1.4em;
+  color: $describe-color;
+  border-top: $border-width $border-style $highlight-color;;
+}
+
+
+
+/* ==========================================================================
+   common css
+   ========================================================================== */
+.container {
+  padding: $box-margin 0;
+  @include border-bottom();
+}
+/* custom margin and padding */
+.box-margin {
+  margin-top: $box-margin;
+}

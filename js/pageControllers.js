@@ -15,16 +15,16 @@ function pageCtrl($scope) {
             "link": "/simple/buttons"
         },
         {
-            "name": "Table",
-            "link": "/simple/table"
+            "name": "Grid system",
+            "link": "/simple/grid"
         },
         {
             "name": "Menu",
             "link": "/simple/menu"
         },
         {
-            "name": "Grid",
-            "link": "/simple/grid"
+            "name": "Table",
+            "link": "/simple/table"
         },
         {
             "name": "Icons",

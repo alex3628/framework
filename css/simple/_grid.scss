@@ -108,6 +108,7 @@ this the same font stack that Normalize.css sets for the `body`.
   vertical-align: top;
   text-rendering: auto;
   @include box-sizing(border-box);
+  padding: 0 $box-margin;
 }
 
 .pure-u-1 {

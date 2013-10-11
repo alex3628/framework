@@ -7,24 +7,31 @@
 @import "base/normalize";
 @import "base/font";
 
+@import "base/variables";
+@import "base/mixins";
 
 
 
 
 /* ==========================================================================
-   Layout (components css)
+   components (simple css)
+   ========================================================================== */
+@import "components/compass";
+@import "components/animation";
+
+
+
+
+/* ==========================================================================
+   simple (simple css)
    ========================================================================== */
 
-@import "components/variables";
-@import "components/mixins";
-@import "components/compass";
-
-@import "components/typography";
-@import "components/grid";
-@import "components/icons";
-@import "components/progressBar";
-@import "components/backToTop";
-
+@import "simple/typography";
+@import "simple/grid";
+@import "simple/icons";
+@import "simple/menu";
+@import "simple/buttons";
+@import "simple/table";
 
 
 
@@ -33,11 +40,11 @@
    Layout (page-specified css)
    ========================================================================== */
 
-@import "layout/layout";
-@import "layout/home-page";
-@import "layout/examples-page";
-@import "layout/blog-page";
-@import "layout/responsive";
+@import "pages/layout";
+@import "pages/home-page";
+@import "pages/examples-page";
+@import "pages/blog-page";
+@import "pages/responsive";
 
 
 

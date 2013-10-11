@@ -4,6 +4,7 @@
 
 @mixin clearfix() {
   zoom: 1;
+  *overflow: hidden;
   &:after {
     clear: both;
     content: ".";
@@ -20,7 +21,7 @@
   &:hover,
   &:focus,
   &:active {
-    text-indent: 10px;
+    text-indent: $nav-area-margin;
   }
 }
 
@@ -112,7 +113,7 @@
 
 // border variants
 // -------------------------
-@mixin normal-border($radius: $border-radius) {
+@mixin border($radius: $border-radius) {
   $width:  $border-width;
   $color:  $border-color;
   $style:  $border-style;
@@ -122,6 +123,20 @@
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   border-radius: $radius;
+}
+@mixin border-top() {
+  $width:  $border-width;
+  $color:  $border-color;
+  $style:  $border-style;
+
+  border-top: $width $style $color;
+}
+@mixin border-bottom() {
+  $width:  $border-width;
+  $color:  $border-color;
+  $style:  $border-style;
+
+  border-bottom: $width $style $color;
 }
 
 
@@ -168,14 +183,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 // loading and progress Striped
 @mixin striped($color: #555, $angle: 45deg) {
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent));
@@ -184,6 +191,18 @@
   background-image: linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
 }
 
+
+
+
+
+// animation
+@mixin animation($animation) {
+  -webkit-animation: $animation;
+  -moz-animation: $animation;
+  -ms-animation: $animation;
+  -o-animation: $animation;
+  animation: $animation;
+}
 
 
 
