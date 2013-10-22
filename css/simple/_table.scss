@@ -1,36 +1,45 @@
-
-
-
-
 .table {
-  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
   @include border();
+  width: 100%;
   caption {
+    color: #000;
+    padding: 1em 0;
     text-align: center;
-    font-weight: bold;
-    padding-bottom: 20px;
-    font-size: 1.2em;
   }
-  th {
+  th, caption {
     font-weight: bold;
   }
   th, td {
+    font-size: inherit;
     padding: 10px;
     vertical-align: middle;
-  }
-  td {
     @include border();
-    border-right: none;
+    border-left: none;
     border-bottom: none;
   }
-  &.table-hover {
+  &.hover {
+    tbody {
+      tr:hover, .hover {
+        background-color: $border-color;
+      }
+    }
+  }
+  &.horizontal {
+    th, td {
+      border-right: none;
+    }
+  }
+  &.vertical {
+    th, td {
+      border-top: none;
+    }
     tbody {
       tr:hover {
-        background-color: #eeeeee;
+        background-color: transparent;
       }
     }
   }
 }
-
-
-

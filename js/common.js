@@ -9,6 +9,6 @@ document.write(
     '<script src="/js/3rdparty/backToTop.js"></script>' +
     '<script src="/js/pageControllers.js"><\/script>' +
     '<script src="/js/submenuScrollByPageHeight.js"><\/script>' +
-    '<script src="/js/main.js"><\/script>' +
-    '<script src="http://10.5.30.183:8080/target/target-script-min.js#anonymous"></script>'
+    '<script src="/js/main.js"><\/script>' //+
+    //'<script src="http://10.5.30.183:8080/target/target-script-min.js#anonymous"></script>'
 );

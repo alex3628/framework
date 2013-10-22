@@ -3,6 +3,25 @@
    ========================================================================== */
 $_code-tab-indent: 16px;
 
+/* link */
+a {
+  color: $main-color;
+  text-decoration: none;
+  @include transition(all 0.2s ease-in-out);
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $highlight-color;
+  }
+  &.link {
+    color: $highlight-color;
+    text-decoration: underline;
+  }
+}
+
+
 
 /* paragraph */
 p {
@@ -54,8 +73,14 @@ h6 {
   margin-bottom: $paragraph-margin;
 }
 
+.text-describe {
+  color: $describe-color;
+}
 .text-stress {
   color: $stress-color;
+}
+.text-primary {
+  color: $primary-color;
 }
 .text-info {
   color: $info-color;
@@ -116,24 +141,6 @@ h6 {
   display: block;
   visibility: visible;
 }
-/* link */
-a {
-  color: $main-color;
-  text-decoration: none;
-  @include transition(all 0.2s ease-in-out);
-  -webkit-tap-highlight-color:rgba(0,0,0,0);
-  &:hover,
-  &:focus,
-  &:active,
-  &.active {
-    color: $highlight-color;
-  }
-}
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
 
 
 
@@ -220,21 +227,20 @@ code {
 .progress {
   width: 100%;
   height: 20px;
-  background-color: $default-color;
+  background-color: $content-bg-color;
   overflow: hidden;
-  @include border-radius(5px);
+  @include border-radius(4px);
   @include box-shadow(inset 0 1px 2px rgba(0,0,0,.1));
   .bar {
     float: left;
     width: 0;
     height: 100%;
-    background-color: $progress-color;
+    background-color: $primary-color;
     @include text-overflow();
     @include box-shadow(inset 0 -1px 0 rgba(0,0,0,.15));
     @include transition(width .6s ease);
   }
   &.active .bar {
-    background-color: #149bdf;
     @include striped();
     @include background-size(40px 40px);
     @include animation(progress-active 2s linear infinite);
@@ -247,7 +253,7 @@ code {
 
 .back-to-top {
   cursor: pointer;
-  border-bottom: solid 30px $highlight-color;
+  border-bottom: solid 30px $primary-color;
   border-top: solid 30px transparent;
   border-right: solid 30px transparent;
   border-left: solid 30px transparent;

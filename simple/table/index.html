@@ -60,11 +60,13 @@
 
     <main>
         <header>
-            <h1 class="title">Table</h1>
-            <h2 class="describe">SlidesJS is a responsive slideshow plug-in for jQuery (1.7.1+) with features like touch and CSS3 transitions.</h2>
-            <!--<code class="box-margin">
-                <p>View on official website: <a target="_blank" href="http://slidesjs.com/" class="active">http://slidesjs.com/</a></p>
-            </code>-->
+            <div class="container">
+                <h1 class="title">Table</h1>
+                <h2 class="describe">Simple CSS for HTML tables.</h2>
+                <!--<code class="box-margin">
+                    <p>View on official website: <a target="_blank" href="http://slidesjs.com/" class="active">http://slidesjs.com/</a></p>
+                </code>-->
+            </div>
         </header>
 
         <article id="page-content">
@@ -75,51 +77,152 @@
             <div class="container">
                 <div class="pure-g">
                     <div class="pure-u-1">
-
-
-
-
-
-                        <h1>Tables</h1>
-                        <div class="bs-docs-example">
-                            <table class="table table-hover">
-                                <caption>Monthly savings</caption>
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Username</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@TwBootstrap</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Larry</td>
-                                    <td>Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <h3 class="subtitle">Standard Table</h3>
+                        <table class="table">
+                            <caption>Caption</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>thead</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>tbody</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@TwBootstrap</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Larry</td>
+                                <td>Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <th>tfoot</th>
+                                <th></th>
+                                <th></th>
+                                <th>Total</th>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="pure-g box-margin">
+                    <div class="pure-u-1">
+                        <h3 class="subtitle">Horizontal Tables</h3>
+                        <table class="table hover horizontal">
+                            <thead>
+                            <tr>
+                                <th>thead</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>tbody</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@TwBootstrap</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Larry</td>
+                                <td>Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <th>tfoot</th>
+                                <th></th>
+                                <th></th>
+                                <th>Total</th>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="pure-g box-margin">
+                    <div class="pure-u-1">
+                        <h3 class="subtitle">Vertical Tables</h3>
+                        <table class="table hover vertical">
+                            <tbody>
+                            <tr>
+                                <td>thead</td>
+                                <td>First Name</td>
+                                <td>Last Name</td>
+                                <td>Username</td>
+                            </tr>
+                            <tr>
+                                <td>tbody</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@TwBootstrap</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Larry</td>
+                                <td>Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            <tr>
+                                <td>tfoot</td>
+                                <td>Larry</td>
+                                <td>Bird</td>
+                                <td>Total</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -137,6 +240,18 @@
 <!-- script link here -->
 <div id="script">
     <script src="/js/common.js"></script>
+    <script>
+        $('.vertical.hover td').hover(
+            function() {
+                var t = parseInt($(this).index()) + 1;
+                $('.vertical td:nth-child(' + t + ')').addClass('hover');
+            },
+            function() {
+                var t = parseInt($(this).index()) + 1;
+                $('.vertical td:nth-child(' + t + ')').removeClass('hover');
+            }
+        );
+    </script>
 </div>
 </body>
 </html>

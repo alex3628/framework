@@ -18,25 +18,23 @@
       background: url(../images/home-lightnight.png) no-repeat;
       @include animation(changeOpacity 1s ease-in-out infinite alternate);
     }
-    h1 {
+    .logo {
       position: absolute;
       bottom: -100px;
       left: 0px;
       width: 100%;
       text-align: center;
       cursor: pointer;
-      &.logo {
-        font-size: 4em;
-      }
+      font-size: 4em;
     }
   }
   footer {
-    background-color: transparent;;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 10px 0;
+    color: $stress-color;
   }
 }
 
@@ -45,7 +43,7 @@
     header {
       margin-top: -160px;
       .logo {
-        bottom: -100px;
+        bottom: -80px;
         font-size: 3em;
       }
     }

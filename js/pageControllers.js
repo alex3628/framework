@@ -7,16 +7,12 @@ function pageCtrl($scope) {
             "link": "/simple/base"
         },
         {
+            "name": "Grid",
+            "link": "/simple/grid"
+        },
+        {
             "name": "Typography",
             "link": "/simple/typography"
-        },
-        {
-            "name": "Buttons",
-            "link": "/simple/buttons"
-        },
-        {
-            "name": "Grid system",
-            "link": "/simple/grid"
         },
         {
             "name": "Menu",
@@ -29,6 +25,10 @@ function pageCtrl($scope) {
         {
             "name": "Icons",
             "link": "/simple/icons"
+        },
+        {
+            "name": "Buttons",
+            "link": "/simple/buttons"
         },
         {
             "name": "Carousel",

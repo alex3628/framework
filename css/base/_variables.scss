@@ -15,21 +15,22 @@ $paragraph-margin: 10px;
 
 
 
-
 // color
 // -------------------------
 $default-color:        #ffffff;
 $highlight-color:      #00bbd7;
 
 $main-color:           #666666;
-$describe-color:       #999999;
+$describe-color:       #cccccc;
 
 $stress-color:         #333333;
-$info-color:           #3a87ad;
-$success-color:        #468847;
-$warning-color:        #c09853;
-$error-color:          #b94a48;
-$progress-color:       #0e90d2;
+$primary-color:        #428bca;
+$info-color:           #5bc0de;
+$success-color:        #5cb85c;
+$warning-color:        #f0ad4e;
+$error-color:          #d9534f;
+
+
 
 
 
@@ -44,24 +45,31 @@ $border-radius:     0px;
 
 
 
+
+
+
 // Buttons
 // -------------------------
-$btn-default-text-color:               #333333;
+$btn-default-text-color:               $stress-color;
 $btn-default-bg-color:                 $default-color;
-$btn-default-border-color:             darken($btn-default-bg-color, 5%);
+$btn-default-border-color:             darken($default-color, 25%);
 
-$btn-info-text-color:                  #ffffff;
+$btn-primary-text-color:               $default-color;
+$btn-primary-bg-color:                 $primary-color;
+$btn-primary-border-color:             darken($primary-color, 5%);
+
+$btn-info-text-color:                  $default-color;
 $btn-info-bg-color:                    $info-color;
-$btn-info-border-color:                darken($btn-info-bg-color, 5%);
+$btn-info-border-color:                darken($info-color, 5%);
 
-$btn-success-text-color:               #ffffff;
+$btn-success-text-color:               $default-color;
 $btn-success-bg-color:                 $success-color;
-$btn-success-border-color:             darken($btn-success-bg-color, 5%);
+$btn-success-border-color:             darken($success-color, 5%);
 
-$btn-warning-text-color:               #ffffff;
+$btn-warning-text-color:               $default-color;
 $btn-warning-bg-color:                 $warning-color;
-$btn-warning-border-color:             darken($btn-warning-bg-color, 5%);
+$btn-warning-border-color:             darken($warning-color, 5%);
 
-$btn-error-text-color:                 #ffffff;
+$btn-error-text-color:                 $default-color;
 $btn-error-bg-color:                   $error-color;
-$btn-error-border-color:               darken($btn-error-bg-color, 5%);
+$btn-error-border-color:               darken($error-color, 5%);
