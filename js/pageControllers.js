@@ -31,12 +31,12 @@ function pageCtrl($scope) {
             "link": "/simple/buttons"
         },
         {
-            "name": "Carousel",
-            "link": "/simple/carousel"
-        },
-        {
             "name": "Compass",
             "link": "/simple/compass"
+        },
+        {
+            "name": "Carousel",
+            "link": "/simple/carousel"
         },
         {
             "name": "Blog",

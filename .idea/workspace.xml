@@ -22,67 +22,31 @@
     <favorites_list name="framework" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.36658356">
+    <splitter split-orientation="horizontal" split-proportion="0.47776994">
       <split-first>
         <leaf>
-          <file leaf-file-name="_variables.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/base/_variables.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="59" column="0" selection-start="1224" selection-end="1224" vertical-scroll-proportion="-24.708334" vertical-offset="292" max-vertical-offset="1200">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_print.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/base/_print.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="79" column="2" selection-start="1202" selection-end="1202" vertical-scroll-proportion="5.4166665" vertical-offset="1315" max-vertical-offset="1590">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_buttons.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/simple/_buttons.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="14" selection-start="132" selection-end="132" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="345">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_mixins.scss" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/css/base/_mixins.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="77" column="33" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.5905963" vertical-offset="640" max-vertical-offset="4635">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/simple/icons/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="130" column="26" selection-start="6515" selection-end="6515" vertical-scroll-proportion="-26.666666" vertical-offset="1310" max-vertical-offset="2985">
+                <state line="212" column="21" selection-start="10970" selection-end="10970" vertical-scroll-proportion="-9.333333" vertical-offset="2956" max-vertical-offset="3615">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/simple/typography/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="341" column="53" selection-start="16257" selection-end="16262" vertical-scroll-proportion="-4.1666665" vertical-offset="5015" max-vertical-offset="5940">
+                <state line="349" column="36" selection-start="17610" selection-end="17610" vertical-scroll-proportion="0.26256984" vertical-offset="5000" max-vertical-offset="5895">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/simple/carousel/index.html">
+          <file leaf-file-name="_icons.scss" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/simple/_icons.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="73" column="58" selection-start="3170" selection-end="3170" vertical-scroll-proportion="-21.666666" vertical-offset="575" max-vertical-offset="3375">
+                <state line="14" column="20" selection-start="237" selection-end="237" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="885">
                   <folding />
                 </state>
               </provider>
@@ -92,38 +56,13 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/main.scss">
+          <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="28" column="22" selection-start="743" selection-end="743" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="945">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_layout.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/pages/_layout.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="1" selection-start="420" selection-end="420" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1515">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_icons.scss" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/css/simple/_icons.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="908">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_examples-page.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/pages/_examples-page.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="62" column="15" selection-start="1008" selection-end="1009" vertical-scroll-proportion="-18.979591" vertical-offset="0" max-vertical-offset="1560">
-                  <folding />
+                <state line="955" column="21" selection-start="21471" selection-end="21471" vertical-scroll-proportion="-17.32" vertical-offset="13892" max-vertical-offset="88140">
+                  <folding>
+                    <marker date="1382435632000" expanded="true" signature="150891:150918" placeholder="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -131,16 +70,16 @@
           <file leaf-file-name="_typography.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/simple/_typography.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="3" selection-start="509" selection-end="509" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="4095">
+                <state line="6" column="3" selection-start="216" selection-end="216" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="4185">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/main.css">
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/simple/table/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="3190" column="16" selection-start="115030" selection-end="115030" vertical-scroll-proportion="0.0" vertical-offset="47470" max-vertical-offset="54075">
+                <state line="23" column="0" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.38547486" vertical-offset="0" max-vertical-offset="4110">
                   <folding />
                 </state>
               </provider>
@@ -158,22 +97,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/base/_variables.scss" />
-        <option value="$PROJECT_DIR$/simple/typography/index.html" />
-        <option value="$PROJECT_DIR$/simple/grid/index.html" />
-        <option value="$PROJECT_DIR$/js/pageControllers.js" />
-        <option value="$PROJECT_DIR$/css/base/_font.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/pages/_home-page.scss" />
-        <option value="$PROJECT_DIR$/css/pages/_layout.scss" />
-        <option value="$PROJECT_DIR$/css/simple/_icons.scss" />
-        <option value="$PROJECT_DIR$/css/components/font-awesome.css" />
-        <option value="$PROJECT_DIR$/css/main.scss" />
-        <option value="$PROJECT_DIR$/css/pages/_examples-page.scss" />
         <option value="$PROJECT_DIR$/simple/carousel/index.html" />
-        <option value="$PROJECT_DIR$/simple/icons/index.html" />
-        <option value="$PROJECT_DIR$/css/simple/_typography.scss" />
+        <option value="$PROJECT_DIR$/js/pageControllers.js" />
+        <option value="$PROJECT_DIR$/js/3rdparty/backToTop.js" />
+        <option value="$PROJECT_DIR$/css/base/_mixins.scss" />
+        <option value="$PROJECT_DIR$/simple/buttons/index.html" />
+        <option value="$PROJECT_DIR$/simple/compass/index.html" />
+        <option value="$PROJECT_DIR$/simple/base/index.html" />
+        <option value="$PROJECT_DIR$/js/common.js" />
+        <option value="$PROJECT_DIR$/css/components/_compass.scss" />
+        <option value="$PROJECT_DIR$/css/pages/_examples-page.scss" />
+        <option value="$PROJECT_DIR$/css/main.scss" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/css/simple/_icons.scss" />
+        <option value="$PROJECT_DIR$/simple/icons/index.html" />
+        <option value="$PROJECT_DIR$/simple/table/index.html" />
+        <option value="$PROJECT_DIR$/simple/typography/index.html" />
       </list>
     </option>
   </component>
@@ -332,43 +271,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="icons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grid" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -441,24 +344,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="about" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -672,15 +557,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="80" width="1920" height="1080" extended-state="0" />
+    <frame x="1440" y="80" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32708332" sideWeight="0.49973643" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.659375" sideWeight="0.49973643" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24986821" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1544544" sideWeight="0.340625" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10911966" sideWeight="0.80625" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1771348" sideWeight="0.42705572" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744282" sideWeight="0.5002636" order="8" side_tool="true" content_ui="tabs" />
@@ -707,114 +592,116 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/components/font-awesome.css">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="220" selection-start="1518" selection-end="1518" vertical-scroll-proportion="-4.51566" vertical-offset="4487" max-vertical-offset="22275">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="746">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/phrase.rnc">
+    <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="20" selection-start="3623" selection-end="3623" vertical-scroll-proportion="0.33261803" vertical-offset="2180" max-vertical-offset="6090">
+        <state line="12" column="2" selection-start="713" selection-end="713" vertical-scroll-proportion="0.19313304" vertical-offset="0" max-vertical-offset="932">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.sass-cache/37684deb76f6366ea11baa40d1dd4e3d4e60d2a1/%042.pngc">
+    <entry file="file://$PROJECT_DIR$/css/components/_compass.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/carousel/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="58" selection-start="3170" selection-end="3170" vertical-scroll-proportion="-21.666666" vertical-offset="575" max-vertical-offset="3375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/typography/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="341" column="53" selection-start="16257" selection-end="16262" vertical-scroll-proportion="-4.1666665" vertical-offset="5015" max-vertical-offset="5940">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3190" column="16" selection-start="115030" selection-end="115030" vertical-scroll-proportion="0.0" vertical-offset="47470" max-vertical-offset="54075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/icons/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="26" selection-start="6515" selection-end="6515" vertical-scroll-proportion="-26.666666" vertical-offset="1310" max-vertical-offset="2985">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/base/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1224" selection-end="1224" vertical-scroll-proportion="-24.708334" vertical-offset="292" max-vertical-offset="1200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/base/_print.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="2" selection-start="1202" selection-end="1202" vertical-scroll-proportion="5.4166665" vertical-offset="1315" max-vertical-offset="1590">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/simple/_buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="14" selection-start="132" selection-end="132" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="345">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/pages/_examples-page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="15" selection-start="1008" selection-end="1009" vertical-scroll-proportion="-18.979591" vertical-offset="0" max-vertical-offset="1560">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/simple/_typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="3" selection-start="509" selection-end="509" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="4095">
+        <state line="16" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="0.27118644" vertical-offset="0" max-vertical-offset="885">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="22" selection-start="743" selection-end="743" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="945">
+        <state line="22" column="0" selection-start="634" selection-end="634" vertical-scroll-proportion="0.3469163" vertical-offset="15" max-vertical-offset="930">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/pages/_layout.scss">
+    <entry file="file://$PROJECT_DIR$/css/simple/_table.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="420" selection-end="420" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1515">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="932">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/simple/_icons.scss">
+    <entry file="file://$PROJECT_DIR$/css/simple/_grid.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="908">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/simple/_buttons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="932">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/base/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="33" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.5905963" vertical-offset="640" max-vertical-offset="4635">
+        <state line="8" column="17" selection-start="274" selection-end="274" vertical-scroll-proportion="0.13793103" vertical-offset="0" max-vertical-offset="4935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="955" column="21" selection-start="21471" selection-end="21471" vertical-scroll-proportion="-17.32" vertical-offset="13892" max-vertical-offset="88140">
+          <folding>
+            <marker date="1382435632000" expanded="true" signature="150891:150918" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/pages/_examples-page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="10" selection-start="1380" selection-end="1397" vertical-scroll-proportion="0.5870044" vertical-offset="652" max-vertical-offset="1560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/compass/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="35" selection-start="3357" selection-end="3373" vertical-scroll-proportion="0.54525137" vertical-offset="727" max-vertical-offset="1635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/simple/_icons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="20" selection-start="237" selection-end="237" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/simple/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="3" selection-start="216" selection-end="216" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="4185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/icons/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="212" column="21" selection-start="10970" selection-end="10970" vertical-scroll-proportion="-9.333333" vertical-offset="2956" max-vertical-offset="3615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/table/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.38547486" vertical-offset="0" max-vertical-offset="4110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/typography/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="349" column="36" selection-start="17610" selection-end="17610" vertical-scroll-proportion="0.26256984" vertical-offset="5000" max-vertical-offset="5895">
           <folding />
         </state>
       </provider>

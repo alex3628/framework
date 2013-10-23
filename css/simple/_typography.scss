@@ -32,66 +32,72 @@ p {
 }
 
 
-/* body font size and color */
-h1 {
-  font-size: 2em;
+/* font size */
+.regular {
+  @include font-size($regular);
 }
-h2 {
-  font-size: 1.5em;
+h1, .xxlarge, .title {
+  @include font-size($xxlarge);
 }
-h3 {
-  font-size: 1.17em;
+h2, .xlarge {
+  @include font-size($xlarge);
 }
-h4 {
-  font-size: 1em;
+h3, .large, .describe, .subtitle {
+  @include font-size($large);
 }
-h5 {
-  font-size: 0.83em;
+h4, .medium, .lead {
+  @include font-size($medium);
 }
-h6 {
-  font-size: 0.67em;
+h5, .small {
+  @include font-size($small);
 }
+h6, .xsmall {
+  @include font-size($xsmall);
+}
+
 .headline {
-  font-size: 6em;
+  @include font-size($xxlarge * 1.5);
   color: $highlight-color;
 }
 .title {
-  font-size: 4em;
+  color: $main-color;
 }
 .describe {
-  font-size: 1.4em;
   color: $describe-color;
 }
 .subtitle {
-  font-size: 1.6em;
   color: $stress-color;
   margin-bottom: $paragraph-margin;
 }
 .lead {
-  font-size: 1.3em;
   color: $stress-color;
   margin-bottom: $paragraph-margin;
 }
 
-.text-describe {
+
+
+
+
+/* font color */
+.color-describe {
   color: $describe-color;
 }
-.text-stress {
+.color-stress {
   color: $stress-color;
 }
-.text-primary {
+.color-primary {
   color: $primary-color;
 }
-.text-info {
+.color-info {
   color: $info-color;
 }
-.text-success {
+.color-success {
   color: $success-color;
 }
-.text-warning {
+.color-warning {
   color: $warning-color;
 }
-.text-error {
+.color-error {
   color: $error-color;
 }
 

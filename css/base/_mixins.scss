@@ -28,8 +28,22 @@
 
 
 
+// font-size
+// -------------------------
+@mixin font-size($size){
+  font-size: $size;
+}
 
 
+
+
+
+
+
+
+
+// Text
+// -------------------------
 
 // Text overflow
 @mixin text-overflow() {
@@ -58,6 +72,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+// Box
+// -------------------------
 
 // Box sizing
 @mixin box-sizing($boxmodel) {
@@ -113,6 +138,11 @@
 
 
 
+
+
+// CSS3
+// -------------------------
+
 // background size
 @mixin background-size($size) {
   -webkit-background-size: $size;
@@ -121,7 +151,7 @@
   background-size: $size;
 }
 
-
+// background color
 @mixin background-linear($color-start: #ffffff, $color-end: #000000) {
   //-webkit-gradien(<type>,<point>[,<radius>]?,<point>[,<radius>]?[,<stop>]*)                                  //Webkit引擎老式语法
   //-webkit-linear-gradient([<point>||<angle>,]?<stop>,<stop>[,<stop>]*)                                       //Webkit引擎新式语法
@@ -131,13 +161,11 @@
   //linear-gradient([[<angle> | to <side-or-corner> ],]?<color-stop>[,<color-stop>]+)                          //w3c标准
   //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff');        //IE6 & IE7
   //-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff')";  //IE8+
-
   background-image: -moz-linear-gradient($color-start, $color-end); /* FF 3.6+ */
   background-image: -webkit-linear-gradient($color-start, $color-end); /* Safari 5.1+, Chrome 10+ */
   background-image: -o-linear-gradient($color-start, $color-end); /* Opera 11.10 */
   background-image: linear-gradient($color-start, $color-end); /* the standard */
 }
-
 
 // loading and progress Striped
 @mixin striped($color: #555, $angle: 45deg) {
@@ -147,14 +175,6 @@
   background-image: linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
 }
 
-
-
-
-
-
-
-
-
 // animation
 @mixin animation($animation) {
   -webkit-animation: $animation;
@@ -163,8 +183,6 @@
   -o-animation: $animation;
   animation: $animation;
 }
-
-
 
 // Transitions
 @mixin transition($transition) {
@@ -189,9 +207,6 @@
   -o-transition: -o-transform $transition;
   transition: transform $transition;
 }
-
-
-
 
 // Transformations
 @mixin rotate($degrees) {
@@ -228,6 +243,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// button style
+// -------------------------
+
 @mixin button($color, $background, $border) {
   @include border(2px);
   @include user-select(none);
@@ -242,8 +276,6 @@
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 100%;
-  *font-size: 90%;
   *overflow: visible;
   padding: 0.5em 1.5em 0.5em;
 
@@ -286,18 +318,6 @@
   &::-moz-focus-inner {
     padding: 0;
     border: 0;
-  }
-  &.xsmall {
-    font-size: 70%;
-  }
-  &.small {
-    font-size: 85%;
-  }
-  &.large {
-    font-size: 110%;
-  }
-  &.xlarge {
-    font-size: 125%;
   }
 }
 

@@ -10,3 +10,7 @@ $mysprite-layout:smart;
 @import "homepage/*.png";
 @include all-homepage-sprites;
 
+/* common images spript */
+@import "common/*.png";
+@include all-common-sprites;
+
